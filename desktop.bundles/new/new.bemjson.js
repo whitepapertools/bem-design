@@ -13,13 +13,12 @@ module.exports = {
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'bem', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' },
+		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' },
 	},
 	content: [
 		{
 			block: 'tpl-layout',
 			content: [
-
 				/* Start */
 				{
 					elem: 'section',

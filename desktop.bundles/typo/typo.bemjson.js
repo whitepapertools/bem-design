@@ -7,20 +7,18 @@ module.exports = {
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
 		{ elem: 'css', url: 'typo.min.css' },
+		{ elem: 'css', url: '/assets/bem-grid/bem-grid-l.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' }
 	],
 	scripts: [{ elem: 'js', url: 'typo.min.js' }],
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
+		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
 	},
 	content: [
 	{
 		block: 'demo',
-		mix: [
-			{ block: 'b-page', elem: 'content' },
-			{ block: 'theme' }],
 		content: [
 		{
 			elem: 'content',
@@ -420,94 +418,6 @@ module.exports = {
 								content: [
 								{
 									block: 'text',
-									mods: { size: 'xxxl', view: 'inverse' },
-									content: 'Typography'
-								}]
-							},
-							{
-								block: 'text',
-								mods: { size: 'm', weight: 'bold' },
-								content: " mods: { view: 'inverse' }"
-							},
-							{
-								block: 'text',
-								mods: { size: 'm' },
-								content: '#FFFFFF'
-							}]
-						}]
-					},
-					{
-						elem: 'col',
-						elemMods: { sw: 4 },
-						content: [
-						{
-							block: 'typography',
-							content: [
-							{
-								elem: 'view',
-								content: [
-								{
-									block: 'text',
-									mods: { size: 'xxxl', view: 'income' },
-									content: 'Typography'
-								}]
-							},
-							{
-								block: 'text',
-								mods: { size: 'm', weight: 'bold' },
-								content: " mods: { view: 'income' }"
-							},
-							{
-								block: 'text',
-								mods: { size: 'm' },
-								content: '#04A504'
-							}]
-						}]
-					}]
-				},
-				{
-					block: 'row',
-					content: [
-					{
-						elem: 'col',
-						elemMods: { sw: 4 },
-						content: [
-						{
-							block: 'typography',
-							content: [
-							{
-								elem: 'view',
-								content: [
-								{
-									block: 'text',
-									mods: { size: 'xxxl', view: 'letter' },
-									content: 'Typography'
-								}]
-							},
-							{
-								block: 'text',
-								mods: { size: 'm', weight: 'bold' },
-								content: " mods: { view: 'letter' }"
-							},
-							{
-								block: 'text',
-								mods: { size: 'm' },
-								content: '#FF0000'
-							}]
-						}]
-					},
-					{
-						elem: 'col',
-						elemMods: { sw: 4 },
-						content: [
-						{
-							block: 'typography',
-							content: [
-							{
-								elem: 'view',
-								content: [
-								{
-									block: 'text',
 									mods: { size: 'xxxl', view: 'disable' },
 									content: 'Typography'
 								}]
@@ -553,38 +463,39 @@ module.exports = {
 						}]
 					}]
 				},
-				{
-					block: 'row',
-					content: [
-					{
-						elem: 'col',
-						elemMods: { sw: 4 },
-						content: [
-						{
-							block: 'typography',
-							content: [
-							{
-								elem: 'view',
-								content: [
-								{
-									block: 'text',
-									mods: { size: 'xxxl', view: 'link-minor' },
-									content: 'Typography'
-								}]
-							},
-							{
-								block: 'text',
-								mods: { size: 'm', weight: 'bold' },
-								content: " mods: { view: 'link-minor' }"
-							},
-							{
-								block: 'text',
-								mods: { size: 'm' },
-								content: '#666699'
-							}]
-						}]
-					}]
-				}]
+				// {
+				// 	block: 'row',
+				// 	content: [
+				// 	{
+				// 		elem: 'col',
+				// 		elemMods: { sw: 4 },
+				// 		content: [
+				// 		{
+				// 			block: 'typography',
+				// 			content: [
+				// 			{
+				// 				elem: 'view',
+				// 				content: [
+				// 				{
+				// 					block: 'text',
+				// 					mods: { size: 'xxxl', view: 'link-minor' },
+				// 					content: 'Typography'
+				// 				}]
+				// 			},
+				// 			{
+				// 				block: 'text',
+				// 				mods: { size: 'm', weight: 'bold' },
+				// 				content: " mods: { view: 'link-minor' }"
+				// 			},
+				// 			{
+				// 				block: 'text',
+				// 				mods: { size: 'm' },
+				// 				content: '#666699'
+				// 			}]
+				// 		}]
+				// 	}]
+				// }
+				]
 			},
 			{
 				elem: 'section',

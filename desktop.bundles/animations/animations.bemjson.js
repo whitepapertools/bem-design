@@ -14,15 +14,11 @@ module.exports = {
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
+		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
 	},
 	content: [
 		{
 		block: 'demo',
-		mix: [
-			{ block: 'b-page', elem: 'content' },
-			{ block: 'theme' }
-		],
 		content: [
 		{
 			elem: 'content',
@@ -48,7 +44,11 @@ module.exports = {
 						elem: 'view',
 						mix: [{ block: 'js-paranja' }],
 						content: [
-						'click here',
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
 						{
 							elem: 'paranja',
 							mix: { block: 'animation', mods: { 'fade': 'out' } },
@@ -72,7 +72,11 @@ module.exports = {
 						elem: 'view',
 						mix: [{ block: 'js-modal-top' }],
 						content: [
-						'click here',
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
 						{
 							elem: 'modal',
 							attrs: { style: 'display: none;' },
@@ -97,7 +101,11 @@ module.exports = {
 						elem: 'view',
 						mix: [{ block: 'js-modal-bottom' }],
 						content: [
-						'click here',
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
 						{
 							elem: 'modal',
 							attrs: { style: 'display: none;' },
@@ -122,7 +130,11 @@ module.exports = {
 						elem: 'view',
 						mix: [{ block: 'js-modal-right' }],
 						content: [
-						'click here',
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
 						{
 							elem: 'modal',
 							attrs: { style: 'display: none;' },
@@ -147,7 +159,11 @@ module.exports = {
 						elem: 'view',
 						mix: [{ block: 'js-modal-left' }],
 						content: [
-						'click here',
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
 						{
 							elem: 'modal',
 							attrs: { style: 'display: none;' },

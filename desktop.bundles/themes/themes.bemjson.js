@@ -14,15 +14,11 @@ module.exports = {
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
+		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
 	},
 	content: [
 	{
 		block: 'demo',
-		mix: {
-			block: 'theme',
-			mods: { color: 'default', space: 'default', size: 'default' }
-		},
 		content: [
 		{
 			elem: 'content',
@@ -64,11 +60,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-brand'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#FFCC00'
 								}]
 							}]
 						},
@@ -87,11 +78,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-action'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#FFDB4D'
 								}]
 							}]
 						},
@@ -110,11 +96,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-selection'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#FFEBA0'
 								}]
 							}]
 						},
@@ -133,107 +114,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-hover'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#FFF6CB'
-								}]
-							}]
-						}]
-					},
-					{
-						block: 'row',
-						content: [
-						{
-							elem: 'col',
-							elemMods: { sw: 3 },
-							content: [
-							{
-								block: 'color',
-								content: [
-								{
-									elem: 'image',
-									elemMods: { color: 'inverse'}
-								},
-								{
-									block: 'text',
-									mods: { size: 'm', weight: 'bold' },
-									content: '--color-inverse'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0, 0, 0, 0.9)'
-								}]
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { sw: 3 },
-							content: [
-							{
-								block: 'color',
-								content: [
-								{
-									elem: 'image',
-									elemMods: { color: 'border'}
-								},
-								{
-									block: 'text',
-									mods: { size: 'm', weight: 'bold' },
-									content: '--color-border'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0, 0, 0, 0.05)'
-								}]
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { sw: 3 },
-							content: [
-							{
-								block: 'color',
-								content: [
-								{
-									elem: 'image',
-									elemMods: { color: 'border-control'}
-								},
-								{
-									block: 'text',
-									mods: { size: 'm', weight: 'bold' },
-									content: '--color-border-control'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0, 0, 0, 0.12)'
-								}]
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { sw: 3 },
-							content: [
-							{
-								block: 'color',
-								content: [
-								{
-									elem: 'image',
-									elemMods: { color: 'ghost'}
-								},
-								{
-									block: 'text',
-									mods: { size: 'm', weight: 'bold' },
-									content: '--color-ghost'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#F3F1ED'
 								}]
 							}]
 						}]
@@ -256,11 +136,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-default'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#FFFFFF'
 								}]
 							}]
 						},
@@ -273,17 +148,52 @@ module.exports = {
 								content: [
 								{
 									elem: 'image',
-									elemMods: { color: 'default-android'}
+									elemMods: { color: 'border'}
 								},
 								{
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
-									content: '--color-default-android'
+									content: '--color-border'
+								}]
+							}]
+						},
+						{
+							elem: 'col',
+							elemMods: { sw: 3 },
+							content: [
+							{
+								block: 'color',
+								content: [
+								{
+									elem: 'image',
+									elemMods: { color: 'ghost'}
 								},
 								{
 									block: 'text',
-									mods: { size: 'm'},
-									content: '#F9F9F9'
+									mods: { size: 'm', weight: 'bold' },
+									content: '--color-ghost'
+								}]
+							}]
+						}]
+					},
+					{
+						block: 'row',
+						content: [
+						{
+							elem: 'col',
+							elemMods: { sw: 3 },
+							content: [
+							{
+								block: 'color',
+								content: [
+								{
+									elem: 'image',
+									elemMods: { color: 'soft'}
+								},
+								{
+									block: 'text',
+									mods: { size: 'm', weight: 'bold' },
+									content: '--color-soft'
 								}]
 							}]
 						},
@@ -302,34 +212,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-tone'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0,0,0,0.90)'
-								}]
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { sw: 3 },
-							content: [
-							{
-								block: 'color',
-								content: [
-								{
-									elem: 'image',
-									elemMods: { color: 'disable'}
-								},
-								{
-									block: 'text',
-									mods: { size: 'm', weight: 'bold' },
-									content: '--color-disable'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0,0,0,0.08)'
 								}]
 							}]
 						}]
@@ -352,11 +234,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-success'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#00985F'
 								}]
 							}]
 						},
@@ -375,11 +252,46 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-alert'
+								}]
+							}]
+						},
+						{
+							elem: 'col',
+							elemMods: { sw: 3 },
+							content: [
+							{
+								block: 'color',
+								content: [
+								{
+									elem: 'image',
+									elemMods: { color: 'warning'}
 								},
 								{
 									block: 'text',
-									mods: { size: 'm'},
-									content: '#FF3333'
+									mods: { size: 'm', weight: 'bold' },
+									content: '--color-warning'
+								}]
+							}]
+						}]
+					},
+					{
+						block: 'row',
+						content: [
+						{
+							elem: 'col',
+							elemMods: { sw: 3 },
+							content: [
+							{
+								block: 'color',
+								content: [
+								{
+									elem: 'image',
+									elemMods: { color: 'soft'}
+								},
+								{
+									block: 'text',
+									mods: { size: 'm', weight: 'bold' },
+									content: '--color-system'
 								}]
 							}]
 						},
@@ -398,11 +310,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-normal'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#DDE3E5'
 								}]
 							}]
 						}]
@@ -434,11 +341,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-typo-primary'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#000000'
 								}]
 							}]
 						},
@@ -457,11 +359,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-typo-promo'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0, 0, 0, 0.7)'
 								}]
 							}]
 						},
@@ -480,11 +377,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-typo-secondary'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0, 0, 0, 0.60)'
 								}]
 							}]
 						},
@@ -503,11 +395,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-typo-ghost'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0, 0, 0, 0.30)'
 								}]
 							}]
 						}]
@@ -524,17 +411,12 @@ module.exports = {
 								content: [
 								{
 									elem: 'image',
-									elemMods: { color: 'typo-inverse'}
+									elemMods: { color: 'typo-disable'}
 								},
 								{
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
-									content: '--color-typo-inverse'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#FFFFFF'
+									content: '--color-typo-disable'
 								}]
 							}]
 						},
@@ -553,11 +435,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-typo-success'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#00985F'
 								}]
 							}]
 						},
@@ -576,34 +453,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-typo-alert'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#FF3333'
-								}]
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { sw: 3 },
-							content: [
-							{
-								block: 'color',
-								content: [
-								{
-									elem: 'image',
-									elemMods: { color: 'typo-disable'}
-								},
-								{
-									block: 'text',
-									mods: { size: 'm', weight: 'bold' },
-									content: '--color-typo-disable'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: 'rgba(0,0,0,0.30)'
 								}]
 							}]
 						}]
@@ -635,11 +484,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-link'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#0070F0'
 								}]
 							}]
 						},
@@ -658,11 +502,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-link-hover'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#CC0000'
 								}]
 							}]
 						},
@@ -681,34 +520,6 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'm', weight: 'bold' },
 									content: '--color-link-minor'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#666699'
-								}]
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { sw: 3 },
-							content: [
-							{
-								block: 'color',
-								content: [
-								{
-									elem: 'image',
-									elemMods: { color: 'typo-letter'}
-								},
-								{
-									block: 'text',
-									mods: { size: 'm', weight: 'bold' },
-									content: '--color-typo-letter'
-								},
-								{
-									block: 'text',
-									mods: { size: 'm'},
-									content: '#FF0000'
 								}]
 							}]
 						}]

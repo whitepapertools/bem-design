@@ -13,15 +13,12 @@ module.exports = {
 	mods: { type: 'full-screen', theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
+		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
 	},
 	content: [
 	{
 		block: 'demo',
-		mix: [
-			{ block: 'theme', mods: { color: 'default', space: 'default', size: 'default' }},
-			{ block: 'scrollify' }
-		],
+		mix: { block: 'scrollify' },
 		content: [
 		{
 			elem: 'layout',
@@ -65,7 +62,7 @@ module.exports = {
 					{
 						tag: 'a',
 						block: 'text',
-						mods: { view: 'letter' },
+						mods: { view: 'link' },
 						attrs: { href: 'https://github.com/bemdesign', style: 'text-decoration: none' },
 						content: 'GitHub'
 					},
@@ -73,7 +70,7 @@ module.exports = {
 					{
 						tag: 'a',
 						block: 'text',
-						mods: { view: 'letter' },
+						mods: { view: 'link' },
 						attrs: { href: 'https://t.me/bem_design', style: 'text-decoration: none' },
 						content: 'Telegram'
 					}]
