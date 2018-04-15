@@ -13,6 +13,20 @@
 <iframe height='500' scrolling='no' title='TEXT. Теория 1' src='//codepen.io/bem_design/embed/7c49bf8d1c1457a7643d880e6250f3b9/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/7c49bf8d1c1457a7643d880e6250f3b9/'>TEXT. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+Модификатор | Значение                                         | Описание
+----------- | ------------------------------------------------ | ------------------------------------
+align       | center / left / right                            | Горизонтальное выравнивание текста
+decoration  | underline                                        | Подчеркивание
+display     | block / inline-block / inline                    | Способ отображения блока на странице
+font        | mono / sans / serif                              | Семейство шрифтов
+size        | xs / s / m / l / xl / xxl / xxxl / xxxxl         | Размер
+spacing     | xs / s / m                                       | Межбуквенное расстояние
+style       | italic                                           | Курсив
+transform   | uppercase                                        | Верхний регистр
+type        | h1 / h2 / h3 / p / blockquote                    | Стиль текста
+view        | alert / brand / disable / ghost / link-minor / link / primary / promo / secondary / success / warning | Цвет
+weight      | black / bold / semibold / regular / light / thin | Жирность шрифта
+
 ## Текст на инфо-страницах
 
 Для простого манипулирования уровнями иерархии для инфо-страниц в блоке `text` есть модификаторы `type`
