@@ -229,10 +229,11 @@ module.exports = {
 						},
 						{
 							elem: 'screenshot',
-							mix: [{ block: 'pt-card', elem: 'image', elemMods: { shadow: 'top-inverse' } } ],
+							mix: { block: 'pt-card', elem: 'content' },
 							content: [
 							{
 								block: 'image',
+								mix: [{ block: 'pt-card', elem: 'image', elemMods: { shadow: 'top-inverse' } } ],
 								url: '/assets/i/heroes.png',
 							}]
 						},
