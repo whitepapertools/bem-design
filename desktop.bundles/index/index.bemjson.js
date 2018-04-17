@@ -1362,13 +1362,16 @@ module.exports = {
 						{
 							elem: 'person-image-wrapper',
 							mix: [
-								{ block: 'pt-card', elem: 'image' },
+								{ block: 'pt-card', elem: 'content' },
 								{ block: 'promo-cards', elem: 'donate-person-image-wrapper'}
 							],
 							content: [
 							{
 								block: 'image',
-								mix: { block: 'promo-cards', elem: 'donate-person-image'},
+								mix: [
+									{ block: 'pt-card', elem: 'image' },
+									{ block: 'promo-cards', elem: 'donate-person-image'}
+								],
 								url: '/assets/i/donate-person-image.png'
 							}]
 						},
@@ -1440,13 +1443,16 @@ module.exports = {
 						{
 							elem: 'project-image-wrapper',
 							mix: [
-								{ block: 'pt-card', elem: 'image' },
+								{ block: 'pt-card', elem: 'content' },
 								{ block: 'promo-cards', elem: 'donate-project-header'}
 							],
 							content: [
 							{
 								block: 'image',
-								mix: { block: 'promo-cards', elem: 'donate-project-image'},
+								mix: [
+									{ block: 'pt-card', elem: 'image' },
+									{ block: 'promo-cards', elem: 'donate-project-image'}
+								],
 								url: '/assets/i/donate-project-image.png'
 							},
 							{
@@ -1563,12 +1569,13 @@ module.exports = {
 						{
 							elem: 'event-image-wrapper',
 							mix: [
-								{ block: 'pt-card', elem: 'image' },
+								{ block: 'pt-card', elem: 'content' },
 								{ block: 'promo-cards', elem: 'donate-event-image'},
 							],
 							content: [
 							{
 								block: 'image',
+								mix: { block: 'pt-card', elem: 'image' },
 								url: '/assets/i/donate-event-image.png'
 							}]
 						},
