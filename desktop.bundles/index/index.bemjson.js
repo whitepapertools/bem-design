@@ -1094,7 +1094,10 @@ module.exports = {
 						},
 						{
 							elem: 'item',
-							mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-h': 'xl', 'space-b': 'xl', align: 'between' } },  { block: 'promo-cards', elem: 'apps-recommendation-footer' }, { block: 'pt-card', elem: 'item' }],
+							mix: [
+								{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', distribute: 'between' } },  
+								{ block: 'promo-cards', elem: 'apps-recommendation-footer' }, { block: 'pt-card', elem: 'item' }
+							],
 							content: [
 							{
 								block: 'pt-icon-plus',
@@ -1164,7 +1167,7 @@ module.exports = {
 						},
 						{
 							elem: 'item',
-							mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', align: 'between' } }, { block: 'promo-cards', elem: 'apps-good-footer' }, { block: 'pt-card', elem: 'item' }],
+							mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', distribute: 'between' } }, { block: 'promo-cards', elem: 'apps-good-footer' }, { block: 'pt-card', elem: 'item' }],
 							content: [
 							{
 								block: 'pt-icon-plus',
