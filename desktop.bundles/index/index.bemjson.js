@@ -608,10 +608,11 @@ module.exports = {
 							content: [
 							{
 								elem: 'goods-image-wrapper',
-								mix: { block: 'pt-card', elem: 'image' },
+								mix: { block: 'pt-card', elem: 'content' },
 								content: [
 								{
 									block: 'image',
+									mix: { block: 'pt-card', elem: 'image' },
 									url: '/assets/i/offer-goods-image.png'
 								}]
 							}]
@@ -670,11 +671,12 @@ module.exports = {
 								elem: 'brand-image-wrapper',
 								mix: [
 									{ block: 'promo-cards', elem: 'offer-brand-image' },
-									{ block: 'pt-card', elem: 'image' }
+									{ block: 'pt-card', elem: 'content' }
 								],
 								content: [
 								{
 									block: 'image',
+									mix: { block: 'pt-card', elem: 'image' },
 									url: '/assets/i/offer-brand-image.png'
 								}]
 							},
@@ -726,13 +728,16 @@ module.exports = {
 						{
 							elem: 'service-image-wrapper',
 							mix: [
-								{ block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+								{ block: 'pt-card', elem: 'content' },
 								{ block: 'promo-cards', elem: 'offer-service-background'},
 							],
 							content: [
 							{
 								block: 'image',
-								mix: { block: 'promo-cards', elem: 'offer-service-photo'},
+								mix: [
+									{ block: 'promo-cards', elem: 'offer-service-photo'},
+									{ block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+								],
 								url: '/assets/i/offer-service-image.png'
 							}]
 						},
