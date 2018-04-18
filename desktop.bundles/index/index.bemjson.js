@@ -151,7 +151,7 @@ module.exports = {
 						},
 						{
 							elem: 'footer',
-							mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', align: 'between' } }, { block: 'promo-cards', elem: 'media-video-footer' }],
+							mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', distribute: 'between' } }, { block: 'promo-cards', elem: 'media-video-footer' }],
 							content: [
 							{
 								block: 'pt-icon-plus',
@@ -255,7 +255,7 @@ module.exports = {
 						},
 						{
 							elem: 'footer',
-							mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', align: 'between' } }, { block: 'promo-cards', elem: 'media-text-footer' }],
+							mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', distribute: 'between' } }, { block: 'promo-cards', elem: 'media-text-footer' }],
 							content: [
 							{
 								block: 'text',
