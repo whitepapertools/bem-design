@@ -11,14 +11,20 @@ module.exports = {
 	],
 	scripts: [{ elem: 'js', url: 'index.min.js' }],
 	mods: { type: 'full-screen', theme: 'islands' },
-	mix: {
-		block: 'theme',
-		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
-	},
+	mix: [
+		{
+			block: 'theme',
+			mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
+		},
+		{
+			block: 'component',
+			mods: { liquid: 'default' }
+		}
+	],
 	content: [
 	{
 		block: 'demo',
-		mix: { block: 'scrollify' },
+		// mix: { block: 'scrollify' },
 		content: [
 		{
 			elem: 'layout',
@@ -1436,7 +1442,7 @@ module.exports = {
 							{
 								block: 'button',
 								mix: { block: 'text', mods: { view: 'inverse', size: 's', transform: 'uppercase' } },
-								mods: { theme: 'islands', size: 'xl', type: 'submit', view: 'person-donate', width: 'full' },
+								mods: { theme: 'islands', size: 'l', type: 'submit', view: 'person-donate', width: 'full' },
 								text: 'Send $10'
 							}]
 						}]
@@ -1562,7 +1568,7 @@ module.exports = {
 							{
 								block: 'button',
 								mix: { block: 'text', mods: { view: 'inverse', size: 'm' } },
-								mods: { theme: 'islands', size: 'xl', type: 'submit', view: 'project-donate', width: 'full', 'border-radius': 'full' },
+								mods: { theme: 'islands', size: 'l', type: 'submit', view: 'project-donate', width: 'full', 'border-radius': 'full' },
 								text: 'Back this project'
 							}]
 						}]
@@ -1694,7 +1700,7 @@ module.exports = {
 									{ block: 'text', mods: { view: 'inverse', weight: 'bold', transform: 'uppercase', style: 'italic' } },
 									{ block: 'decorator', mods: { 'indent-l': 'xl' } }
 								],
-								mods: { theme: 'islands', size: 'xl', type: 'submit', view: 'event-donate', 'border-radius': 'full' },
+								mods: { theme: 'islands', size: 'l', type: 'submit', view: 'event-donate', 'border-radius': 'full' },
 								text: 'Make a party'
 							}]
 						}]
