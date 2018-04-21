@@ -1,0 +1,4 @@
+.foot {
+	padding: var(--space-xxxl) 0;
+	background-color: var(--color-default);
+}
