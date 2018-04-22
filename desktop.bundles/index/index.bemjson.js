@@ -570,13 +570,8 @@ module.exports = {
 													block: 'pt-card',
 													mix: [
 														{ block: 'article' },
-														{ 
-															block: 'foot' 
-														},
-														{
-															block: 'theme',
-															mods: { color: 'liquid-inverse', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
-														}
+														{ block: 'theme', mods: { color: 'liquid-inverse' }},
+														{ block: 'component', mods: { liquid: 'inverse' }}
 													],
 													content: [
 														{
@@ -640,13 +635,8 @@ module.exports = {
 													block: 'pt-card',
 													mix: [
 														{ block: 'article' },
-														{ 
-															block: 'foot' 
-														},
-														{
-															block: 'theme',
-															mods: { color: 'liquid-inverse', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
-														}
+														{ block: 'theme', mods: { color: 'liquid-inverse' }},
+														{ block: 'component', mods: { liquid: 'inverse' }},
 													],
 													content: [
 														{
@@ -699,12 +689,11 @@ module.exports = {
 											content: [
 												{
 													block: 'pt-card',
-													mix: { block: 'article' },
-													tag: 'a',
-													attrs: {
-														'style': 'background: #011D27;',
-														'href': 'http://bem.design'
-													},
+													mix: [
+														{ block: 'article' },
+														{ block: 'theme', mods: { color: 'liquid-inverse' }},
+														{ block: 'component', mods: { liquid: 'inverse' }},
+													],
 													content: [
 														{
 															elem: 'image',
@@ -723,7 +712,7 @@ module.exports = {
 																{
 																	block: 'pt-badge',
 																	mods: { view: 'default' },
-																	content: 'Интсрументарий'
+																	content: 'Инструментарий'
 																}
 															]
 														},
@@ -742,13 +731,13 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'inverse', size: 'xxxl', weight: 'light' },
+																			mods: { view: 'primary', size: 'xxxl', weight: 'light' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
 																			content: 'Instrument'
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'inverse', size: 'm' },
+																			mods: { view: 'primary', size: 'm' },
 																			content: 'О будущем платформы'
 																		}
 																	]
@@ -890,10 +879,8 @@ module.exports = {
 												{
 													block: 'event',
 													mix: [
-														{
-															block: 'theme',
-															mods: { color: 'liquid-inverse', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
-														},
+														{ block: 'theme', mods: { color: 'liquid-inverse' }},
+														{ block: 'component', mods: { liquid: 'inverse' }},
 														{ block: 'pt-card', view: 'default' }
 													],
 													content: [
@@ -983,10 +970,8 @@ module.exports = {
 												{
 													block: 'event',
 													mix: [
-														{
-															block: 'theme',
-															mods: { color: 'liquid-inverse', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
-														},
+														{ block: 'theme', mods: { color: 'liquid-inverse' }},
+														{ block: 'component', mods: { liquid: 'inverse' }},
 														{ block: 'pt-card', view: 'default' }
 													],
 													content: [
@@ -1152,17 +1137,9 @@ module.exports = {
 				{
 					elem: 'section',
 					mix: [
-						{ 
-							block: 'foot' 
-						},
-						{
-							block: 'theme',
-							mods: { color: 'liquid-inverse', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
-						},
-						{
-							block: 'component',
-							mods: { liquid: 'default' }
-						}
+						{ block: 'foot' },
+						{ block: 'theme', mods: { color: 'liquid-inverse' }},
+						{ block: 'component', mods: { alertid: 'default' }}
 					],
 					content: [
 						{
