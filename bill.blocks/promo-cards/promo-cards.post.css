@@ -8,6 +8,7 @@
 	align-items: center;
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
+	color: var(--color-typo-primary);
 
 	&_slide {
 		&_first {
@@ -90,21 +91,9 @@
 		}
 		&_ghost {
 			background: var(--color-ghost);
-
-			.promo-cards__description, .promo-cards__item {
-				color: black;
-			}
 		}
 		&_inverse {
-			background: #2E3033;
-
-			.promo-cards__description, .promo-cards__item {
-				color: var(--color-default);
-			}
-
-			.promo-cards__controls {
-				filter: invert();
-			}
+			background: #2E3033;	
 		}
 	}
 
@@ -175,20 +164,6 @@
 			}
 			&_third {
 				transform: translateX(-330px) rotate(-90deg);
-			}
-		}
-	}
-	&__controls {
-		position: absolute;
-		bottom: var(--space-xl);
-		left: var(--space-xxxl);
-
-		&-item {
-			opacity: 1;
-			transition: .3s ease;
-
-			&:hover {
-				opacity: .6;
 			}
 		}
 	}

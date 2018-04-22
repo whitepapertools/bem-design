@@ -1,15 +1,15 @@
 module.exports = {
 	block: 'page',
-	title: 'INDEX',
+	title: 'BILL',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-		{ elem: 'css', url: 'new.min.css' },
+		{ elem: 'css', url: 'bill.min.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
-	scripts: [{ elem: 'js', url: 'new.min.js' }],
+	scripts: [{ elem: 'js', url: 'bill.min.js' }],
 	mods: { type: 'full-screen', theme: 'islands' },
 	mix: [
 		{
@@ -30,9 +30,12 @@ module.exports = {
 		/* MEDIA */
 		{
 			block: 'promo-cards',
-			cls: 'scroll-section',
 			mods: { view: 'inverse', slide: 'first' },
-			mix: { block: 'promo-cards', elem: 'media-section' },
+			mix: [
+				{ block: 'theme', mods: { color: 'liquid-inverse' }},
+				{ block: 'component', mods: { liquid: 'inverse' }},
+				{ block: 'promo-cards', elem: 'media-section' }
+			],
 			content: [
 			{
 				elem: 'theme-name',
@@ -57,11 +60,20 @@ module.exports = {
 				content: [
 				{
 					elem: 'card',
-					mix: [{ elem: 'media', elemMods: { type: 'video' } }, { block: 'decorator', mods: { 'indent-b': 'xxxxl' } }],
+					mix: [
+						{ elem: 'media', elemMods: { type: 'video' }}, 
+						{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+					],
 					content: [
 					{
 						block: 'media',
-						mix: [{ block: 'pt-card', mods: { view: 'inverse' } }, { block: 'promo-cards', elem: 'media-video-back' }, { block: 'promo-cards', elem: 'hover' }],
+						mix: [
+							{ block: 'theme', mods: { color: 'liquid-inverse' }},
+							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'pt-card', mods: { view: 'default' }}, 
+							{ block: 'promo-cards', elem: 'media-video-back' }, 
+							{ block: 'promo-cards', elem: 'hover' }
+						],
 						content: [
 						{
 							elem: 'video',
@@ -78,7 +90,7 @@ module.exports = {
 							{
 								block: 'text',
 								mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-h': 'l' } }, { block: 'promo-cards', elem: 'media-video-title' }],
-								mods: { view: 'inverse', size: 'xxxl', weight: 'bold' },
+								mods: { view: 'primary', size: 'xxxl', weight: 'bold' },
 								content: [
 								{
 									elem: 'wrap',
@@ -120,14 +132,14 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { view: 'inverse', size: 's' },
+										mods: { view: 'primary', size: 's' },
 										content: 'The Tonight Show…'
 									}]
 								}]
 							},
 							{
 								block: 'text',
-								mods: { view: 'inverse', size: 's', font: 'mono' },
+								mods: { view: 'primary', size: 's', font: 'mono' },
 								content: [
 								{
 									block: 'text',
@@ -141,11 +153,21 @@ module.exports = {
 					},
 					{
 						block: 'media',
-						mix: [{ block: 'pt-card', mods: { view: 'default' } }, { block: 'promo-cards', elem: 'media-text-back' }, { block: 'promo-cards', elem: 'hover' }],
+						mix: [
+							{ block: 'theme', mods: { color: 'liquid-default' }},
+							{ block: 'component', mods: { liquid: 'default' }},
+							{ block: 'pt-card', mods: { view: 'default' } }, 
+							{ block: 'promo-cards', elem: 'media-text-back' }, 
+							{ block: 'promo-cards', elem: 'hover' }
+						],
 						content: [
 						{
 							elem: 'article-author',
-							mix: [{ block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'l' } }],
+							mix: [
+								{ block: 'theme', mods: { color: 'liquid-inverse' }},
+								{ block: 'component', mods: { liquid: 'inverse' }},
+								{ block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'l' }}
+							],
 							content: [
 							{
 								block: 'pt-icon-plus',
@@ -170,7 +192,7 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { view: 'inverse', size: 'm' },
+										mods: { view: 'primary', size: 'm' },
 										content: 'James Bridle'
 									}]
 								}]
@@ -227,7 +249,12 @@ module.exports = {
 					},
 					{
 						block: 'media',
-						mix: [{ block: 'pt-card', mods: { view: 'inverse' } }, { block: 'promo-cards', elem: 'media-music-back' }, { block: 'promo-cards', elem: 'hover' }],
+						mix: [
+							{ block: 'theme', mods: { color: 'liquid-inverse' }},
+							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'pt-card', mods: { view: 'default' } }, { block: 'promo-cards', elem: 'media-music-back' }, 
+							{ block: 'promo-cards', elem: 'hover' }
+						],
 						content: [
 						{
 							elem: 'cover',
@@ -246,13 +273,13 @@ module.exports = {
 										content: [
 										{
 											block: 'text',
-											mods: { view: 'inverse', size: 'xxxl', align: 'center', weight: 'bold' },
+											mods: { view: 'primary', size: 'xxxl', align: 'center', weight: 'bold' },
 											mix: { block: 'decorator', mods: { 'indent-b': 's' } },
 											content: 'Pitchfork\'s Best New Music',
 										},
 										{
 											block: 'text',
-											mods: { view: 'inverse', size: 'm', align: 'center', font: 'mono', style: 'italic' },
+											mods: { view: 'primary', size: 'm', align: 'center', font: 'mono', style: 'italic' },
 											content: 'Pitchfork',
 										}]
 									}
@@ -272,7 +299,7 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { view: 'inverse', size: 's', weight: 'bold' },
+										mods: { view: 'primary', size: 's', weight: 'bold' },
 										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 										content: 'London',
 									},
@@ -281,14 +308,14 @@ module.exports = {
 										content: [
 										{
 											block: 'text',
-											mods: { view: 'inverse', size: 'xs', weight: 'light', font: 'mono' },
+											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
 											content: 'Benjamin Clementine • At Least',
 										}]
 									}]
 								},
 								{
 									block: 'text',
-									mods: { view: 'inverse', size: 's', weight: 'bold' },
+									mods: { view: 'primary', size: 's', weight: 'bold' },
 									content: '7:25'
 								}]
 							},
@@ -301,7 +328,7 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { view: 'inverse', size: 's', weight: 'bold' },
+										mods: { view: 'primary', size: 's', weight: 'bold' },
 										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 										content: 'London',
 									},
@@ -310,14 +337,14 @@ module.exports = {
 										content: [
 										{
 											block: 'text',
-											mods: { view: 'inverse', size: 'xs', weight: 'light', font: 'mono' },
+											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
 											content: 'Benjamin Clementine • At Least',
 										}]
 									}]
 								},
 								{
 									block: 'text',
-									mods: { view: 'inverse', size: 's', weight: 'bold' },
+									mods: { view: 'primary', size: 's', weight: 'bold' },
 									content: '7:25'
 								}]
 							},
@@ -330,7 +357,7 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { view: 'inverse', size: 's', weight: 'bold' },
+										mods: { view: 'primary', size: 's', weight: 'bold' },
 										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 										content: 'London',
 									},
@@ -339,14 +366,14 @@ module.exports = {
 										content: [
 										{
 											block: 'text',
-											mods: { view: 'inverse', size: 'xs', weight: 'light', font: 'mono' },
+											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
 											content: 'Benjamin Clementine • At Least',
 										}]
 									}]
 								},
 								{
 									block: 'text',
-									mods: { view: 'inverse', size: 's', weight: 'bold' },
+									mods: { view: 'primary', size: 's', weight: 'bold' },
 									content: '7:25'
 								}]
 							},
@@ -359,7 +386,7 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { view: 'inverse', size: 's', weight: 'bold' },
+										mods: { view: 'primary', size: 's', weight: 'bold' },
 										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 										content: 'London',
 									},
@@ -368,14 +395,14 @@ module.exports = {
 										content: [
 										{
 											block: 'text',
-											mods: { view: 'inverse', size: 'xs', weight: 'light', font: 'mono' },
+											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
 											content: 'Benjamin Clementine • At Least',
 										}]
 									}]
 								},
 								{
 									block: 'text',
-									mods: { view: 'inverse', size: 's', weight: 'bold' },
+									mods: { view: 'primary', size: 's', weight: 'bold' },
 									content: '7:25'
 								}]
 							}]
@@ -388,12 +415,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', view: 'primary', weight: 'bold' } }],
 						content: 'Video'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For online services providing videos and movies, for media services, and other YouTube-like sites'
 					}]
 				},
@@ -403,12 +430,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Copy'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For media services, blogs, social networks, or any platforms with text contents'
 					}]
 				},
@@ -418,12 +445,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Music'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', font: 'mono', view: 'primary' },
 						content: 'For audio libraries, musical services, online radio stations, and social networks.'
 					}]
 				},
@@ -435,7 +462,7 @@ module.exports = {
 						mix: [{ block: 'decorator', mods: { 'indent-h': 'm' } }],
 						content: {
 							block: 'text',
-							mods: { size: 'xl', transform: 'uppercase', view: 'letter', align: 'center', font: 'mono' },
+							mods: { size: 'xl', view: 'alert', transform: 'uppercase', align: 'center', font: 'mono' },
 							mix: { block: 'promo-cards', elem: 'media-tab-1' },
 							content: 'Video'
 						}
@@ -461,40 +488,19 @@ module.exports = {
 						}
 					}]
 				}]
-			},
-			// {
-			// 	elem: 'controls',
-			// 	content: [
-			// 	{
-			// 		tag: 'a',
-			// 		elem: 'controls-item',
-			// 		attrs: { href: '#' },
-			// 		content: {
-			// 			block: 'icon',
-			// 			mods: { 'arrow-up-2': 'xl-primary' },
-			// 			mix: { block: 'decorator', mods: { 'indent-r': 'xxl' } }
-			// 		}
-			// 	},
-			// 	{
-			// 		tag: 'a',
-			// 		elem: 'controls-item',
-			// 		attrs: { href: '#' },
-			// 		content: {
-			// 			block: 'icon',
-			// 			mods: { 'arrow-down-2': 'xl-primary' }
-			// 		}
-			// 	}]
-			// }
-			]
+			}]
 		},
 		/* /MEDIA */
 
 		/* OFFER */
 		{
 			block: 'promo-cards',
-			cls: 'scroll-section',
-			mix: { block: 'promo-cards', elem: 'offer-section' },
 			mods: { view: 'ghost', slide: 'first' },
+			mix: [
+				{ block: 'theme', mods: { color: 'liquid-default' }},
+				{ block: 'component', mods: { liquid: 'default' }},
+				{ block: 'promo-cards', elem: 'offer-section' }
+			],
 			content: [
 			{
 				elem: 'theme-name',
@@ -669,7 +675,9 @@ module.exports = {
 					{
 						block: 'offer',
 						mix: [
-							{ block: 'pt-card', mods: { view: 'inverse' } },
+							{ block: 'theme', mods: { color: 'liquid-inverse' }},
+							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'pt-card', mods: { view: 'default' } },
 							{ block: 'promo-cards', elem: 'hover' },
 							{ block: 'promo-cards', elem: 'offer-service' },
 						],
@@ -699,7 +707,7 @@ module.exports = {
 							content: [
 							{
 								block: 'text',
-								mods: { view: 'inverse', size: 'xl', font: 'serif', weight: 'bold', transform: 'uppercase', align: 'center', display: 'block' },
+								mods: { view: 'primary', size: 'xl', font: 'serif', weight: 'bold', transform: 'uppercase', align: 'center', display: 'block' },
 								content: 'Brabus'
 							}]
 						},
@@ -716,7 +724,7 @@ module.exports = {
 										{ block: 'decorator', mods: { 'indent-b': 'xl'} },
 										{ block: 'promo-cards', elem: 'offer-service-desc'},
 									],
-									mods: { view: 'inverse', size: 'm', weight: 'semibold' },
+									mods: { view: 'primary', size: 'm', weight: 'semibold' },
 									content: 'Luxury and comfort never comprised. The BRABUS GLE 700 Coupe will lead to an unforgettable journey'
 								},
 								{
@@ -725,12 +733,12 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { view: 'inverse', size: 's', weight: 'semibold' },
+										mods: { view: 'primary', size: 's', weight: 'semibold' },
 										content: 'from'
 									},
 									{
 										block: 'text',
-										mods: { view: 'inverse', size: 'xxxl', weight: 'semibold' },
+										mods: { view: 'primary', size: 'xxxl', weight: 'semibold' },
 										content: '$1200'
 									}]
 								}]
@@ -744,12 +752,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Goods'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For hypermarkets and stores working online. Additionally serves as a banner ad.'
 					}]
 				},
@@ -759,12 +767,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Offers'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For clothing collections, lines of cosmetics, lookbooks, and other collections of products.'
 					}]
 				},
@@ -774,12 +782,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Service'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For subscription services, pricing plans, and services ordered online. This will do for all from a hairdressing saloon to a cloud hosting.'
 					}]
 				},
@@ -792,7 +800,7 @@ module.exports = {
 						content: {
 							block: 'text',
 							mix: { block: 'promo-cards', elem: 'offer-tab-1' },
-							mods: { size: 'xl', transform: 'uppercase', view: 'letter', align: 'center' },
+							mods: { size: 'xl', view: 'alert', transform: 'uppercase', align: 'center' },
 							content: 'Goods'
 						}
 					},
@@ -802,7 +810,7 @@ module.exports = {
 						content: {
 							block: 'text',
 							mix: { block: 'promo-cards', elem: 'offer-tab-2' },
-							mods: { size: 'xl', transform: 'uppercase', view: 'primary', align: 'center' },
+							mods: { size: 'xl', transform: 'uppercase', align: 'center' },
 							content: 'Brand'
 						}
 					},
@@ -812,35 +820,24 @@ module.exports = {
 						content: {
 							block: 'text',
 							mix: { block: 'promo-cards', elem: 'offer-tab-3' },
-							mods: { size: 'xl', transform: 'uppercase', view: 'primary', align: 'center' },
+							mods: { size: 'xl', transform: 'uppercase', align: 'center' },
 							content: 'Service'
 						}
 					}]
 				}]
-			},
-			// {
-			// 	elem: 'controls',
-			// 	content: [
-			// 	{
-			// 		block: 'icon',
-			// 		mods: { 'arrow-up-2': 'xl-primary' },
-			// 		mix: { block: 'decorator', mods: { 'indent-r': 'xxl' } }
-			// 	},
-			// 	{
-			// 		block: 'icon',
-			// 		mods: { 'arrow-down-2': 'xl-primary' }
-			// 	}]
-			// },
-			]
+			}]
 		},
 		/* /OFFER */
 
 		/* APPS */
 		{
 			block: 'promo-cards',
-			cls: 'scroll-section',
 			mods: { view: 'inverse', slide: 'first' },
-			mix: { block: 'promo-cards', elem: 'apps-section' },
+			mix: [
+				{ block: 'theme', mods: { color: 'liquid-inverse' }},
+				{ block: 'component', mods: { liquid: 'inverse' }},
+				{ block: 'promo-cards', elem: 'apps-section' }
+			],
 			content: [
 			{
 				elem: 'theme-name',
@@ -865,12 +862,17 @@ module.exports = {
 				content: [
 				{
 					elem: 'card',
-					mix: [{ elem: 'apps', elemMods: { type: 'developer' } }, { block: 'decorator', mods: { 'indent-b': 'xxxxl' } }],
+					mix: [
+						{ block: 'theme', mods: { color: 'liquid-inverse' }},
+						{ block: 'component', mods: { liquid: 'inverse' }},
+						{ elem: 'apps', elemMods: { type: 'developer' }}, 
+						{ block: 'decorator', mods: { 'indent-b': 'xxxxl' } }
+					],
 					content: [
 					{
 						block: 'app',
 						mods: { view: 'monument-hypnotic' },
-						mix: [{ block: 'pt-card', mods: { view: 'inverse' } }, { block: 'promo-cards', elem: 'apps-developer-back' }, { block: 'promo-cards', elem: 'hover' }],
+						mix: [{ block: 'pt-card', mods: { view: 'default' } }, { block: 'promo-cards', elem: 'apps-developer-back' }, { block: 'promo-cards', elem: 'hover' }],
 						content: [
 						{
 							elem: 'info',
@@ -878,7 +880,7 @@ module.exports = {
 							content: [
 							{
 								block: 'text',
-								mods: { size: 'm', transform: 'uppercase', align: 'center', spacing: 'm' },
+								mods: { size: 'm', view: 'primary', transform: 'uppercase', align: 'center', spacing: 'm' },
 								mix: { block: 'promo-cards', elem: 'apps-developer-name' },
 								content: 'Bundle'
 							},
@@ -893,7 +895,7 @@ module.exports = {
 								content: [
 								{
 									block: 'text',
-									mods: { size: 'l', view: 'inverse', font: 'mono', with: 'semibold' },
+									mods: { size: 'l', view: 'primary', font: 'mono', with: 'semibold' },
 									content: '$299'
 								}]
 							}]
@@ -930,25 +932,20 @@ module.exports = {
 											content: [
 											{
 												block: 'text',
-												mods: { size: 's', view: 'inverse' },
+												mods: { size: 's', view: 'primary' },
 												content: 'Monument Vallet'
 											},
 											{
 												block: 'text',
-												mods: { size: 's', view: 'ghost-inverse' },
+												mods: { size: 's', view: 'ghost' },
 												content: 'by ustwo games'
 											}]
 										}]
 									},
 									{
 										block: 'pt-badge',
-										mods: { view: 'ghost-inverse' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 's', view: 'inverse' },
-											content: '$99'
-										}]
+										mods: { view: 'default' },
+										content: '$99'
 									}]
 								},
 								{
@@ -973,25 +970,20 @@ module.exports = {
 											content: [
 											{
 												block: 'text',
-												mods: { size: 's', view: 'inverse' },
+												mods: { size: 's', view: 'primary' },
 												content: 'Monument Valley 2'
 											},
 											{
 												block: 'text',
-												mods: { size: 's', view: 'ghost-inverse' },
+												mods: { size: 's', view: 'ghost' },
 												content: 'by ustwo games'
 											}]
 										}]
 									},
 									{
 										block: 'pt-badge',
-										mods: { view: 'ghost-inverse' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 's', view: 'inverse' },
-											content: '$99'
-										}]
+										mods: { view: 'default' },
+										content: '$99'
 									}]
 								}]
 							}]
@@ -1000,7 +992,13 @@ module.exports = {
 					{
 						block: 'app',
 						mods: { view: 'monument' },
-						mix: [{ block: 'pt-card', mods: { view: 'inverse' } }, { block: 'promo-cards', elem: 'apps-recommendation-back' }, { block: 'promo-cards', elem: 'hover' }],
+						mix: [
+							{ block: 'theme', mods: { color: 'liquid-inverse' }},
+							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'pt-card', mods: { view: 'inverse' } }, 
+							{ block: 'promo-cards', elem: 'apps-recommendation-back' }, 
+							{ block: 'promo-cards', elem: 'hover' }
+						],
 						content: [
 						{
 							elem: 'cover',
@@ -1033,14 +1031,14 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { size: 'xxxl', view: 'inverse', align: 'center', weight: 'bold' },
+										mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'bold' },
 										mix: [{ block: 'decorator', mods: { 'space-b': 'l' }}, { block: 'promo-cards', elem: 'apps-recommendation-info' }],
 										content: 'From our Bafta award winning hit!'
 									},
 									{
 										block: 'text',
 										mix: { block: 'promo-cards', elem: 'apps-recommendation-info' },
-										mods: { size: 'm', view: 'ghost-inverse', align: 'center' },
+										mods: { size: 'm', view: 'primary', align: 'center' },
 										content: 'Enjoy beautiful levels filled with illusory, meditative puzzles'
 									}]
 								}]
@@ -1071,31 +1069,32 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { size: 's', view: 'inverse' },
+										mods: { size: 's', view: 'primary' },
 										content: 'Monument Valley'
 									},
 									{
 										block: 'text',
-										mods: { size: 's', view: 'ghost-inverse' },
+										mods: { size: 's', view: 'ghost' },
 										content: 'by ustwo games'
 									}]
 								}]
 							},
 							{
 								block: 'pt-badge',
-								mods: { view: 'ghost-inverse' },
-								content: [
-								{
-									block: 'text',
-									mods: { size: 's', view: 'inverse' },
-									content: '$99'
-								}]
+								mods: { view: 'default' },
+								content: '$99'
 							}]
 						}]
 					},
 					{
 						block: 'app',
-						mix: [{ block: 'pt-card', mods: { view: 'inverse' } }, { block: 'promo-cards', elem: 'apps-good-back' }, { block: 'promo-cards', elem: 'hover' }],
+						mix: [
+							{ block: 'theme', mods: { color: 'liquid-inverse' }},
+							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'pt-card', mods: { view: 'default' }}, 
+							{ block: 'promo-cards', elem: 'apps-good-back' }, 
+							{ block: 'promo-cards', elem: 'hover' }
+						],
 						content: [
 						{
 							elem: 'good-info',
@@ -1108,14 +1107,14 @@ module.exports = {
 							},
 							{
 								block: 'text',
-								mods: { size: 'xxxl', view: 'inverse', weight: 'bold' },
+								mods: { size: 'xxxl', view: 'primary', weight: 'bold' },
 								mix: [{ block: 'decorator', mods: { 'space-b': 'l' } }, { block: 'promo-cards', elem: 'apps-good-info' }],
 								content: 'From our Bafta award winning hit'
 							},
 							{
 								block: 'text',
 								mix: { block: 'promo-cards', elem: 'apps-good-info' },
-								mods: { size: 'm', view: 'ghost-inverse' },
+								mods: { size: 'm', view: 'ghost' },
 								content: 'Enjoy beautiful levels filled with illusory, meditative puzzles'
 							}]
 						},
@@ -1141,24 +1140,20 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
+										mods: { view: 'primary', size: 'm' },
 										content: 'Monument Valley'
 									},
 									{
 										block: 'text',
-										mods: { size: 's', view: 'ghost-inverse' },
+										mods: { size: 's', view: 'ghost' },
 										content: 'by ustwo games'
 									}]
 								}]
 							},
 							{
 								block: 'pt-badge',
-								mods: { view: 'ghost-inverse' },
-								content: [
-								{
-									block: 'text',
-									mods: { size: 's', view: 'inverse' },
-									content: '$99'
-								}]
+								mods: { view: 'default' },
+								content: '$99'
 							}]
 						}]
 					}]
@@ -1170,12 +1165,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Collection'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For selections and collections made for blogs, social networks, stores, and media. For instance, \‘Ten computer games about zombies\’ or \‘Best alarm clock applications\’   '
 					}]
 				},
@@ -1186,12 +1181,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Application'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl',  view: 'primary', font: 'mono' },
 						content: 'For sites and blogs about games, services, and applications.'
 					}]
 				},
@@ -1202,12 +1197,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Developer'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For all sorts of stores providing games, applications, and services.'
 					}]
 				},
@@ -1219,7 +1214,7 @@ module.exports = {
 						mix: [{ block: 'decorator', mods: { 'indent-h': 'm' } }],
 						content: {
 							block: 'text',
-							mods: { size: 'xl', transform: 'uppercase', view: 'letter', align: 'center', font: 'mono' },
+							mods: { size: 'xl', view: 'alert', transform: 'uppercase', align: 'center', font: 'mono' },
 							mix: { block: 'promo-cards', elem: 'apps-tab-1' },
 							content: 'Collection'
 						}
@@ -1245,29 +1240,6 @@ module.exports = {
 						}
 					}]
 				}]
-			// },
-			// {
-			// 	elem: 'controls',
-			// 	content: [
-			// 	{
-			// 		tag: 'a',
-			// 		elem: 'controls-item',
-			// 		attrs: { href: '#' },
-			// 		content: {
-			// 			block: 'icon',
-			// 			mods: { 'arrow-up-2': 'xl-primary' },
-			// 			mix: { block: 'decorator', mods: { 'indent-r': 'xxl' } }
-			// 		}
-			// 	},
-			// 	{
-			// 		tag: 'a',
-			// 		elem: 'controls-item',
-			// 		attrs: { href: '#' },
-			// 		content: {
-			// 			block: 'icon',
-			// 			mods: { 'arrow-down-2': 'xl-primary' }
-			// 		}
-			// 	}]
 			}]
 		},
 		/* /APPS */
@@ -1275,9 +1247,12 @@ module.exports = {
 		/* DONATE */
 		{
 			block: 'promo-cards',
-			cls: 'scroll-section',
-			mix: { block: 'promo-cards', elem: 'donate-section' },
 			mods: { view: 'ghost', slide: 'first' },
+			mix: [
+				{ block: 'theme', mods: { color: 'liquid-default' }},
+				{ block: 'component', mods: { liquid: 'default' }},
+				{ block: 'promo-cards', elem: 'donate-section' }
+			],
 			content: [
 			{
 				elem: 'theme-name',
@@ -1310,6 +1285,8 @@ module.exports = {
 					{
 						block: 'donate',
 						mix: [
+							{ block: 'theme', mods: { color: 'liquid-default' }},
+							{ block: 'component', mods: { liquid: 'default' }},
 							{ block: 'pt-card', mods: { view: 'default' } },
 							{ block: 'promo-cards', elem: 'hover' },
 							{ block: 'promo-cards', elem: 'donate-person' },
@@ -1421,7 +1398,11 @@ module.exports = {
 						},
 						{
 							elem: 'project-info',
-							mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'l' } },
+							mix: [
+								{ block: 'theme', mods: { color: 'liquid-default' }},
+								{ block: 'component', mods: { liquid: 'default' }},
+								{ block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'l' }}
+							],	
 							content: [
 							{
 								elem: 'project-countdowns',
@@ -1502,6 +1483,8 @@ module.exports = {
 						{
 							elem: 'project-action',
 							mix: [
+								{ block: 'theme', mods: { color: 'liquid-default' }},
+								{ block: 'component', mods: { liquid: 'default' }},
 								{ block: 'pt-card', elem: 'footer', elemMods: { 'space-h': 'm', 'space-v': 'l' } },
 								{ block: 'promo-cards', elem: 'donate-project-action'},
 							],
@@ -1653,12 +1636,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' }, }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', view: 'primary', mods: { font: 'sans', weight: 'bold' }, }],
 						content: 'Person'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For bloggers and streamers, charity sites and crowdfunding projects'
 					}]
 				},
@@ -1668,12 +1651,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Project'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For crowdfunding projects and charity sites '
 					}]
 				},
@@ -1683,12 +1666,12 @@ module.exports = {
 					content: [
 					{
 						elem: 'header',
-						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', weight: 'bold' } }],
+						mix: [{ block: 'decorator', mods: { 'indent-b': 'xl' } }, { block: 'text', mods: { font: 'sans', view: 'primary', weight: 'bold' } }],
 						content: 'Event'
 					},
 					{
 						block: 'text',
-						mods: { size: 'xl', font: 'mono' },
+						mods: { size: 'xl', view: 'primary', font: 'mono' },
 						content: 'For social networks, crowdfunding platforms, online banking systems, payment services, and applications. This will do for raising money for a joint gift or all sorts of things.'
 					}]
 				},
@@ -1701,7 +1684,7 @@ module.exports = {
 						content: {
 							block: 'text',
 							mix: { block: 'promo-cards', elem: 'donate-tab-1' },
-							mods: { size: 'xl', transform: 'uppercase', view: 'letter', align: 'center' },
+							mods: { size: 'xl', view: 'alert', transform: 'uppercase', align: 'center' },
 							content: 'Person'
 						}
 					},
@@ -1711,7 +1694,7 @@ module.exports = {
 						content: {
 							block: 'text',
 							mix: { block: 'promo-cards', elem: 'donate-tab-2' },
-							mods: { size: 'xl', transform: 'uppercase', view: 'primary', align: 'center' },
+							mods: { size: 'xl', transform: 'uppercase', align: 'center' },
 							content: 'Project'
 						}
 					},
@@ -1721,34 +1704,23 @@ module.exports = {
 						content: {
 							block: 'text',
 							mix: { block: 'promo-cards', elem: 'donate-tab-3' },
-							mods: { size: 'xl', transform: 'uppercase', view: 'primary', align: 'center' },
+							mods: { size: 'xl', transform: 'uppercase', align: 'center' },
 							content: 'Event'
 						}
 					}]
 				}]
-			},
-			// {
-			// 	elem: 'controls',
-			// 	content: [
-			// 	{
-			// 		block: 'icon',
-			// 		mods: { 'arrow-up-2': 'xl-primary' },
-			// 		mix: { block: 'decorator', mods: { 'indent-r': 'xxl' } }
-			// 	},
-			// 	{
-			// 		block: 'icon',
-			// 		mods: { 'arrow-down-2': 'xl-primary' }
-			// 	}]
-			// },
-			]
+			}]
 		},
 		/* /DONATE */
 
 		/* TEAM */
 		{
 			block: 'promo-cards',
-			cls: 'scroll-section',
-			// mods: { view: 'inverse' },
+			mods: { view: 'default' },
+			mix: [
+				{ block: 'theme', mods: { color: 'liquid-default' }},
+				{ block: 'component', mods: { liquid: 'default' }},
+			],
 			content: [
 			{
 				elem: 'content',
@@ -1871,7 +1843,7 @@ module.exports = {
 							block: 'promo-cards',
 							elem: 'team-member',
 							mix: { block: 'text', mods: { view: 'primary', font: 'mono', weight: 'bold', transform: 'uppercase' } },
-							content: 'Misha Koloskof'
+							content: 'Mikhail Koloskof'
 						}]
 					},
 					{
@@ -1888,31 +1860,7 @@ module.exports = {
 						}]
 					}]
 				}]
-			},
-			// {
-			// 	elem: 'controls',
-			// 	content: [
-			// 	{
-			// 		tag: 'a',
-			// 		elem: 'controls-item',
-			// 		attrs: { href: '#' },
-			// 		content: {
-			// 			block: 'icon',
-			// 			mods: { 'arrow-up-2': 'xl-primary' },
-			// 			mix: { block: 'decorator', mods: { 'indent-r': 'xxl' } }
-			// 		}
-			// 	},
-			// 	{
-			// 		tag: 'a',
-			// 		elem: 'controls-item',
-			// 		attrs: { href: '#' },
-			// 		content: {
-			// 			block: 'icon',
-			// 			mods: { 'arrow-down-2': 'xl-primary' }
-			// 		}
-			// 	}]
-			// }
-			]
+			}]
 		}
 		/* /TEAM */
 

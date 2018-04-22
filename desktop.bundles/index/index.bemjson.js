@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'KIT BILL',
+	title: 'INDEX',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -568,11 +568,16 @@ module.exports = {
 											content: [
 												{
 													block: 'pt-card',
-													mix: { block: 'article' },
-													tag: 'a',
-													attrs: {
-														'href': 'http://bem.design'
-													},
+													mix: [
+														{ block: 'article' },
+														{ 
+															block: 'foot' 
+														},
+														{
+															block: 'theme',
+															mods: { color: 'liquid-inverse', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+														}
+													],
 													content: [
 														{
 															elem: 'image',
@@ -610,13 +615,13 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'inverse', size: 'xxxl', weight: 'light' },
+																			mods: { view: 'primary', size: 'xxxl', weight: 'light' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
 																			content: 'BEM Design'
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'inverse', size: 'm' },
+																			mods: { view: 'primary', size: 'm' },
 																			content: 'Мы сделали БЭМ-платформу основным инструментом дизайнеров для построения интерфейсов, дополнив ее всем необходимым арсеналом для масштабирования'
 																		}
 																	]
@@ -634,19 +639,13 @@ module.exports = {
 												{
 													block: 'pt-card',
 													mix: [
-														{ 
-															block: 'article' 
-														},
+														{ block: 'article' },
 														{ 
 															block: 'foot' 
 														},
 														{
 															block: 'theme',
-															mods: { color: 'liquid-brand', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
-														},
-														{
-															block: 'component',
-															mods: { liquid: 'default' }
+															mods: { color: 'liquid-inverse', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 														}
 													],
 													content: [
