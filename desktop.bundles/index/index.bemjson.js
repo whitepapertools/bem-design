@@ -26,6 +26,106 @@ module.exports = {
 			block: 'tpl-layout',
 			content: [
 
+				{
+					block: 'new-menu',
+					mix: { block: 'tpl-layout', elem: 'section' },
+					content: [
+						{
+							elem: 'container',
+							mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }, },
+							content: [
+								{
+									elem: 'logo',
+									tag: 'a',
+									attrs: { href: '#' },
+									content: {
+										block: 'image',
+										attrs: { style: 'display: block' },
+										width: 44,
+										url: '../../assets/i/bem-design.svg'
+									}
+								},
+								{
+									elem: 'nav',
+									content: [
+										{
+											block: 'text',
+											mods: { size: 'm', view: 'primary' },
+											tag: 'a', attrs: { href: '/themes.html' },
+											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
+											content: 'Тема'
+										},
+										{
+											block: 'text',
+											mods: { size: 'm', view: 'primary' },
+											tag: 'a', attrs: { href: '/content.html' },
+											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
+											content: 'Контент'
+										},
+										{
+											block: 'text',
+											mods: { size: 'm', view: 'primary' },
+											tag: 'a', attrs: { href: '/patterns.html' },
+											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
+											content: 'Паттерны'
+										},
+										{
+											block: 'text',
+											mods: { size: 'm', view: 'primary' },
+											tag: 'a', attrs: { href: '/templates.html' },
+											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
+											content: 'Шаблоны'
+										},
+										{
+											elem: 'item',
+											elemMods: { view: 'dropdown' },
+											content: [
+												{
+													block: 'pt-icon-plus',
+													mods: { 'vertical-align': 'center' },
+													content: [
+														{
+															elem: 'block',
+															content: {
+																block: 'text',
+																mods: { size: 'm', view: 'primary' },
+																content: 'Инфо'
+															}
+														},
+														{
+															elem: 'icon',
+															elemMods: { 'indent-l': 'xs'},
+															content: { block: 'icon', mods: { 'name': 'arrow-down', view: 'ghost', size: 's' }}
+														}
+													]
+												},
+												{
+													elem: 'dropdown',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															tag: 'a', attrs: { href: '/templates.html' },
+															mix: { block: 'new-menu', elem: 'dropdown-link' },
+															content: 'Документы'
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															tag: 'a', attrs: { href: '/templates.html' },
+															mix: { block: 'new-menu', elem: 'dropdown-link' },
+															content: 'Материалы'
+														},
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
 				/* Start */
 				{
 					elem: 'section',

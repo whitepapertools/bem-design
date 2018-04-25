@@ -52,7 +52,8 @@ const techs = {
         { path: 'node_modules/bem-logos/common.blocks', check: false },
         { path: 'node_modules/bem-patterns/common.blocks', check: false },
         { path: 'node_modules/bem-typo/common.blocks', check: false },
-        { path: 'node_modules/bem-vectors/common.blocks', check: false }
+        { path: 'node_modules/bem-vectors/common.blocks', check: false },
+				{ path: 'node_modules/bem-social/common.blocks', check: false }
     ];
 
 module.exports = function(config) {
