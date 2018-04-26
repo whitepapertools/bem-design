@@ -24,6 +24,7 @@ module.exports = {
 	content: [
 		{
 			block: 'tpl-layout',
+			attrs: { style: 'position: relative; top: 60px' },
 			content: [
 
 				{
@@ -1238,292 +1239,56 @@ module.exports = {
 					elem: 'section',
 					mix: [
 						{ block: 'foot' },
-						{ block: 'theme', mods: { color: 'liquid-inverse' }},
-						{ block: 'component', mods: { alertid: 'default' }}
+						{ block: 'component', mods: { liquid: 'default' }}
 					],
-					content: [
-						{
-							elem: 'container',
-							elemMods: { size: 'm', align: 'center' },
-							content: [
-								{
-									block: 'tpl-grid',
-									mods: { columns: '12', 'col-gap': 'full', 'row-gap': 'full' },
-									content: [
-										{
-											elem: 'fraction',
-											elemMods: { col: '3'},
-											content: [
-												{
-													block: 'pt-list',
-													content: [
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Твиттер'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Репозиторий'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Дрибббл'
-																}
-															]
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '3'},
-											content: [
-												{
-													block: 'pt-list',
-													content: [
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Карточный Кит'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Сообщество в Телеграм'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Бренд гайдлайны'
-																}
-															]
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '3'},
-											content: [
-												{
-													block: 'pt-list',
-													content: [
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Подписка'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Написать нам'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Команда'
-																}
-															]
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '3'},
-											content: [
-												{
-													block: 'pt-list',
-													content: [
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Подписка'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Написать нам'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'm', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'style': 'text-decoration: none;',
-																		'href': 'http://bem.info'
-																	},
-																	content: 'Команда'
-																}
-															]
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '2'},
-											content: [
-												{
-													block: 'image',
-													width: 53,
-													url: '../../assets/i/bem-design-inverse.svg'
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '8'},
-											content: [
-												{
-													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Методология БЭМ позволяет создавать расширяемые и повторно используемые компоненты интерфейса'
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '2'},
-											content: [
-												{
-													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: '2018'
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
+					content: {
+						elem: 'container',
+						elemMods: { size: 'm', align: 'center' },
+						mix: { block: 'foot', elem: 'container' },
+						content: [
+							{
+								block: 'text',
+								mods: { size: 'm', view: 'secondary' },
+								content: 'Wombat Design ©, 2018'
+							},
+							{
+								block: 'foot',
+								elem: 'social',
+								content: [
+									{
+									  block: 'social-icon',
+									  mods: { size: 'm', clear: 'github-primary', hover: 'default' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a', attrs: { href: 'https://github.com/bemdesign' },
+									},
+									{
+									  block: 'social-icon',
+									  mods: { size: 'm', clear: 'telegram-primary', hover: 'default' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a', attrs: { href: 'https://t.me/bem_design' },
+									},
+									{
+									  block: 'social-icon',
+									  mods: { size: 'm', clear: 'twitter-primary', hover: 'default' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a', attrs: { href: 'https://twitter.com/bem_design' },
+									},
+									{
+									  block: 'social-icon',
+									  mods: { size: 'm', clear: 'codepen-primary', hover: 'default' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a', attrs: { href: 'https://codepen.io/bem_design' },
+									},
+									{
+									  block: 'social-icon',
+									  mods: { size: 'm', clear: 'dribbble-primary', hover: 'default' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a', attrs: { href: 'https://dribbble.com/bem_design' },
+									},
+								]
+							}
+						]
+					}
 				}
 				/* /Footer */
 
