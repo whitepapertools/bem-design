@@ -16,21 +16,16 @@ module.exports = {
 		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
 	},
 	content: [
-	{
-		block: 'demo',
-		content: [
 		{
 			elem: 'content',
+			block: 'demo',
 			elemMods: { size: 's' },
 			content: [
-			{
-				block: 'demo',
-				elem: 'logo'
-			},
+
 			{
 				block: 'text',
 				mods: { size: 'xxxxl', weight: 'bold' },
-				mix: [{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' } }, { block: 'demo', elem: 'title' }],
+				mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
 				content: 'Patterns'
 			},
 
@@ -1801,11 +1796,6 @@ module.exports = {
 					mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
 					content: '.pt-icon-plus',
 				},
-				// {
-				//   block: 'text',
-				//   mods: { view: 'primary', size: 'm', indent: 'm' },
-				//   content: 'Конструкция отображения данных с иконкой слева. Состоит из элементов иконки и контентной части.'
-				// },
 				{
 					block: 'pt-table',
 					mods: { view: 'default', 'space-a': 's', stripe: 'even' },
@@ -2038,199 +2028,189 @@ module.exports = {
 			},
 			/* /PT-ICON-PLUS */
 
-			/* PT-AVATAR */
-			{
-				elem: 'pattern',
-				block: 'demo',
-				content: [
-				{
-					block: 'text',
-					mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
-					mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
-					content: '.pt-avatar',
-				},
-				// {
-				//   block: 'text',
-				//   mods: { view: 'primary', size: 'm', indent: 'm' },
-				//   content: 'Конструкция отображения данных с иконкой слева. Состоит из элементов иконки и контентной части.'
-				// },
-				{
-					block: 'text',
-					mods: { size: 'l', weight: 'bold' },
-					mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-					content: '__photo'
-				},
-				{
-					block: 'pt-table',
-					mods: { view: 'default', 'space-a': 's', stripe: 'even' },
-					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
-					content: [
-					{
-						elem: 'row',
-						elemMods: { 'view': 'head' },
-						content: [
-						{
-							elem: 'col',
-							elemMods: { width: '30' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
-								content: 'Модификатор'
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { width: '35' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
-								content: 'Значение'
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { width: '35' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
-								content: 'Описание'
-							}]
-						}]
-					},
-					{
-						elem: 'row',
-						content: [
-						{
-							elem: 'col',
-							elemMods: { width: '30' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'm', view: 'primary' },
-								content: 'size'
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { width: '35' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'm', view: 'primary' },
-								content: 's / m / l'
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { width: '35' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'm', view: 'primary' },
-								content: 'Размер'
-							}]
-						}]
-					}]
-				}]
-			},
-			/* /PT-AVATAR */
+			/* AVATAR */
+			// {
+			// 	elem: 'pattern',
+			// 	block: 'demo',
+			// 	content: [
+			// 	{
+			// 		block: 'text',
+			// 		mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
+			// 		mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+			// 		content: '.avatar',
+			// 	},
+			// 	{
+			// 		block: 'text',
+			// 		mods: { size: 'l', weight: 'bold' },
+			// 		mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+			// 		content: '__photo'
+			// 	},
+			// 	{
+			// 		block: 'pt-table',
+			// 		mods: { view: 'default', 'space-a': 's', stripe: 'even' },
+			// 		mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+			// 		content: [
+			// 		{
+			// 			elem: 'row',
+			// 			elemMods: { 'view': 'head' },
+			// 			content: [
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '30' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
+			// 					content: 'Модификатор'
+			// 				}]
+			// 			},
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '35' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
+			// 					content: 'Значение'
+			// 				}]
+			// 			},
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '35' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
+			// 					content: 'Описание'
+			// 				}]
+			// 			}]
+			// 		},
+			// 		{
+			// 			elem: 'row',
+			// 			content: [
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '30' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'm', view: 'primary' },
+			// 					content: 'size'
+			// 				}]
+			// 			},
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '35' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'm', view: 'primary' },
+			// 					content: 's / m / l'
+			// 				}]
+			// 			},
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '35' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'm', view: 'primary' },
+			// 					content: 'Размер'
+			// 				}]
+			// 			}]
+			// 		}]
+			// 	}]
+			// },
+			/* /AVATAR */
 
-			/* PT-BADGE */
-			{
-				elem: 'pattern',
-				block: 'demo',
-				content: [
-				{
-					block: 'text',
-					mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
-					mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
-					content: '.pt-badge',
-				},
-				// {
-				//   block: 'text',
-				//   mods: { view: 'primary', size: 'm', indent: 'm' },
-				//   content: 'Конструкция для отображения статусов/счетчиков.'
-				// },
-				{
-					block: 'pt-table',
-					mods: { view: 'default', 'space-a': 's', stripe: 'even' },
-					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
-					content: [
-					{
-						elem: 'row',
-						elemMods: { 'view': 'head' },
-						content: [
-						{
-							elem: 'col',
-							elemMods: { width: '30' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
-								content: 'Модификатор'
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { width: '35' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
-								content: 'Значение'
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { width: '35' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
-								content: 'Описание'
-							}]
-						}]
-					},
-					{
-						elem: 'row',
-						content: [
-						{
-							elem: 'col',
-							elemMods: { width: '30' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'm', view: 'primary' },
-								content: 'view'
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { width: '35' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'm', view: 'primary' },
-								content: 'default / success / warning / alert / inverse'
-							}]
-						},
-						{
-							elem: 'col',
-							elemMods: { width: '35' },
-							content: [
-							{
-								block: 'text',
-								mods: { size: 'm', view: 'primary' },
-								content: 'Фон блока'
-							}]
-						}]
-					}]
-				}]
-			},
-			/* /PT-BAGE */
+			/* BADGE */
+			// {
+			// 	elem: 'pattern',
+			// 	block: 'demo',
+			// 	content: [
+			// 	{
+			// 		block: 'text',
+			// 		mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
+			// 		mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+			// 		content: '.badge',
+			// 	},
+			// 	{
+			// 		block: 'pt-table',
+			// 		mods: { view: 'default', 'space-a': 's', stripe: 'even' },
+			// 		mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+			// 		content: [
+			// 		{
+			// 			elem: 'row',
+			// 			elemMods: { 'view': 'head' },
+			// 			content: [
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '30' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
+			// 					content: 'Модификатор'
+			// 				}]
+			// 			},
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '35' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
+			// 					content: 'Значение'
+			// 				}]
+			// 			},
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '35' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'xs', view: 'ghost', weight: 'bold', transform: 'uppercase', spacing: 'xs' },
+			// 					content: 'Описание'
+			// 				}]
+			// 			}]
+			// 		},
+			// 		{
+			// 			elem: 'row',
+			// 			content: [
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '30' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'm', view: 'primary' },
+			// 					content: 'view'
+			// 				}]
+			// 			},
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '35' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'm', view: 'primary' },
+			// 					content: 'default / success / warning / alert / inverse'
+			// 				}]
+			// 			},
+			// 			{
+			// 				elem: 'col',
+			// 				elemMods: { width: '35' },
+			// 				content: [
+			// 				{
+			// 					block: 'text',
+			// 					mods: { size: 'm', view: 'primary' },
+			// 					content: 'Фон блока'
+			// 				}]
+			// 			}]
+			// 		}]
+			// 	}]
+			// },
+			/* /BAGE */
 
 			/* PT-SURFACE */
 			{
@@ -2243,11 +2223,6 @@ module.exports = {
 					mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
 					content: '.pt-surface',
 				},
-				// {
-				//   block: 'text',
-				//   mods: { view: 'primary', size: 'm', indent: 'm' },
-				//   content: 'Конструкция для отображения статусов/счетчиков.'
-				// },
 				{
 					block: 'pt-table',
 					mods: { view: 'default', 'space-a': 's', stripe: 'even' },
@@ -2527,10 +2502,12 @@ module.exports = {
 				}]
 			},
 			/* /PT-SURFACE */
+
 			]
 		},
 		{
+			block: 'demo',
 			elem: 'footer'
-		}]
-	}]
+		}
+	]
 };

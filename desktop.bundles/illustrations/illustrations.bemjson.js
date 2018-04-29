@@ -18,157 +18,151 @@ module.exports = {
 	content: [
 	{
 		block: 'demo',
+		elem: 'content',
 		content: [
 		{
-			elem: 'content',
+			block: 'text',
+			mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
+			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+			content: 'Illustrations'
+		},
+		{
+			block: 'illustration-list',
 			content: [
 			{
-				block: 'demo',
-				elem: 'logo'
-			},
-			{
-				block: 'text',
-				mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
-				mix: [{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' } }, { block: 'demo', elem: 'title' }],
-				content: 'Illustrations'
-			},
-			{
-				block: 'illustration-list',
+				block: 'illustration-item',
 				content: [
 				{
-					block: 'illustration-item',
+					elem: 'view',
+					elemMods: { view: 'inverse' },
+					content: [
+						{
+							block: 'image',
+							width: 400,
+							url: '/assets/i/bem-team.png'
+						}
+					]
+				},
+				{
+					elem: 'name',
 					content: [
 					{
-						elem: 'view',
-						elemMods: { view: 'inverse' },
-						content: [
-							{
-								block: 'image',
-								width: 400,
-								url: '/assets/i/bem-team.png'
-							}
-						]
-					},
-					{
-						elem: 'name',
-						content: [
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
+						content: "BEM Design Team"
+					}]
+				}]
+			},
+			{
+				block: 'illustration-item',
+				content: [
+				{
+					elem: 'view',
+					elemMods: { view: 'inverse' },
+					content: [
 						{
-							block: 'text',
-							mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
-							content: "BEM Design Team"
-						}]
+							block: 'image',
+							width: 400,
+							url: '/assets/i/bem-show.png'
+						}
+					]
+				},
+				{
+					elem: 'name',
+					content: [
+					{
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
+						content: "BEM Show"
+					}]
+				}]
+			},
+			{
+				block: 'illustration-item',
+				content: [
+				{
+					elem: 'view',
+					elemMods: { view: 'inverse' },
+					content: [
+						{
+							block: 'image',
+							width: 400,
+							url: '/assets/i/bem-hackathon.png'
+						}
+					]
+				},
+				{
+					elem: 'name',
+					content: [
+					{
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
+						content: "BEM Hackathon"
+					}]
+				}]
+			},
+			{
+				block: 'illustration-item',
+				content: [
+				{
+					elem: 'view',
+					content: [
+					{
+						block: 'illustration',
 					}]
 				},
 				{
-					block: 'illustration-item',
+					elem: 'name',
 					content: [
 					{
-						elem: 'view',
-						elemMods: { view: 'inverse' },
-						content: [
-							{
-								block: 'image',
-								width: 400,
-								url: '/assets/i/bem-show.png'
-							}
-						]
-					},
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
+						content: "BEM Night"
+					}]
+				}]
+			},
+			{
+				block: 'illustration-item',
+				content: [
+				{
+					elem: 'view',
+					content: [
+					]
+				},
+				{
+					elem: 'name',
+					content: [
 					{
-						elem: 'name',
-						content: [
-						{
-							block: 'text',
-							mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
-							content: "BEM Show"
-						}]
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
+						content: "BEM Channel"
+					}]
+				}]
+			},
+			{
+				block: 'illustration-item',
+				content: [
+				{
+					elem: 'view',
+					content: [
+					{
+						block: 'illustration',
 					}]
 				},
 				{
-					block: 'illustration-item',
+					elem: 'name',
 					content: [
 					{
-						elem: 'view',
-						elemMods: { view: 'inverse' },
-						content: [
-							{
-								block: 'image',
-								width: 400,
-								url: '/assets/i/bem-hackathon.png'
-							}
-						]
-					},
-					{
-						elem: 'name',
-						content: [
-						{
-							block: 'text',
-							mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
-							content: "BEM Hackathon"
-						}]
-					}]
-				},
-				{
-					block: 'illustration-item',
-					content: [
-					{
-						elem: 'view',
-						content: [
-						{
-							block: 'illustration',
-						}]
-					},
-					{
-						elem: 'name',
-						content: [
-						{
-							block: 'text',
-							mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
-							content: "BEM Night"
-						}]
-					}]
-				},
-				{
-					block: 'illustration-item',
-					content: [
-					{
-						elem: 'view',
-						content: [
-						]
-					},
-					{
-						elem: 'name',
-						content: [
-						{
-							block: 'text',
-							mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
-							content: "BEM Channel"
-						}]
-					}]
-				},
-				{
-					block: 'illustration-item',
-					content: [
-					{
-						elem: 'view',
-						content: [
-						{
-							block: 'illustration',
-						}]
-					},
-					{
-						elem: 'name',
-						content: [
-						{
-							block: 'text',
-							mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
-							content: "BEM Magazine"
-						}]
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center', font: 'sans' },
+						content: "BEM Magazine"
 					}]
 				}]
 			}]
-		},
-		{
-			elem: 'footer'
 		}]
+	},
+	{
+		block: 'demo',
+		elem: 'footer'
 	}]
 };

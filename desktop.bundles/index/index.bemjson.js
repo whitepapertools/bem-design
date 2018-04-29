@@ -26,7 +26,6 @@ module.exports = {
 			block: 'tpl-layout',
 			attrs: { style: 'position: relative; top: 60px' },
 			content: [
-
 				{
 					block: 'new-menu',
 					mix: { block: 'tpl-layout', elem: 'section' },
@@ -141,6 +140,7 @@ module.exports = {
 						}
 					]
 				},
+				
 				/* Start */
 				{
 					elem: 'section',
@@ -981,7 +981,7 @@ module.exports = {
 																					elem: 'persone',
 																					content: [
 																						{
-																							block: 'pt-avatar',
+																							block: 'avatar',
 																							content: [
 																								{
 																									elem: 'photo',
@@ -1003,7 +1003,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'brand-logo',
-																							mods: { view: 'pitercss', size: 'm' },
+																							mods: { name: 'pitercss', size: 'm' },
 																						}
 																					]
 																				}
@@ -1072,7 +1072,7 @@ module.exports = {
 																					elem: 'persone',
 																					content: [
 																						{
-																							block: 'pt-avatar',
+																							block: 'avatar',
 																							content: [
 																								{
 																									elem: 'photo',
@@ -1094,7 +1094,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'brand-logo',
-																							mods: { view: 'wsd', size: 'm' },
+																							mods: { name: 'wsd', size: 'm' },
 																						}
 																					]
 																				}
@@ -1235,31 +1235,31 @@ module.exports = {
 									  block: 'social-icon',
 									  mods: { size: 'm', clear: 'github-primary', hover: 'default' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://github.com/bemdesign' },
+										tag: 'a', attrs: { href: 'https://github.com/whitepapertools' },
 									},
 									{
 									  block: 'social-icon',
 									  mods: { size: 'm', clear: 'telegram-primary', hover: 'default' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://t.me/bem_design' },
+										tag: 'a', attrs: { href: 'https://t.me/whitepapertools' },
 									},
 									{
 									  block: 'social-icon',
 									  mods: { size: 'm', clear: 'twitter-primary', hover: 'default' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://twitter.com/bem_design' },
+										tag: 'a', attrs: { href: 'https://twitter.com/whitepapertools' },
 									},
 									{
 									  block: 'social-icon',
 									  mods: { size: 'm', clear: 'codepen-primary', hover: 'default' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://codepen.io/bem_design' },
+										tag: 'a', attrs: { href: 'https://codepen.io/whitepapertools' },
 									},
 									{
 									  block: 'social-icon',
 									  mods: { size: 'm', clear: 'dribbble-primary', hover: 'default' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://dribbble.com/bem_design' },
+										tag: 'a', attrs: { href: 'https://dribbble.com/whitepapertools' },
 									},
 								]
 							}
