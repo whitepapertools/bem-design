@@ -78,49 +78,63 @@ module.exports = {
 											content: 'Шаблоны'
 										},
 										{
-											elem: 'item',
-											elemMods: { view: 'dropdown' },
-											content: [
-												{
-													block: 'pt-icon-plus',
-													mods: { 'vertical-align': 'center' },
-													content: [
-														{
-															elem: 'block',
-															content: {
-																block: 'text',
-																mods: { size: 'm', view: 'primary' },
-																content: 'Инфо'
-															}
-														},
-														{
-															elem: 'icon',
-															elemMods: { 'indent-l': 'xs'},
-															content: { block: 'icon', mods: { 'name': 'arrow-down', view: 'ghost', size: 's' }}
-														}
-													]
-												},
-												{
-													elem: 'dropdown',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															tag: 'a', attrs: { href: '/templates.html' },
-															mix: { block: 'new-menu', elem: 'dropdown-link' },
-															content: 'Документы'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															tag: 'a', attrs: { href: '/templates.html' },
-															mix: { block: 'new-menu', elem: 'dropdown-link' },
-															content: 'Материалы'
-														},
-													]
-												}
-											]
-										}
+											block: 'text',
+											mods: { size: 'm', view: 'primary' },
+											tag: 'a', attrs: { href: '/templates.html' },
+											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
+											content: 'Обучение'
+										},
+										{
+											block: 'text',
+											mods: { size: 'm', view: 'primary' },
+											tag: 'a', attrs: { href: '/templates.html' },
+											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
+											content: 'Материалы'
+										},
+										// {
+										// 	elem: 'item',
+										// 	elemMods: { view: 'dropdown' },
+										// 	content: [
+										// 		{
+										// 			block: 'pt-icon-plus',
+										// 			mods: { 'vertical-align': 'center' },
+										// 			content: [
+										// 				{
+										// 					elem: 'block',
+										// 					content: {
+										// 						block: 'text',
+										// 						mods: { size: 'm', view: 'primary' },
+										// 						content: 'Инфо'
+										// 					}
+										// 				},
+										// 				{
+										// 					elem: 'icon',
+										// 					elemMods: { 'indent-l': 'xs'},
+										// 					content: { block: 'icon', mods: { 'name': 'arrow-down', view: 'ghost', size: 's' }}
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'dropdown',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					tag: 'a', attrs: { href: '/templates.html' },
+										// 					mix: { block: 'new-menu', elem: 'dropdown-link' },
+										// 					content: 'Документы'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					tag: 'a', attrs: { href: '/templates.html' },
+										// 					mix: { block: 'new-menu', elem: 'dropdown-link' },
+										// 					content: 'Материалы'
+										// 				},
+										// 			]
+										// 		}
+										// 	]
+										// }
 									]
 								}
 							]
@@ -139,48 +153,10 @@ module.exports = {
 							elemMods: { size: 'm', align: 'center' },
 							content: [
 								{
-									block: 'tpl-grid',
-									mods: { columns: '12', 'col-gap': 'full', 'row-gap': 'full' },
-									content: [
-										{
-											elem: 'fraction',
-											elemMods: { col: '12' },
-											attrs: {
-												'style': 'display: flex; align-items: center;'
-											},
-											content: [
-												{
-													block: 'pt-icon-plus',
-													mods: { 'vertical-align': 'center' },
-													content: [
-														{
-															elem: 'icon',
-															elemMods: { 'indent-right': 'l' },
-															content: [
-																{
-																	block: 'skrskr',
-																	attrs: {
-																		'style': 'width: 200px; height: 200px; background: #494949;'
-																	}
-																}
-															]
-														},
-														{
-															elem: 'block',
-															content: [
-																{
-																	block: 'text',
-																	mods: { view: 'primary', size: 'xxxl', weight: 'bold' },
-																	attrs: { 'style': 'font-size: 200px;' },
-																	content: 'Platform'
-																}
-															]
-														}
-													]
-												}
-											]
-										}
-									]
+									block: 'text',
+									mods: { view: 'primary', size: 'xxxl', weight: 'bold', align: 'center' },
+									attrs: { 'style': 'font-size: 160px;' },
+									content: 'White Paper'
 								}
 							]
 						}
@@ -252,7 +228,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'l', view: 'primary' },
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 															content: 'Тема является фундаментальным слоем на основе которого выстраивается дизайн система'
 														},
 														{
@@ -260,11 +236,11 @@ module.exports = {
 															content: [
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom' },
+																	elemMods: { 'space-b': 'm' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': '/themes.html'
@@ -275,12 +251,12 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'm' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
-																			tag: 'a',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'l',
 																			attrs: {
 																				'href': '/themes.html'
 																			},
@@ -310,7 +286,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'l', view: 'primary' },
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 															content: 'Контентом являются мельчайшие блоки позволяющие выразить смысл логической сущности'
 														},
 														{
@@ -318,11 +294,11 @@ module.exports = {
 															content: [
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'm' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': '/typo.html'
@@ -333,12 +309,12 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'm' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
-																			tag: 'a',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'l',
 																			attrs: {
 																				'href': '/vectors.html'
 																			},
@@ -348,12 +324,12 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'm' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
-																			tag: 'a',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'l',
 																			attrs: {
 																				'href': '/icons.html'
 																			},
@@ -383,7 +359,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'l', view: 'primary' },
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 															content: 'Паттерны позволяют представить контент в осмысленной форме для целостного восприятия интерфейса'
 														},
 														{
@@ -391,11 +367,11 @@ module.exports = {
 															content: [
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom' },
+																	elemMods: { 'space-b': 'm' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': '/pt-list.html'
@@ -406,11 +382,11 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'l' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link', border: 'bottom' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': '/pt-form.html'
@@ -421,11 +397,11 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom' },
+																	elemMods: { 'space-b': 'l' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': '/patterns.html'
@@ -450,7 +426,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 															content: 'Шаблоны'
 														},
 														{
@@ -464,11 +440,11 @@ module.exports = {
 															content: [
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'm' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': '/layouts.html'
@@ -479,11 +455,11 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'l' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': '/layouts.html'
@@ -508,8 +484,8 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-															content: 'Документы'
+															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+															content: 'Обучение'
 														},
 														{
 															block: 'text',
@@ -522,11 +498,11 @@ module.exports = {
 															content: [
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'm' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': '/article-icons.html'
@@ -537,11 +513,11 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom'  },
+																	elemMods: { 'space-b': 'm', border: 'bottom'  },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
 																				'href': 'https://koloskof.github.io/bemxjstdemo/',
@@ -567,7 +543,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 															content: 'Материалы'
 														},
 														{
@@ -581,22 +557,22 @@ module.exports = {
 															content: [
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom' },
+																	elemMods: { 'space-b': 'l' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			content: 'Kit BILL'
 																		}
 																	]
 																},
 																{
 																	elem: 'item',
-																	elemMods: { 'space-v': 'm', border: 'bottom' },
+																	elemMods: { 'space-b': 'l', border: 'bottom' },
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'link' },
+																			mods: { size: 'l', view: 'link' },
 																			content: 'BEM Starter Kit'
 																		}
 																	]
@@ -690,8 +666,8 @@ module.exports = {
 															elemMods: { 'space-a': 'xxl' },
 															content: [
 																{
-																	block: 'pt-badge',
-																	mods: { view: 'default' },
+																	block: 'text',
+																	mods: { view: 'primary', size: 'm', weight: 'light' },
 																	content: 'Журнал'
 																}
 															]
@@ -745,8 +721,8 @@ module.exports = {
 															elemMods: { 'space-a': 'xxl' },
 															content: [
 																{
-																	block: 'pt-badge',
-																	mods: { view: 'default' },
+																	block: 'text',
+																	mods: { view: 'primary', size: 'm', weight: 'light' },
 																	content: 'Сообщество'
 																}
 															]
@@ -811,8 +787,8 @@ module.exports = {
 															elemMods: { 'space-a': 'xxl' },
 															content: [
 																{
-																	block: 'pt-badge',
-																	mods: { view: 'default' },
+																	block: 'text',
+																	mods: { view: 'primary', size: 'm', weight: 'light' },
 																	content: 'Инструментарий'
 																}
 															]
@@ -849,80 +825,80 @@ module.exports = {
 												}
 											]
 										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '4'},
-											content: [
-												{
-													block: 'text',
-													mods: { size: 'l', view: 'primary' },
-													content: 'БЭМ-платформа как основной инструмент дизайнеров для построения интерфейсов. Масштабируемая дизайн-система и визуальная косметика. Фундаментальные библиотеки, необходимые для прототипирования.'
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '8'},
-											content: [
-												{
-													block: 'pt-list',
-													mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' } },
-													content: [
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l', 'space-t': 'l', 'border': 'bottom' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'xxl', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'href': 'https://habrahabr.ru/post/274721/',
-																		'target': '_blank',
-																		'style': 'text-decoration: none;'
-																	},
-																	content: 'БЭМ-одержимость. Последствие параметрического дизайна'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l', 'space-t': 'l', 'border': 'bottom'  },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'xxl', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'href': 'https://habrahabr.ru/post/274719/',
-																		'target': '_blank',
-																		'style': 'text-decoration: none;'
-																	},
-																	content: 'Следующие пол шага после Дизайна в браузере'
-																}
-															]
-														},
-														{
-															elem: 'item',
-															elemMods: { 'space-b': 'l', 'space-t': 'l', 'border': 'bottom'  },
-															content: [
-																{
-																	block: 'text',
-																	mods: { size: 'xxl', view: 'primary' },
-																	tag: 'a',
-																	attrs: {
-																		'href': 'https://habrahabr.ru/post/238485/',
-																		'target': '_blank',
-																		'style': 'text-decoration: none;'
-																	},
-																	content: 'Дизайн в браузере'
-																}
-															]
-														}
-													]
-												}
-											]
-										}
+										// {
+										// 	elem: 'fraction',
+										// 	elemMods: { col: '4'},
+										// 	content: [
+										// 		{
+										// 			block: 'text',
+										// 			mods: { size: 'l', view: 'primary' },
+										// 			content: 'БЭМ-платформа как основной инструмент дизайнеров для построения интерфейсов. Масштабируемая дизайн-система и визуальная косметика. Фундаментальные библиотеки, необходимые для прототипирования.'
+										// 		}
+										// 	]
+										// },
+										// {
+										// 	elem: 'fraction',
+										// 	elemMods: { col: '8'},
+										// 	content: [
+										// 		{
+										// 			block: 'pt-list',
+										// 			mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' } },
+										// 			content: [
+										// 				{
+										// 					elem: 'item',
+										// 					elemMods: { 'space-b': 'l', 'space-t': 'l', 'border': 'bottom' },
+										// 					content: [
+										// 						{
+										// 							block: 'text',
+										// 							mods: { size: 'xxl', view: 'primary' },
+										// 							tag: 'a',
+										// 							attrs: {
+										// 								'href': 'https://habrahabr.ru/post/274721/',
+										// 								'target': '_blank',
+										// 								'style': 'text-decoration: none;'
+										// 							},
+										// 							content: 'БЭМ-одержимость. Последствие параметрического дизайна'
+										// 						}
+										// 					]
+										// 				},
+										// 				{
+										// 					elem: 'item',
+										// 					elemMods: { 'space-b': 'l', 'space-t': 'l', 'border': 'bottom'  },
+										// 					content: [
+										// 						{
+										// 							block: 'text',
+										// 							mods: { size: 'xxl', view: 'primary' },
+										// 							tag: 'a',
+										// 							attrs: {
+										// 								'href': 'https://habrahabr.ru/post/274719/',
+										// 								'target': '_blank',
+										// 								'style': 'text-decoration: none;'
+										// 							},
+										// 							content: 'Следующие пол шага после Дизайна в браузере'
+										// 						}
+										// 					]
+										// 				},
+										// 				{
+										// 					elem: 'item',
+										// 					elemMods: { 'space-b': 'l', 'space-t': 'l', 'border': 'bottom'  },
+										// 					content: [
+										// 						{
+										// 							block: 'text',
+										// 							mods: { size: 'xxl', view: 'primary' },
+										// 							tag: 'a',
+										// 							attrs: {
+										// 								'href': 'https://habrahabr.ru/post/238485/',
+										// 								'target': '_blank',
+										// 								'style': 'text-decoration: none;'
+										// 							},
+										// 							content: 'Дизайн в браузере'
+										// 						}
+										// 					]
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// }
 									]
 								}
 							]
@@ -1203,18 +1179,18 @@ module.exports = {
 														}
 													]
 												},
-												{
-													block: 'input',
-													attrs: {
-														'style': 'width: 300px;'
-													},
-													mix: { block: 'decorator', mods: { 'indent-r': 'xs' } },
-													mods: {
-															theme: 'islands',
-															size: 'xl'
-													},
-													placeholder: 'Ваша почта'
-												},
+												// {
+												// 	block: 'input',
+												// 	attrs: {
+												// 		'style': 'width: 300px;'
+												// 	},
+												// 	mix: { block: 'decorator', mods: { 'indent-r': 'xs' } },
+												// 	mods: {
+												// 			theme: 'islands',
+												// 			size: 'xl'
+												// 	},
+												// 	placeholder: 'Ваша почта'
+												// },
 												{
 													block: 'button',
 													mods: {
@@ -1249,7 +1225,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', view: 'secondary' },
-								content: 'Wombat Design ©, 2018'
+								content: '© 2018 White Paper'
 							},
 							{
 								block: 'foot',
