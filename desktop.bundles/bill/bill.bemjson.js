@@ -124,7 +124,7 @@ module.exports = {
 									content: [
 									{
 										block: 'brand-logo',
-										mods: { 'view': 'fallon', size: 's' }
+										mods: { 'name': 'ustwo', size: 's' }
 									}]
 								},
 								{
@@ -179,7 +179,7 @@ module.exports = {
 									elemMods: { 'indent-right': 'xs' },
 									content: [
 									{
-										block: 'pt-avatar',
+										block: 'avatar',
 										content: [
 										{
 											elem: 'photo',
@@ -650,7 +650,7 @@ module.exports = {
 								content: [
 								{
 									block: 'brand-logo',
-									mods: { view: 'bape', size: 's' },
+									mods: { name: 'bape', size: 's' },
 									mix: { block: 'promo-cards', elem: 'offer-brand-logo' },
 								}]
 							}]
@@ -924,7 +924,7 @@ module.exports = {
 											content: [
 											{
 												block: 'brand-logo',
-												mods: { 'view': 'monument-valley', size: 's', form: 'mask' }
+												mods: { 'name': 'monument-valley', size: 's', form: 'mask' }
 											}]
 										},
 										{
@@ -943,7 +943,7 @@ module.exports = {
 										}]
 									},
 									{
-										block: 'pt-badge',
+										block: 'badge',
 										mods: { view: 'default' },
 										content: '$99'
 									}]
@@ -962,7 +962,7 @@ module.exports = {
 											content: [
 											{
 												block: 'brand-logo',
-												mods: { 'view': 'monument-valley-2', size: 's', form: 'mask'}
+												mods: { 'name': 'monument-valley-2', size: 's', form: 'mask'}
 											}]
 										},
 										{
@@ -981,7 +981,7 @@ module.exports = {
 										}]
 									},
 									{
-										block: 'pt-badge',
+										block: 'badge',
 										mods: { view: 'default' },
 										content: '$99'
 									}]
@@ -1061,7 +1061,7 @@ module.exports = {
 									content: [
 									{
 										block: 'brand-logo',
-										mods: { 'view': 'monument-valley-2', size: 's', form: 'mask' }
+										mods: { 'name': 'monument-valley-2', size: 's', form: 'mask' }
 									}]
 								},
 								{
@@ -1080,7 +1080,7 @@ module.exports = {
 								}]
 							},
 							{
-								block: 'pt-badge',
+								block: 'badge',
 								mods: { view: 'default' },
 								content: '$99'
 							}]
@@ -1132,7 +1132,7 @@ module.exports = {
 									content: [
 									{
 										block: 'brand-logo',
-										mods: { 'view': 'ustwo', size: 's'}
+										mods: { 'name': 'ustwo', size: 's'}
 									}]
 								},
 								{
@@ -1151,7 +1151,7 @@ module.exports = {
 								}]
 							},
 							{
-								block: 'pt-badge',
+								block: 'badge',
 								mods: { view: 'default' },
 								content: '$99'
 							}]
@@ -1321,7 +1321,7 @@ module.exports = {
 								{
 									elem: 'person-avatar',
 									mix: [
-										{ block: 'pt-avatar', elem: 'photo', elemMods: { size: 'm' } },
+										{ block: 'avatar', elem: 'photo', elemMods: { size: 'm' } },
 										{ block: 'promo-cards', elem: 'donate-person-avatar'},
 									]
 								}]
@@ -1594,22 +1594,22 @@ module.exports = {
 								{
 									elem: 'event-mini-avatar',
 									elemMods: { view: '1' },
-									mix: { block: 'pt-avatar', elem: 'photo', elemMods: { size: 'xs' } },
+									mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' } },
 								},
 								{
 									elem: 'event-mini-avatar',
 									elemMods: { view: '2' },
-									mix: { block: 'pt-avatar', elem: 'photo', elemMods: { size: 'xs' } },
+									mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' } },
 								},
 								{
 									elem: 'event-mini-avatar',
 									elemMods: { view: '3' },
-									mix: { block: 'pt-avatar', elem: 'photo', elemMods: { size: 'xs' } },
+									mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' } },
 								},
 								{
 									elem: 'event-mini-avatar',
 									elemMods: { view: '4' },
-									mix: { block: 'pt-avatar', elem: 'photo', elemMods: { size: 'xs' } },
+									mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' } },
 								},
 								{
 									block: 'text',
