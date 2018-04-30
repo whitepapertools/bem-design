@@ -39,11 +39,6 @@ module.exports = {
 					mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
 					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 					content: '.pt-table',
-					tag: 'a',
-					attrs: {
-						href: 'pt-table.html',
-						target: '_blank'
-					}
 				},
 				{
 					block: 'pt-table',
