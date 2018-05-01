@@ -1,7 +1,7 @@
 .new-menu {
 	height: 60px;
-	background: var(--color-default);
-	border-bottom: 1px solid var(--color-border);
+	background: var(--color-bg-default);
+	border-bottom: 1px solid var(--color-bg-border);
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -65,7 +65,7 @@
 		width: 160px;
 		display: flex;
 		flex-flow: column;
-		background: var(--color-default);
+		background: var(--color-bg-default);
 		box-shadow: 0 0px 2px rgba(0,0,0,0.03), 0 1px 4px rgba(0,0,0,0.12), 0 12px 8px -3px rgba(0,0,0,0.06);
 		right: -12px;
 		top: 100%;

@@ -120,7 +120,7 @@ module.exports = {
 								content: [
 								{
 									elem: 'icon',
-									elemMods: { 'indent-right': 'xs' },
+									elemMods: { 'indent-r': 'xs' },
 									content: [
 									{
 										block: 'brand-logo',
@@ -176,7 +176,7 @@ module.exports = {
 								content: [
 								{
 									elem: 'icon',
-									elemMods: { 'indent-right': 'xs' },
+									elemMods: { 'indent-r': 'xs' },
 									content: [
 									{
 										block: 'avatar',
@@ -920,7 +920,7 @@ module.exports = {
 										content: [
 										{
 											elem: 'icon',
-											elemMods: { 'indent-right': 's' },
+											elemMods: { 'indent-r': 's' },
 											content: [
 											{
 												block: 'brand-logo',
@@ -958,7 +958,7 @@ module.exports = {
 										content: [
 										{
 											elem: 'icon',
-											elemMods: { 'indent-right': 's' },
+											elemMods: { 'indent-r': 's' },
 											content: [
 											{
 												block: 'brand-logo',
@@ -1057,7 +1057,7 @@ module.exports = {
 								content: [
 								{
 									elem: 'icon',
-									elemMods: { 'indent-right': 's' },
+									elemMods: { 'indent-r': 's' },
 									content: [
 									{
 										block: 'brand-logo',
@@ -1128,7 +1128,7 @@ module.exports = {
 								content: [
 								{
 									elem: 'icon',
-									elemMods: { 'indent-right': 's' },
+									elemMods: { 'indent-r': 's' },
 									content: [
 									{
 										block: 'brand-logo',

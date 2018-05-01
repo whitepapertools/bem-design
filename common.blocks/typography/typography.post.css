@@ -9,6 +9,6 @@
 		height: 96px;
 		display: flex;
 		align-items: center;
-		background-color: var(--color-ghost);
+		background-color: var(--color-bg-ghost);
 	}
 }

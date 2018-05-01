@@ -1,7 +1,7 @@
 .layout-item {
-   margin-bottom: $space-xxxl;
+   margin-bottom: var(--space-xxxl);
   &__view {
-    margin-bottom: $space-l;
+    margin-bottom: var(--space-l);
     background-repeat: no-repeat;
   }
 }

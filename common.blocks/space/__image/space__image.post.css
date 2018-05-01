@@ -2,7 +2,7 @@
 	height: 96px;
 	width: 96px;
 	margin-right: var(--space-s);
-	background: var(--color-border);
+	background: var(--color-bg-border);
 }
 
 .space-image {

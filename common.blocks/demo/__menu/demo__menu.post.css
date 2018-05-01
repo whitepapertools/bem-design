@@ -23,7 +23,7 @@
 			text-decoration: none;
 		}
 		& a:hover {
-			color: var(--color-alert);
+			color: var(--color-typo-alert);
 		}
 	}
 	&__menu-item-row {

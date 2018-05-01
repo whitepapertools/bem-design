@@ -1,7 +1,6 @@
 .event {
 	display: block;
 	height: 320px;
-	background-color: var(--color-inverse);
 	text-align: center;
 	overflow: hidden;
 	position: relative;

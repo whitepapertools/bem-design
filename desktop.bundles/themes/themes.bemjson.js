@@ -53,7 +53,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-brand'
+								content: '--color-bg-brand'
 							}]
 						}]
 					},
@@ -71,7 +71,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-action'
+								content: '--color-bg-action'
 							}]
 						}]
 					},
@@ -89,7 +89,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-selection'
+								content: '--color-bg-selection'
 							}]
 						}]
 					},
@@ -107,7 +107,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-hover'
+								content: '--color-bg-hover'
 							}]
 						}]
 					}]
@@ -129,7 +129,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-default'
+								content: '--color-bg-default'
 							}]
 						}]
 					},
@@ -147,7 +147,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-border'
+								content: '--color-bg-border'
 							}]
 						}]
 					},
@@ -165,7 +165,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-ghost'
+								content: '--color-bg-ghost'
 							}]
 						}]
 					}]
@@ -187,7 +187,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-soft'
+								content: '--color-bg-soft'
 							}]
 						}]
 					},
@@ -205,7 +205,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-tone'
+								content: '--color-bg-tone'
 							}]
 						}]
 					}]
@@ -227,7 +227,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-success'
+								content: '--color-bg-success'
 							}]
 						}]
 					},
@@ -245,7 +245,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-alert'
+								content: '--color-bg-alert'
 							}]
 						}]
 					},
@@ -263,7 +263,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-warning'
+								content: '--color-bg-warning'
 							}]
 						}]
 					}]
@@ -285,7 +285,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-system'
+								content: '--color-bg-system'
 							}]
 						}]
 					},
@@ -303,7 +303,7 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { size: 'm', weight: 'bold' },
-								content: '--color-normal'
+								content: '--color-bg-normal'
 							}]
 						}]
 					}]
