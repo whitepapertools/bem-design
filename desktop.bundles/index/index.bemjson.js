@@ -51,42 +51,49 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/themes.html' },
+											tag: 'a', 
+											attrs: { href: '../../../../desktop.bundles/themes/themes.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Тема'
 										},
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/content.html' },
+											tag: 'a', 
+											attrs: { href: '../../../../desktop.bundles/content/content.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Контент'
 										},
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/patterns.html' },
+											tag: 'a', 
+											attrs: { href: '../../../../desktop.bundles/patterns/patterns.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Паттерны'
 										},
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/templates.html' },
+											tag: 'a', 
+											attrs: { href: '../../../../desktop.bundles/templates/templates.html' },
+
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Шаблоны'
 										},
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/templates.html' },
+											tag: 'a', 
+											attrs: { href: '../../../../desktop.bundles/doc/doc.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Обучение'
 										},
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/templates.html' },
+											tag: 'a', 
+											attrs: { href: '../../../../desktop.bundles/assets/assets.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Материалы'
 										},
