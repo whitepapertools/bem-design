@@ -32,6 +32,9 @@ module.exports = {
 			/* Типографика */
 			{
 				elem: 'section',
+				attrs: {
+					'id': 'text'
+				},
 				content: [
 					{
 						block: 'text',
@@ -553,6 +556,9 @@ module.exports = {
 			/* Векторы */
 			{
 				elem: 'section',
+				attrs: {
+					'id': 'vector'
+				},
 				content: [
 					{
 						block: 'text',
@@ -1038,6 +1044,9 @@ module.exports = {
 			/* Логотипы */
 			{
 				elem: 'section',
+				attrs: {
+					'id': 'brand-logo'
+				},
 				content: [
 					{
 						block: 'text',
@@ -1857,22 +1866,25 @@ module.exports = {
 			/* Логотипы */
 
 			/* Контролы */
-			{
-				elem: 'section',
-				content: [
-					{
-						block: 'text',
-						mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-						mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-						content: 'Контролы'
-					}
-				]
-			},
+			// {
+			// 	elem: 'section',
+			// 	content: [
+			// 		{
+			// 			block: 'text',
+			// 			mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+			// 			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+			// 			content: 'Контролы'
+			// 		}
+			// 	]
+			// },
 			/*  /Контроллы */
 
 			/* Иконки */
 			{
 				elem: 'section',
+				attrs: {
+					'id': 'icon'
+				},
 				content: [
 					{
 						block: 'text',
@@ -1887,6 +1899,9 @@ module.exports = {
 			/* Аватарки */
 			{
 				elem: 'section',
+				attrs: {
+					'id': 'avatar'
+				},
 				content: [
 					{
 						block: 'text',
@@ -1901,6 +1916,9 @@ module.exports = {
 			/* Бейджи */
 			{
 				elem: 'section',
+				attrs: {
+					'id': 'badge'
+				},
 				content: [
 					{
 						block: 'text',
@@ -1915,6 +1933,9 @@ module.exports = {
 			/* Теги */
 			{
 				elem: 'section',
+				attrs: {
+					'id': 'tag'
+				},
 				content: [
 					{
 						block: 'text',

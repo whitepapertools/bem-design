@@ -250,7 +250,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/themes/themes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html#color'
 																			},
 																			content: 'Цветовая палитра'
 																		}
@@ -265,7 +265,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/themes/themes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html#space'
 																			},
 																			content: 'Отступы'
 																		}
@@ -280,7 +280,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/sizes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html#size'
 																			},
 																			content: 'Размеры'
 																		}
@@ -295,7 +295,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/themes/themes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html#breakpoint'
 																			},
 																			content: 'Точки перестроения'
 																		}
@@ -310,7 +310,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/themes/themes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html#gap'
 																			},
 																			content: 'Расстояния'
 																		}
@@ -325,7 +325,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/themes/themes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html#menu'
 																			},
 																			content: 'Меню'
 																		}
@@ -340,7 +340,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/themes/themes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html#font'
 																			},
 																			content: 'Шрифт'
 																		}
@@ -383,7 +383,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html'
+																				'href': '../../../../desktop.bundles/content/content.html#text'
 																			},
 																			content: 'Типографика'
 																		}
@@ -398,7 +398,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html'
+																				'href': '../../../../desktop.bundles/content/content.html#vector'
 																			},
 																			content: 'Векторы'
 																		}
@@ -413,7 +413,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html'
+																				'href': '../../../../desktop.bundles/content/content.html#icon'
 																			},
 																			content: 'Иконки'
 																		}
@@ -428,12 +428,27 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html'
+																				'href': '../../../../desktop.bundles/content/content.html#brand-logo'
 																			},
 																			content: 'Логотипы'
 																		}
 																	]
 																},
+																// {
+																// 	elem: 'item',
+																// 	elemMods: { 'space-b': 'm' },
+																// 	content: [
+																// 		{
+																// 			block: 'text',
+																// 			mods: { size: 'l', view: 'link' },
+																// 			tag: 'a',
+																// 			attrs: {
+																// 				'href': '../../../../desktop.bundles/content/content.html'
+																// 			},
+																// 			content: 'Контролы'
+																// 		}
+																// 	]
+																// },
 																{
 																	elem: 'item',
 																	elemMods: { 'space-b': 'm' },
@@ -443,22 +458,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html'
-																			},
-																			content: 'Контролы'
-																		}
-																	]
-																},
-																{
-																	elem: 'item',
-																	elemMods: { 'space-b': 'm' },
-																	content: [
-																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'link' },
-																			tag: 'a',
-																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html'
+																				'href': '../../../../desktop.bundles/content/content.html#avatar'
 																			},
 																			content: 'Аватарки'
 																		}
@@ -473,7 +473,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html'
+																				'href': '../../../../desktop.bundles/content/content.html#badge'
 																			},
 																			content: 'Бейджи'
 																		}
@@ -488,7 +488,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html'
+																				'href': '../../../../desktop.bundles/content/content.html#tag'
 																			},
 																			content: 'Тэги'
 																		}
@@ -531,7 +531,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html#pt-table'
 																			},
 																			content: 'Таблицы'
 																		}
@@ -546,7 +546,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html#pt-list'
 																			},
 																			content: 'Списки'
 																		}
@@ -561,7 +561,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html#pt-form'
 																			},
 																			content: 'Формы'
 																		}
@@ -576,7 +576,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html#pt-informer'
 																			},
 																			content: 'Информеры'
 																		}
@@ -591,7 +591,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html#pt-icon-plus'
 																			},
 																			content: 'Айкон плюс'
 																		}
@@ -606,7 +606,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html#pt-surface'
 																			},
 																			content: 'Сюрфейс'
 																		}
