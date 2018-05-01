@@ -1232,35 +1232,40 @@ module.exports = {
 								elem: 'social',
 								content: [
 									{
-									  block: 'social-icon',
-									  mods: { size: 'm', clear: 'github-primary', hover: 'default' },
+										block: 'social-icon',
+										mods: { name: 'github', size: 'm', view: 'primary' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://github.com/whitepapertools' },
+										tag: 'a',
+										attrs: { href: 'https://github.com/whitepapertools' }
 									},
 									{
-									  block: 'social-icon',
-									  mods: { size: 'm', clear: 'telegram-primary', hover: 'default' },
+										block: 'social-icon',
+										mods: { name: 'telegram', size: 'm', view: 'primary' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://t.me/whitepapertools' },
+										tag: 'a',
+										attrs: { href: 'https://t.me/whitepapertools' }
 									},
 									{
-									  block: 'social-icon',
-									  mods: { size: 'm', clear: 'twitter-primary', hover: 'default' },
+										block: 'social-icon',
+										mods: { name: 'twitter', size: 'm', view: 'primary' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://twitter.com/whitepapertools' },
+										tag: 'a',
+										attrs: { href: 'https://twitter.com/whitepapertools' }
 									},
 									{
-									  block: 'social-icon',
-									  mods: { size: 'm', clear: 'codepen-primary', hover: 'default' },
+										block: 'social-icon',
+										mods: { name: 'codepen', size: 'm', view: 'primary' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://codepen.io/whitepapertools' },
+										tag: 'a',
+										attrs: { href: 'https://codepen.io/whitepapertools' }
 									},
 									{
-									  block: 'social-icon',
-									  mods: { size: 'm', clear: 'dribbble-primary', hover: 'default' },
+										block: 'social-icon',
+										mods: { name: 'dribbble', size: 'm', view: 'primary' },
 										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a', attrs: { href: 'https://dribbble.com/whitepapertools' },
-									},
+										tag: 'a',
+										attrs: { href: 'https://dribbble.com/whitepapertools' }
+									}
 								]
 							}
 						]
