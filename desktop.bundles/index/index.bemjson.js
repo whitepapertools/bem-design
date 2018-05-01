@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'INDEX',
+	title: 'White Paper Tools',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -189,7 +189,7 @@ module.exports = {
 													content: [
 														{
 															elem: 'icon',
-															elemMods: { 'indent-right': 'l' },
+															elemMods: { 'indent-r': 'l' },
 															content: [
 																{
 																	block: 'image',
@@ -616,7 +616,7 @@ module.exports = {
 													content: [
 														{
 															elem: 'icon',
-															elemMods: { 'indent-right': 'l' },
+															elemMods: { 'indent-r': 'l' },
 															content: [
 																{
 																	block: 'image',

@@ -13,7 +13,7 @@ module.exports = {
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
+		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 	},
 	content: [
 	{
@@ -39,7 +39,11 @@ module.exports = {
 		},
 		{
 			block: 'image',
-			mods: { view: 'icon-grid' }
+			width: 740,
+			url: '../../../../assets/i/icon-grid.png',
+			attrs: {
+				'style': 'border: 1px solid rgba(0, 0, 0, 0.05);'
+			}
 		},
 		{
 			block: 'text',
@@ -58,7 +62,11 @@ module.exports = {
 		},
 		{
 			block: 'image',
-			mods: { view: 'icon-form' }
+			width: 740,
+			url: '../../../../assets/i/icon-form.png',
+			attrs: {
+				'style': 'border: 1px solid rgba(0, 0, 0, 0.05);'
+			}
 		},
 		{
 			block: 'text',
@@ -72,7 +80,11 @@ module.exports = {
 		},
 		{
 			block: 'image',
-			mods: { view: 'icon-size' }
+			width: 740,
+			url: '../../../../assets/i/icon-size.png',
+			attrs: {
+				'style': 'border: 1px solid rgba(0, 0, 0, 0.05);'
+			}
 		},
 		{
 			block: 'text',
@@ -81,7 +93,11 @@ module.exports = {
 		},
 		{
 			block: 'image',
-			mods: { view: 'icon-sizes' }
+			width: 740,
+			url: '../../../../assets/i/icon-sizes.png',
+			attrs: {
+				'style': 'border: 1px solid rgba(0, 0, 0, 0.05);'
+			}
 		},
 		{
 			block: 'text',

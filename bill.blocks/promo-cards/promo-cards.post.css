@@ -87,10 +87,10 @@
 
 	&_view {
 		&_default {
-			background: var(--color-default);
+			background: var(--color-bg-default);
 		}
 		&_ghost {
-			background: var(--color-ghost);
+			background: var(--color-bg-ghost);
 		}
 		&_inverse {
 			background: #2E3033;	
@@ -152,7 +152,7 @@
 		position: absolute;
 		font-size: 200px;
 		color: transparent;
-		-webkit-text-stroke: .2px var(--color-alert);
+		-webkit-text-stroke: .2px var(--color-typo-alert);
 		transition: transform .4s .3s, opacity .4s .4s, color .4s .4s;
 
 		&_slide {
@@ -185,7 +185,7 @@
 			height: 456px;
 			box-sizing: border-box;
 			border-radius: 12px;
-			border: 1px solid var(--color-disable);
+			border: 1px solid var(--color-bg-disable);
 			transition: .3s .3s ease;
 		}
 
