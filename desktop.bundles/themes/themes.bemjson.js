@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'BEM Themes',
+	title: 'Theme',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -26,8 +26,10 @@ module.exports = {
 			block: 'text',
 			mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
 			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
-			content: 'Variables'
+			content: 'Тема'
 		},
+
+		/* Цвета */
 		{
 			elem: 'section',
 			content: [
@@ -36,6 +38,12 @@ module.exports = {
 				block: 'decorator',
 				mods: { 'indent-b' : 'xxxxxl' },
 				content: [
+				{
+					block: 'text',
+					mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+					content: 'Цвета'
+				},
 				{
 					block: 'row',
 					content: [
@@ -522,10 +530,20 @@ module.exports = {
 			/* /Link Colors */
 			]
 		},
+		/* /Цвета */
+
+		/* Отступы */
 		{
 			elem: 'section',
 			content: [
 			/* Spaces */
+
+			{
+				block: 'text',
+				mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+				mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+				content: 'Отступы'
+			},
 			{
 				block: 'row',
 				content: [
@@ -787,7 +805,85 @@ module.exports = {
 			},
 			/* Spaces */
 			]
-		}]
+		},
+		/* /Отступы */
+
+
+		/* Размеры */
+		{
+			elem: 'section',
+			content: [
+				{
+					block: 'text',
+					mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+					content: 'Размеры'
+				}
+			]
+		},
+		/* /Размеры */
+
+
+		/* Точки перестроения */
+		{
+			elem: 'section',
+			content: [
+				{
+					block: 'text',
+					mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+					content: 'Точки перестроения'
+				}
+			]
+		},
+		/* /Точки перестроения */
+
+
+		/* Расстояния */
+		{
+			elem: 'section',
+			content: [
+				{
+					block: 'text',
+					mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+					content: 'Расстояния'
+				}
+			]
+		},
+		/* /Расстояния */
+
+
+		/* Меню */
+		{
+			elem: 'section',
+			content: [
+				{
+					block: 'text',
+					mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+					content: 'Меню'
+				}
+			]
+		},
+		/* /Меню */
+
+
+		/* Шрифт */
+		{
+			elem: 'section',
+			content: [
+				{
+					block: 'text',
+					mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+					content: 'Шрифт'
+				}
+			]
+		},
+		/* /Шрифт */
+
+		]
 	},
 	{
 		block: 'demo',

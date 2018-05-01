@@ -243,7 +243,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/themes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html'
 																			},
 																			content: 'Цветовая палитра'
 																		}
@@ -256,11 +256,86 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 'l', view: 'link' },
-																			tag: 'l',
+																			tag: 'a',
 																			attrs: {
-																				'href': '/themes.html'
+																				'href': '../../../../desktop.bundles/themes/themes.html'
 																			},
 																			content: 'Отступы'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '/sizes.html'
+																			},
+																			content: 'Размеры'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/themes/themes.html'
+																			},
+																			content: 'Точки перестроения'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/themes/themes.html'
+																			},
+																			content: 'Расстояния'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/themes/themes.html'
+																			},
+																			content: 'Меню'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/themes/themes.html'
+																			},
+																			content: 'Шрифт'
 																		}
 																	]
 																}
@@ -301,7 +376,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/typo.html'
+																				'href': '../../../../desktop.bundles/content/content.html'
 																			},
 																			content: 'Типографика'
 																		}
@@ -314,9 +389,9 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 'l', view: 'link' },
-																			tag: 'l',
+																			tag: 'a',
 																			attrs: {
-																				'href': '/vectors.html'
+																				'href': '../../../../desktop.bundles/content/content.html'
 																			},
 																			content: 'Векторы'
 																		}
@@ -329,11 +404,86 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 'l', view: 'link' },
-																			tag: 'l',
+																			tag: 'a',
 																			attrs: {
-																				'href': '/icons.html'
+																				'href': '../../../../desktop.bundles/content/content.html'
 																			},
 																			content: 'Иконки'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/content/content.html'
+																			},
+																			content: 'Логотипы'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/content/content.html'
+																			},
+																			content: 'Контролы'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/content/content.html'
+																			},
+																			content: 'Аватарки'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/content/content.html'
+																			},
+																			content: 'Бейджи'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/content/content.html'
+																			},
+																			content: 'Тэги'
 																		}
 																	]
 																}
@@ -374,7 +524,22 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/pt-list.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																			},
+																			content: 'Таблицы'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'm' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/patterns/patterns.html'
 																			},
 																			content: 'Списки'
 																		}
@@ -389,7 +554,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/pt-form.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html'
 																			},
 																			content: 'Формы'
 																		}
@@ -404,9 +569,39 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/patterns.html'
+																				'href': '../../../../desktop.bundles/patterns/patterns.html'
 																			},
-																			content: 'Все паттерны'
+																			content: 'Информеры'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'l' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																			},
+																			content: 'Айкон плюс'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'space-b': 'l' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'link' },
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/patterns/patterns.html'
+																			},
+																			content: 'Сюрфейс'
 																		}
 																	]
 																}
@@ -447,7 +642,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/layouts.html'
+																				'href': '../../../../desktop.bundles/layouts/layouts.html'
 																			},
 																			content: 'Какрас'
 																		}
@@ -462,7 +657,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/layouts.html'
+																				'href': '../../../../desktop.bundles/layouts/layouts.html'
 																			},
 																			content: 'Сетка'
 																		}
@@ -505,7 +700,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': '/article-icons.html'
+																				'href': '../../../../desktop.bundles/article-icons/article-icons.html'
 																			},
 																			content: 'Как рисовать иконки'
 																		}
@@ -520,8 +715,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'link' },
 																			tag: 'a',
 																			attrs: {
-																				'href': 'https://koloskof.github.io/bemxjstdemo/',
-																				'target': '_blank'
+																				'href': '../../../../desktop.bundles/article-vectors/article-vectors.html'
 																			},
 																			content: 'Шаблонизация'
 																		}
@@ -562,7 +756,12 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 'l', view: 'link' },
-																			content: 'Kit BILL'
+																			content: 'Kit BILL',
+																			tag: 'a',
+																			attrs: {
+																				'href': 'https://ui8.net/products/kit-bill',
+																				'target': '_blank'
+																			}
 																		}
 																	]
 																},
@@ -573,7 +772,11 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 'l', view: 'link' },
-																			content: 'BEM Starter Kit'
+																			content: 'BEM Starter Kit',
+																			tag: 'a',
+																			attrs: {
+																				'href': '../../../../desktop.bundles/bem-starter-kit/bem-starter-kit.html'
+																			}
 																		}
 																	]
 																}
@@ -789,7 +992,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { view: 'primary', size: 'm', weight: 'light' },
-																	content: 'Инструментарий'
+																	content: 'Материалы'
 																}
 															]
 														},
@@ -810,12 +1013,12 @@ module.exports = {
 																			block: 'text',
 																			mods: { view: 'primary', size: 'xxxl', weight: 'light' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																			content: 'Instrument'
+																			content: 'Kit Bill'
 																		},
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 'm' },
-																			content: 'О будущем платформы'
+																			content: 'Scalable cards based on BEM. Good for hight fidelity prototyping. Components help to create extendable and reusable user interface'
 																		}
 																	]
 																}
@@ -1231,6 +1434,20 @@ module.exports = {
 								block: 'foot',
 								elem: 'social',
 								content: [
+									// {
+									// 	block: 'social-icon',
+									// 	mods: { name: 'ok', size: 'm', view: 'primary' },
+									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+									// 	tag: 'a',
+									// 	attrs: { href: 'https://github.com/whitepapertools' }
+									// },
+									// {
+									// 	block: 'social-icon',
+									// 	mods: { name: 'ya', size: 'm', view: 'primary' },
+									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+									// 	tag: 'a',
+									// 	attrs: { href: 'https://github.com/whitepapertools' }
+									// },
 									{
 										block: 'social-icon',
 										mods: { name: 'github', size: 'm', view: 'primary' },
