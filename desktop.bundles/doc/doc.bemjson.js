@@ -11,11 +11,12 @@ module.exports = {
 	scripts: [
 		{ elem: 'js', url: 'doc.min.js' },
 		{ elem: 'js', url: '//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js' },
-		{ elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' }
+		{ elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' },
+		{ elem: 'js', url: '//unpkg.com/prismjs/components/prism-json.min.js' }
 	],
 	mix: {
 		block: 'theme',
-		mods: { color: 'default', space: 'default', size: 'default' }
+		mods: { color: 'liquid-default', space: 'default', size: 'default' }
 	},
 	content: [
 	{

@@ -4,6 +4,25 @@
 
 Способ представления информации в маленьком формате.
 
+```json
+{
+	block: 'pt-card',
+	content: [
+	{
+		elem: 'image'
+	},
+	{
+		elem: 'header'
+	},
+	{
+		elem: 'content'
+	},
+	{
+		elem: 'footer'
+	}]
+}
+```
+
 <iframe height='500' scrolling='no' title='pt-card. Теория 1' src='//codepen.io/bem_design/embed/6dfa7d09f4c412333aa70bf475064679/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/6dfa7d09f4c412333aa70bf475064679/'>pt-card. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
@@ -15,7 +34,7 @@ view        | default
 
 ## Элемент header
 
-Располагается поверх всего контента и висит в верху карточки. Выполняет роль шапки.
+Располагается поверх всего контента и висит в верху карточки. Выполняет роль шапки. Может использоваться, как шапка карточки, так и как шапка контента.
 
 Модификаторы `pt-card__header` | Значение
 ------------------------------ | -------------------------
@@ -55,9 +74,9 @@ space-l                         | xs / s / m / l / xl / xxl
 
 ## Элемент footer
 
-Располагается поверх всего контента и висит в внизу карточки. Выполняет роль подвала.
+Располагается поверх всего контента и висит в внизу карточки. Выполняет роль подвала. Может использоваться, как подвал карточки, так и как подвал контента.
 
-Модификаторы `pt-card__footer` | Значение
+Модификаторы элемента `footer`  | Значение
 ------------------------------- | -------------------------
 align                           | center / right / between
 space-a                         | xs / s / m / l / xl / xxl
@@ -76,7 +95,7 @@ space-b                         | xs / s / m / l / xl / xxl
 
 Элемент для отображения изображения.
 
-Модификаторы `pt-card__image` | Значение
+Модификаторы элемента `image` | Значение
 ----------------------------- | -----------------------------------------------------------
 shadow                        | bottom-default / bottom-inverse / top-default / top-inverse
 size                          | cover

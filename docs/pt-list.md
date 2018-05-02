@@ -36,7 +36,7 @@ view        | default / ghost
 <iframe height='500' scrolling='no' title='pt-list. Теория 2' src='//codepen.io/bem_design/embed/60834c80ab573c6afdd1ed88f6b71f1f/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/60834c80ab573c6afdd1ed88f6b71f1f/'>pt-list. Теория 2</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-Модификаторы `pt-list__item` | Значение                         | Описание
+Модификаторы элемента `item` | Значение                         | Описание
 ---------------------------- | -------------------------------- | -------------------------------------
 border                       | all                              | Обводка
 distribute                   | default / between                | Распределение контента по горизонтали
