@@ -76,7 +76,7 @@ module.exports = {
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
 											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/templates/templates.html' },
+											attrs: { href: '../../../../desktop.bundles/layouts/layouts.html' },
 
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Шаблоны'
