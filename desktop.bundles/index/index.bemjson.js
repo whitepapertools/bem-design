@@ -37,7 +37,7 @@ module.exports = {
 								{
 									elem: 'logo',
 									tag: 'a',
-									attrs: { href: '#' },
+									attrs: { href: '../../../../desktop.bundles/index/index.html' },
 									content: {
 										block: 'image',
 										attrs: { style: 'display: block' },
@@ -230,7 +230,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxl', view: 'primary', weight: 'bold' },
 															mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-															content: 'Темы'
+															content: 'Тема'
 														},
 														{
 															block: 'text',
