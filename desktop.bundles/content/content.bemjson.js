@@ -679,491 +679,491 @@ module.exports = {
 						/* /Типографика */
 
 						/* Векторы */
-						{
-							elem: 'section',
-							attrs: {
-								'id': 'vector'
-							},
-							content: [
-								{
-									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-									content: 'Векторы'
-								},
-								{
-									elem: 'row',
-									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
-									content: [
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '1': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 1: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '2': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 1: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '3': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 1: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '4': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 4: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '5': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 5: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '6': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 6: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '7': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 7: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '8': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 8: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '9': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 9: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '10': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 10: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '11': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 11: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '12': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 12: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '13': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 13: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '14': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 14: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'vector',
-															mods: { '15': 'm-primary-action'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Название'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
-															content: 'mods: { 15: \'m-primary\' }'
-														}
-													]
-												}
-											]
-										}
-									]
-								}
-							]
-						},
+						// {
+						// 	elem: 'section',
+						// 	attrs: {
+						// 		'id': 'vector'
+						// 	},
+						// 	content: [
+						// 		{
+						// 			block: 'text',
+						// 			mods: { size: 'xxl', weight: 'bold', font: 'sans' },
+						// 			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+						// 			content: 'Векторы'
+						// 		},
+						// 		{
+						// 			elem: 'row',
+						// 			mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+						// 			content: [
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '1': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 1: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '2': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 1: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '3': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 1: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '4': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 4: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '5': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 5: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '6': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 6: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '7': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 7: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '8': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 8: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '9': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 9: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '10': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 10: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '11': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 11: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '12': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 12: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '13': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 13: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '14': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 14: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				},
+						// 				{
+						// 					block: 'pt-icon-plus',
+						// 					mods: { 'vertical-align': 'center' },
+						// 					content: [
+						// 						{
+						// 							elem: 'icon',
+						// 							elemMods: { 'indent-r': 'm' },
+						// 							content: [
+						// 								{
+						// 									block: 'vector',
+						// 									mods: { '15': 'm-primary-action'}
+						// 								}
+						// 							]
+						// 						},
+						// 						{
+						// 							elem: 'block',
+						// 							content: [
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary' },
+						// 									content: 'Название'
+						// 								},
+						// 								{
+						// 									block: 'text',
+						// 									mods: { size: 'm', view: 'primary', weight: 'bold', align: 'center' },
+						// 									content: 'mods: { 15: \'m-primary\' }'
+						// 								}
+						// 							]
+						// 						}
+						// 					]
+						// 				}
+						// 			]
+						// 		}
+						// 	]
+						// },
 						/* /Векторы */
 
 						/* Логотипы */
@@ -1258,6 +1258,46 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'm', weight: 'bold' },
 															content: "mods: { name: 'steam' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'brand-logo',
+															mods: { name: 'skype', size: 'l'}
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															content: 'Skype'
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'link'},
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															attrs: {
+																href: 'https://www.skype.com/ru'
+															},
+															content: 'https://www.skype.com/ru'
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { name: 'skype' }"
 														}
 													]
 												}
@@ -1625,384 +1665,331 @@ module.exports = {
 												}
 											]
 										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'mts', size: 'l'},
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'МТС'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															attrs: {
-																href: 'http://www.mts.ru'
-															},
-															content: 'http://www.mts.ru'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'mts' }"
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'kcell', size: 'l'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xs'} }
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Kcell'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															attrs: {
-																href: 'https://www.kcell.kz/ru'
-															},
-															content: 'https://www.kcell.kz/ru'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'kcell' }"
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'activ', size: 'l'},
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Activ'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															attrs: {
-																href: 'https://activ.kz'
-															},
-															content: 'https://activ.kz'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'activ' }"
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'ok', size: 'l'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Одноклассники'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															attrs: {
-																href: 'https://ok.ru'
-															},
-															content: 'https://ok.ru'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'ok' }"
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'vk', size: 'l'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Вконтакте'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															attrs: {
-																href: 'https://vk.com'
-															},
-															content: 'https://vk.com'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'vk' }"
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'skype', size: 'l'}
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Skype'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															attrs: {
-																href: 'https://www.skype.com/ru'
-															},
-															content: 'https://www.skype.com/ru'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'skype' }"
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'regru', size: 'l'},
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Reg.ru'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															attrs: {
-																href: 'https://www.reg.ru'
-															},
-															content: 'https://www.reg.ru'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'regru' }"
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'ru-center', size: 'l'},
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Ru-Center'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															attrs: {
-																href: 'https://www.nic.ru'
-															},
-															content: 'https://www.nic.ru'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'ru-center' }"
-														}
-													]
-												}
-											]
-										},
-										{
-											block: 'pt-icon-plus',
-											mods: { 'vertical-align': 'center' },
-											content: [
-												{
-													elem: 'icon',
-													elemMods: { 'indent-r': 'm' },
-													content: [
-														{
-															block: 'brand-logo',
-															mods: { name: 'no-logo', size: 'l'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xs'} }
-														}
-													]
-												},
-												{
-													elem: 'block',
-													content: [
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'primary' },
-															content: 'Нет логотипа'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', view: 'link'},
-															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-															content: 'нет адреса'
-														},
-														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "mods: { name: 'no-logo' }"
-														}
-													]
-												}
-											]
-										}
+
+										// {
+										// 	block: 'pt-icon-plus',
+										// 	mods: { 'vertical-align': 'center' },
+										// 	content: [
+										// 		{
+										// 			elem: 'icon',
+										// 			elemMods: { 'indent-r': 'm' },
+										// 			content: [
+										// 				{
+										// 					block: 'brand-logo',
+										// 					mods: { name: 'mts', size: 'l'},
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'block',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					content: 'МТС'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'link'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+										// 					attrs: {
+										// 						href: 'http://www.mts.ru'
+										// 					},
+										// 					content: 'http://www.mts.ru'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "mods: { name: 'mts' }"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// },
+										// {
+										// 	block: 'pt-icon-plus',
+										// 	mods: { 'vertical-align': 'center' },
+										// 	content: [
+										// 		{
+										// 			elem: 'icon',
+										// 			elemMods: { 'indent-r': 'm' },
+										// 			content: [
+										// 				{
+										// 					block: 'brand-logo',
+										// 					mods: { name: 'kcell', size: 'l'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xs'} }
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'block',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					content: 'Kcell'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'link'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+										// 					attrs: {
+										// 						href: 'https://www.kcell.kz/ru'
+										// 					},
+										// 					content: 'https://www.kcell.kz/ru'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "mods: { name: 'kcell' }"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// },
+										// {
+										// 	block: 'pt-icon-plus',
+										// 	mods: { 'vertical-align': 'center' },
+										// 	content: [
+										// 		{
+										// 			elem: 'icon',
+										// 			elemMods: { 'indent-r': 'm' },
+										// 			content: [
+										// 				{
+										// 					block: 'brand-logo',
+										// 					mods: { name: 'activ', size: 'l'},
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'block',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					content: 'Activ'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'link'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+										// 					attrs: {
+										// 						href: 'https://activ.kz'
+										// 					},
+										// 					content: 'https://activ.kz'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "mods: { name: 'activ' }"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// },
+										// {
+										// 	block: 'pt-icon-plus',
+										// 	mods: { 'vertical-align': 'center' },
+										// 	content: [
+										// 		{
+										// 			elem: 'icon',
+										// 			elemMods: { 'indent-r': 'm' },
+										// 			content: [
+										// 				{
+										// 					block: 'brand-logo',
+										// 					mods: { name: 'ok', size: 'l'}
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'block',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					content: 'Одноклассники'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'link'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+										// 					attrs: {
+										// 						href: 'https://ok.ru'
+										// 					},
+										// 					content: 'https://ok.ru'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "mods: { name: 'ok' }"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// },
+										// {
+										// 	block: 'pt-icon-plus',
+										// 	mods: { 'vertical-align': 'center' },
+										// 	content: [
+										// 		{
+										// 			elem: 'icon',
+										// 			elemMods: { 'indent-r': 'm' },
+										// 			content: [
+										// 				{
+										// 					block: 'brand-logo',
+										// 					mods: { name: 'vk', size: 'l'}
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'block',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					content: 'Вконтакте'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'link'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+										// 					attrs: {
+										// 						href: 'https://vk.com'
+										// 					},
+										// 					content: 'https://vk.com'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "mods: { name: 'vk' }"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// },
+										// {
+										// 	block: 'pt-icon-plus',
+										// 	mods: { 'vertical-align': 'center' },
+										// 	content: [
+										// 		{
+										// 			elem: 'icon',
+										// 			elemMods: { 'indent-r': 'm' },
+										// 			content: [
+										// 				{
+										// 					block: 'brand-logo',
+										// 					mods: { name: 'regru', size: 'l'},
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'block',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					content: 'Reg.ru'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'link'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+										// 					attrs: {
+										// 						href: 'https://www.reg.ru'
+										// 					},
+										// 					content: 'https://www.reg.ru'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "mods: { name: 'regru' }"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// },
+										// {
+										// 	block: 'pt-icon-plus',
+										// 	mods: { 'vertical-align': 'center' },
+										// 	content: [
+										// 		{
+										// 			elem: 'icon',
+										// 			elemMods: { 'indent-r': 'm' },
+										// 			content: [
+										// 				{
+										// 					block: 'brand-logo',
+										// 					mods: { name: 'ru-center', size: 'l'},
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'block',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					content: 'Ru-Center'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'link'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+										// 					attrs: {
+										// 						href: 'https://www.nic.ru'
+										// 					},
+										// 					content: 'https://www.nic.ru'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "mods: { name: 'ru-center' }"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// },
+										// {
+										// 	block: 'pt-icon-plus',
+										// 	mods: { 'vertical-align': 'center' },
+										// 	content: [
+										// 		{
+										// 			elem: 'icon',
+										// 			elemMods: { 'indent-r': 'm' },
+										// 			content: [
+										// 				{
+										// 					block: 'brand-logo',
+										// 					mods: { name: 'no-logo', size: 'l'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xs'} }
+										// 				}
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'block',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'primary' },
+										// 					content: 'Нет логотипа'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', view: 'link'},
+										// 					mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+										// 					content: 'нет адреса'
+										// 				},
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "mods: { name: 'no-logo' }"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// }
 									]
 								}
 							]
 						},
 						/* Логотипы */
-
-						/* Контролы */
-						// {
-						// 	elem: 'section',
-						// 	content: [
-						// 		{
-						// 			block: 'text',
-						// 			mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-						// 			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-						// 			content: 'Контролы'
-						// 		}
-						// 	]
-						// },
-						/*  /Контроллы */
 
 						/* Иконки */
 						{
@@ -2033,6 +2020,123 @@ module.exports = {
 									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
 									content: 'Аватарки'
+								},
+								{
+									elem: 'row',
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+									content: [
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'avatar',
+															content: [
+																{
+																	elem: 'photo',
+																	elemMods: { size: 'l' }
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Крупный аватар"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "elemMods: { size: 'l' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'avatar',
+															content: [
+																{
+																	elem: 'photo',
+																	elemMods: { size: 'm' }
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Стандартный аватар"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "elemMods: { size: 'm' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'avatar',
+															content: [
+																{
+																	elem: 'photo',
+																	elemMods: { size: 's' }
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Мелкий аватар"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "elemMods: { size: 's' }"
+														}
+													]
+												}
+											]
+										}
+									]
 								}
 							]
 						},
@@ -2050,6 +2154,144 @@ module.exports = {
 									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
 									content: 'Бейджи'
+								},
+								{
+									elem: 'row',
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+									content: [
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'badge',
+															mods: { view: 'alert' },
+															content: 'alert'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Алертный"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'alert' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'badge',
+															mods: { view: 'warning' },
+															content: 'warning'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Ворнинг"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'warning' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'badge',
+															mods: { view: 'success' },
+															content: 'success'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Успех"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'success' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'badge',
+															mods: { view: 'default' },
+															content: 'default'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Дефолтный"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'default' }"
+														}
+													]
+												}
+											]
+										}
+									]
 								}
 							]
 						},
@@ -2067,16 +2309,292 @@ module.exports = {
 									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
 									content: 'Теги'
+								},
+								{
+									elem: 'row',
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+									content: [
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'tag',
+															mods: { view: 'default', size: 'm' },
+															content: 'default'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Дефолтный"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'default' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'tag',
+															mods: { view: 'disable', size: 'm' },
+															content: 'disable'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Дизейбл"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'disable' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'tag',
+															mods: { view: 'link', size: 'm' },
+															content: 'link'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Ссылочный"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'link' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'tag',
+															mods: { view: 'default', size: 's' },
+															content: 'default'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Дефолтный"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'default' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'tag',
+															mods: { view: 'disable', size: 's' },
+															content: 'disable'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Дизейбл"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'disable' }"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'pt-icon-plus',
+											mods: { 'vertical-align': 'center' },
+											content: [
+												{
+													elem: 'icon',
+													elemMods: { 'indent-r': 'm' },
+													content: [
+														{
+															block: 'tag',
+															mods: { view: 'link', size: 's' },
+															content: 'link'
+														}
+													]
+												},
+												{
+													elem: 'block',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
+															content: "Ссылочный"
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "mods: { view: 'link' }"
+														}
+													]
+												}
+											]
+										}
+									]
 								}
 							]
 						}
 						/* /Теги */
 					]
 				},
+				/* Footer */
 				{
-					block: 'demo',
-					elem: 'footer'
+					elem: 'section',
+					mix: [
+						{ block: 'foot' },
+						{ block: 'component', mods: { liquid: 'default' }}
+					],
+					content: {
+						elem: 'container',
+						elemMods: { size: 'm', align: 'center' },
+						mix: { block: 'foot', elem: 'container' },
+						content: [
+							{
+								block: 'text',
+								mods: { size: 'm', view: 'secondary' },
+								content: '© 2018 White Paper'
+							},
+							{
+								block: 'foot',
+								elem: 'social',
+								content: [
+									// {
+									// 	block: 'social-icon',
+									// 	mods: { name: 'ok', size: 'm', view: 'primary' },
+									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+									// 	tag: 'a',
+									// 	attrs: { href: 'https://github.com/whitepapertools' }
+									// },
+									// {
+									// 	block: 'social-icon',
+									// 	mods: { name: 'ya', size: 'm', view: 'primary' },
+									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+									// 	tag: 'a',
+									// 	attrs: { href: 'https://github.com/whitepapertools' }
+									// },
+									{
+										block: 'social-icon',
+										mods: { name: 'github', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://github.com/whitepapertools' }
+									},
+									{
+										block: 'social-icon',
+										mods: { name: 'telegram', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://t.me/whitepapertools' }
+									},
+									{
+										block: 'social-icon',
+										mods: { name: 'twitter', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://twitter.com/whitepapertools' }
+									},
+									{
+										block: 'social-icon',
+										mods: { name: 'codepen', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://codepen.io/whitepapertools' }
+									},
+									{
+										block: 'social-icon',
+										mods: { name: 'dribbble', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://dribbble.com/whitepapertools' }
+									}
+								]
+							}
+						]
+					}
 				}
+				/* /Footer */
 			]
 		}
 	]

@@ -280,10 +280,82 @@ module.exports = {
 						content: '9. Примеры (хорошо и плохо)'
 					}]
 				},
+				/* Footer */
 				{
-					block: 'demo',
-					elem: 'footer'
+					elem: 'section',
+					mix: [
+						{ block: 'foot' },
+						{ block: 'component', mods: { liquid: 'default' }}
+					],
+					content: {
+						elem: 'container',
+						elemMods: { size: 'm', align: 'center' },
+						mix: { block: 'foot', elem: 'container' },
+						content: [
+							{
+								block: 'text',
+								mods: { size: 'm', view: 'secondary' },
+								content: '© 2018 White Paper'
+							},
+							{
+								block: 'foot',
+								elem: 'social',
+								content: [
+									// {
+									// 	block: 'social-icon',
+									// 	mods: { name: 'ok', size: 'm', view: 'primary' },
+									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+									// 	tag: 'a',
+									// 	attrs: { href: 'https://github.com/whitepapertools' }
+									// },
+									// {
+									// 	block: 'social-icon',
+									// 	mods: { name: 'ya', size: 'm', view: 'primary' },
+									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+									// 	tag: 'a',
+									// 	attrs: { href: 'https://github.com/whitepapertools' }
+									// },
+									{
+										block: 'social-icon',
+										mods: { name: 'github', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://github.com/whitepapertools' }
+									},
+									{
+										block: 'social-icon',
+										mods: { name: 'telegram', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://t.me/whitepapertools' }
+									},
+									{
+										block: 'social-icon',
+										mods: { name: 'twitter', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://twitter.com/whitepapertools' }
+									},
+									{
+										block: 'social-icon',
+										mods: { name: 'codepen', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://codepen.io/whitepapertools' }
+									},
+									{
+										block: 'social-icon',
+										mods: { name: 'dribbble', size: 'm', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
+										tag: 'a',
+										attrs: { href: 'https://dribbble.com/whitepapertools' }
+									}
+								]
+							}
+						]
+					}
 				}
+				/* /Footer */
 			]
 		}
 	]

@@ -236,7 +236,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'l', view: 'primary' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-															content: 'Тема является фундаментальным слоем на основе которого выстраивается дизайн система'
+															content: 'Тема является фундаментальным слоем на основе которого выстраивается дизайн-система'
 														},
 														{
 															block: 'pt-list',
@@ -389,21 +389,21 @@ module.exports = {
 																		}
 																	]
 																},
-																{
-																	elem: 'item',
-																	elemMods: { 'space-b': 'm' },
-																	content: [
-																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'link' },
-																			tag: 'a',
-																			attrs: {
-																				'href': '../../../../desktop.bundles/content/content.html#vector'
-																			},
-																			content: 'Векторы'
-																		}
-																	]
-																},
+																// {
+																// 	elem: 'item',
+																// 	elemMods: { 'space-b': 'm' },
+																// 	content: [
+																// 		{
+																// 			block: 'text',
+																// 			mods: { size: 'l', view: 'link' },
+																// 			tag: 'a',
+																// 			attrs: {
+																// 				'href': '../../../../desktop.bundles/content/content.html#vector'
+																// 			},
+																// 			content: 'Векторы'
+																// 		}
+																// 	]
+																// },
 																{
 																	elem: 'item',
 																	elemMods: { 'space-b': 'm' },
