@@ -6,7 +6,7 @@ block('icon-item')(
 				block: 'text',
 				mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 				mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'center' },
-				content: 'name: ' + this.ctx.name
+				content: "name: '" + this.ctx.name + "'"
 			},
       {
 				block: 'pt-icon-plus',
