@@ -170,8 +170,14 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
-								mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+								mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 								content: '.pt-table',
+							},
+							{
+								block: 'text',
+								mods: { size: 'l' },
+								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+								content: 'Паттерн { block: \'pt-table\'} используется для представления табличной информации в различных пропорциях.'
 							},
 							{
 								block: 'pt-table',
@@ -628,8 +634,14 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
-								mix: { block: 'decorator', mods: { 'space-b': 's' }},
+								mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 								content: '.pt-list',
+							},
+							{
+								block: 'text',
+								mods: { size: 'l' },
+								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+								content: 'Паттерн { block: \'pt-list\' } используется для представления вертикально повторяющихся пунктов с любым содержимым.'
 							},
 							{
 								block: 'pt-table',
@@ -898,40 +910,6 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											content: 'distribute'
-										}]
-									},
-									{
-										elem: 'col',
-										elemMods: { width: '35' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											content: 'default / between'
-										}]
-									},
-									{
-										elem: 'col',
-										elemMods: { width: '35' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											content: 'Распределение контента по горизонтали'
-										}]
-									}]
-								},
-								{
-									elem: 'row',
-									content: [
-									{
-										elem: 'col',
-										elemMods: { width: '30' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
 											content: 'space-a / space-v / space-h / space-t / space-b / space-r / space-l'
 										}]
 									},
@@ -942,41 +920,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											content: 'xs / s / m / l / xl / xxl'
-										}]
-									},
-									{
-										elem: 'col',
-										elemMods: { width: '35' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											content: 'Внутренние отступы'
-										}]
-									}]
-								},
-								{
-									elem: 'row',
-									content: [
-									{
-										elem: 'col',
-										elemMods: { width: '30' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											content: 'space-a / space-v / space-h / space-t / space-b / space-r / space-l'
-										}]
-									},
-									{
-										elem: 'col',
-										elemMods: { width: '35' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											content: 'xxs'
+											content: 'xxs / xs / s / m / l / xl / xxl'
 										}]
 									},
 									{
@@ -1039,8 +983,14 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
-								mix: { block: 'decorator', mods: { 'space-b': 's' }},
+								mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 								content: '.pt-form',
+							},
+							{
+								block: 'text',
+								mods: { size: 'l' },
+								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+								content: 'Паттерн { block: \'pt-form\' } используется для представления любой информации требующей ввода данных или выбора настроек пользователем для дальнейшей отправки.'
 							},
 							{
 								block: 'pt-table',
@@ -1387,41 +1337,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											content: 'xs / s / m / l / xl'
-										}]
-									},
-									{
-										elem: 'col',
-										elemMods: { width: '35' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											content: 'Внутренние отступы'
-										}]
-									}]
-								},
-								{
-									elem: 'row',
-									content: [
-									{
-										elem: 'col',
-										elemMods: { width: '30' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											content: 'space-a / space-h / space-v / space-t / space-r / space-b / space-l'
-										}]
-									},
-									{
-										elem: 'col',
-										elemMods: { width: '35' },
-										content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											content: 'xxl / xxxl'
+											content: 'xs / s / m / l / xl / xxl / xxxl'
 										}]
 									},
 									{
@@ -1571,8 +1487,14 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
-								mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+								mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 								content: '.pt-informer',
+							},
+							{
+								block: 'text',
+								mods: { size: 'l' },
+								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+								content: 'Паттерн { block: \'pt-informer\' } используется для представления блоков информирующих об успехе/ошибке или предупреждающих/информирующих о чем либо.'
 							},
 							{
 								block: 'pt-table',
@@ -1933,8 +1855,14 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
-								mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+								mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 								content: '.pt-icon-plus',
+							},
+							{
+								block: 'text',
+								mods: { size: 'l' },
+								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+								content: 'Паттерн { block: \'pt-icon-plus\' }  используется для представления связки графической и любой другой информации'
 							},
 							{
 								block: 'pt-table',
@@ -2100,7 +2028,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											content: 'indent-right'
+											content: 'indent-r'
 										}]
 									},
 									{
@@ -2134,7 +2062,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											content: 'indent-left'
+											content: 'indent-l'
 										}]
 									},
 									{
@@ -2363,8 +2291,14 @@ module.exports = {
 							{
 								block: 'text',
 								mods: { view: 'primary', size: 'xxxl', weight: 'bold', display: 'block' },
-								mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+								mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 								content: '.pt-surface',
+							},
+							{
+								block: 'text',
+								mods: { size: 'l' },
+								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+								content: 'Паттерн { block: \'pt-surface\' } используется для отображения перекрывающих слоев в которые размещается контент'
 							},
 							{
 								block: 'pt-table',
