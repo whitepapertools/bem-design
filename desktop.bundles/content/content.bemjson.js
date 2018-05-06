@@ -17,7 +17,7 @@ module.exports = {
 		mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 	},
 	content: [
-				{
+		{
 			block: 'tpl-layout',
 			attrs: { style: 'position: relative; top: 60px' },
 			content: [
@@ -163,9 +163,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Типографика'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Тема является фундаментом, на котором выстраиваются остальные интерфейсные уровни. Модификации темы можно комбинировать, отдельно указав нужные значения для цветов, отступов и размеров.'
 								},
 								{
 									elem: 'row',
@@ -1175,9 +1181,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Логотипы'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Блок .brand-logo используется для отображения упрощенной версии логотипа, например в истории или формах оплаты (рядом с подписью).'
 								},
 								{
 									elem: 'row',
@@ -2000,9 +2012,53 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Иконки'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Для отображения иконок используется блок icon. Иконки используются в различных частях интерфейса, они могут быть как самостоятельными сущностями, находиться внутри контролов или располагаться рядом с текстовыми блоками.'
+								},
+								{
+									block: 'icon-list',
+									mix: { block: 'tpl-grid', mods: { 'col-gap': 'half', 'row-gap': 'two-thirds', ratio: '1-1-1-1' }},
+									content: [
+										{
+											block: 'icon-item',
+											name: 'add-user'
+										},
+										{
+											block: 'icon-item',
+											name: 'bug'
+										},
+										{
+											block: 'icon-item',
+											name: 'filter'
+										},
+										{
+											block: 'icon-item',
+											name: 'trash'
+										},
+										{
+											block: 'icon-item',
+											name: 'phone-1'
+										},
+										{
+											block: 'icon-item',
+											name: 'photo'
+										},
+										{
+											block: 'icon-item',
+											name: 'picture'
+										},
+										{
+											block: 'icon-item',
+											name: 'search'
+										}
+									]
 								}
 							]
 						},
@@ -2017,9 +2073,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Аватарки'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Блок .avatar используется для отображения фотографий пользователей и может быть дополнен дополнительными элементами, такими как статус или счетчик.'
 								},
 								{
 									elem: 'row',
@@ -2151,9 +2213,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Бейджи'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Блок .badge используется для отображения статусов'
 								},
 								{
 									elem: 'row',
@@ -2306,9 +2374,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Теги'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Блок .tag используется для классификаци'
 								},
 								{
 									elem: 'row',
