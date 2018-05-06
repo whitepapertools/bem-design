@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'Theme',
+	title: 'Тема',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -168,9 +168,15 @@ module.exports = {
 									content: [
 									{
 										block: 'text',
-										mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-										mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+										mods: { size: 'xxl', weight: 'bold' },
+										mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 										content: 'Цвета'
+									},
+									{
+										block: 'text',
+										mods: { size: 'l' },
+										mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+										content: 'Переменные цветов используются в модификациях блоков и типографики подчеркивая их смысл или состояние.'
 									},
 									{
 										block: 'row',
@@ -668,9 +674,15 @@ module.exports = {
 								/* Spaces */
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Отступы'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Переменные отступов используются как для ритма внутри сеток, так и для обозначения уровней вложенности и разделения смысловых сущностей внутри паттернов.'
 								},
 								{
 									block: 'row',
@@ -945,9 +957,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Размеры'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Переменные размеров используются в текстовых блоках и подчеркивают информационную иерархию.'
 								}
 							]
 						},
@@ -962,9 +980,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Точки перестроения'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Переменные используются внутри адаптивных модификации сеток.'
 								}
 							]
 						},
@@ -979,9 +1003,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Расстояния'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Переменные используются для формирования отступов внутри обвязок и сеток.'
 								}
 							]
 						},
@@ -996,9 +1026,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Меню'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Переменные используются для формирования ширины элемента обвязки, предназначенного для размещения меню.'
 								}
 							]
 						},
@@ -1013,9 +1049,15 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+									mods: { size: 'xxl', weight: 'bold' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 									content: 'Шрифт'
+								},
+								{
+									block: 'text',
+									mods: { size: 'l' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+									content: 'Переменные используются для обозначения шрифта у текстовых блоков.'
 								},
 								{
 									block: 'fonts',
@@ -1056,7 +1098,7 @@ module.exports = {
 												{
 													block: 'text',
 													mix: { block: 'decorator', mods: { 'indent-t': 's' } },
-													mods: { size: 'l', view: 'primary', weight: 'semibold' },
+													mods: { size: 'm', view: 'primary', weight: 'bold' },
 													content: "font: 'Museo'"
 												}
 											]
@@ -1096,7 +1138,7 @@ module.exports = {
 												{
 													block: 'text',
 													mix: { block: 'decorator', mods: { 'indent-t': 's' } },
-													mods: { size: 'l', view: 'primary', weight: 'semibold' },
+													mods: { size: 'm', view: 'primary', weight: 'bold' },
 													content: "font: 'Plex'"
 												}
 											]
