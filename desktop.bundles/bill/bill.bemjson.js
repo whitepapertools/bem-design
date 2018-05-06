@@ -14,11 +14,11 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
+			mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
 		},
 		{
 			block: 'component',
-			mods: { liquid: 'default' }
+			mods: { whitepaper: 'default' }
 		}
 	],
 
@@ -32,8 +32,8 @@ module.exports = {
 			block: 'promo-cards',
 			mods: { view: 'inverse', slide: 'first' },
 			mix: [
-				{ block: 'theme', mods: { color: 'liquid-inverse' }},
-				{ block: 'component', mods: { liquid: 'inverse' }},
+				{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+				{ block: 'component', mods: { whitepaper: 'inverse' }},
 				{ block: 'promo-cards', elem: 'media-section' }
 			],
 			content: [
@@ -68,8 +68,8 @@ module.exports = {
 					{
 						block: 'media',
 						mix: [
-							{ block: 'theme', mods: { color: 'liquid-inverse' }},
-							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+							{ block: 'component', mods: { whitepaper: 'inverse' }},
 							{ block: 'pt-card', mods: { view: 'default' }}, 
 							{ block: 'promo-cards', elem: 'media-video-back' }, 
 							{ block: 'promo-cards', elem: 'hover' }
@@ -154,8 +154,8 @@ module.exports = {
 					{
 						block: 'media',
 						mix: [
-							{ block: 'theme', mods: { color: 'liquid-default' }},
-							{ block: 'component', mods: { liquid: 'default' }},
+							{ block: 'theme', mods: { color: 'whitepaper-default' }},
+							{ block: 'component', mods: { whitepaper: 'default' }},
 							{ block: 'pt-card', mods: { view: 'default' } }, 
 							{ block: 'promo-cards', elem: 'media-text-back' }, 
 							{ block: 'promo-cards', elem: 'hover' }
@@ -164,8 +164,8 @@ module.exports = {
 						{
 							elem: 'article-author',
 							mix: [
-								{ block: 'theme', mods: { color: 'liquid-inverse' }},
-								{ block: 'component', mods: { liquid: 'inverse' }},
+								{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+								{ block: 'component', mods: { whitepaper: 'inverse' }},
 								{ block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'l' }}
 							],
 							content: [
@@ -250,8 +250,8 @@ module.exports = {
 					{
 						block: 'media',
 						mix: [
-							{ block: 'theme', mods: { color: 'liquid-inverse' }},
-							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+							{ block: 'component', mods: { whitepaper: 'inverse' }},
 							{ block: 'pt-card', mods: { view: 'default' } }, { block: 'promo-cards', elem: 'media-music-back' }, 
 							{ block: 'promo-cards', elem: 'hover' }
 						],
@@ -497,8 +497,8 @@ module.exports = {
 			block: 'promo-cards',
 			mods: { view: 'ghost', slide: 'first' },
 			mix: [
-				{ block: 'theme', mods: { color: 'liquid-default' }},
-				{ block: 'component', mods: { liquid: 'default' }},
+				{ block: 'theme', mods: { color: 'whitepaper-default' }},
+				{ block: 'component', mods: { whitepaper: 'default' }},
 				{ block: 'promo-cards', elem: 'offer-section' }
 			],
 			content: [
@@ -675,8 +675,8 @@ module.exports = {
 					{
 						block: 'offer',
 						mix: [
-							{ block: 'theme', mods: { color: 'liquid-inverse' }},
-							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+							{ block: 'component', mods: { whitepaper: 'inverse' }},
 							{ block: 'pt-card', mods: { view: 'default' } },
 							{ block: 'promo-cards', elem: 'hover' },
 							{ block: 'promo-cards', elem: 'offer-service' },
@@ -834,8 +834,8 @@ module.exports = {
 			block: 'promo-cards',
 			mods: { view: 'inverse', slide: 'first' },
 			mix: [
-				{ block: 'theme', mods: { color: 'liquid-inverse' }},
-				{ block: 'component', mods: { liquid: 'inverse' }},
+				{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+				{ block: 'component', mods: { whitepaper: 'inverse' }},
 				{ block: 'promo-cards', elem: 'apps-section' }
 			],
 			content: [
@@ -863,8 +863,8 @@ module.exports = {
 				{
 					elem: 'card',
 					mix: [
-						{ block: 'theme', mods: { color: 'liquid-inverse' }},
-						{ block: 'component', mods: { liquid: 'inverse' }},
+						{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+						{ block: 'component', mods: { whitepaper: 'inverse' }},
 						{ elem: 'apps', elemMods: { type: 'developer' }}, 
 						{ block: 'decorator', mods: { 'indent-b': 'xxxxl' } }
 					],
@@ -993,8 +993,8 @@ module.exports = {
 						block: 'app',
 						mods: { view: 'monument' },
 						mix: [
-							{ block: 'theme', mods: { color: 'liquid-inverse' }},
-							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+							{ block: 'component', mods: { whitepaper: 'inverse' }},
 							{ block: 'pt-card', mods: { view: 'inverse' } }, 
 							{ block: 'promo-cards', elem: 'apps-recommendation-back' }, 
 							{ block: 'promo-cards', elem: 'hover' }
@@ -1089,8 +1089,8 @@ module.exports = {
 					{
 						block: 'app',
 						mix: [
-							{ block: 'theme', mods: { color: 'liquid-inverse' }},
-							{ block: 'component', mods: { liquid: 'inverse' }},
+							{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+							{ block: 'component', mods: { whitepaper: 'inverse' }},
 							{ block: 'pt-card', mods: { view: 'default' }}, 
 							{ block: 'promo-cards', elem: 'apps-good-back' }, 
 							{ block: 'promo-cards', elem: 'hover' }
@@ -1249,8 +1249,8 @@ module.exports = {
 			block: 'promo-cards',
 			mods: { view: 'ghost', slide: 'first' },
 			mix: [
-				{ block: 'theme', mods: { color: 'liquid-default' }},
-				{ block: 'component', mods: { liquid: 'default' }},
+				{ block: 'theme', mods: { color: 'whitepaper-default' }},
+				{ block: 'component', mods: { whitepaper: 'default' }},
 				{ block: 'promo-cards', elem: 'donate-section' }
 			],
 			content: [
@@ -1285,8 +1285,8 @@ module.exports = {
 					{
 						block: 'donate',
 						mix: [
-							{ block: 'theme', mods: { color: 'liquid-default' }},
-							{ block: 'component', mods: { liquid: 'default' }},
+							{ block: 'theme', mods: { color: 'whitepaper-default' }},
+							{ block: 'component', mods: { whitepaper: 'default' }},
 							{ block: 'pt-card', mods: { view: 'default' } },
 							{ block: 'promo-cards', elem: 'hover' },
 							{ block: 'promo-cards', elem: 'donate-person' },
@@ -1399,8 +1399,8 @@ module.exports = {
 						{
 							elem: 'project-info',
 							mix: [
-								{ block: 'theme', mods: { color: 'liquid-default' }},
-								{ block: 'component', mods: { liquid: 'default' }},
+								{ block: 'theme', mods: { color: 'whitepaper-default' }},
+								{ block: 'component', mods: { whitepaper: 'default' }},
 								{ block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'l' }}
 							],	
 							content: [
@@ -1483,8 +1483,8 @@ module.exports = {
 						{
 							elem: 'project-action',
 							mix: [
-								{ block: 'theme', mods: { color: 'liquid-default' }},
-								{ block: 'component', mods: { liquid: 'default' }},
+								{ block: 'theme', mods: { color: 'whitepaper-default' }},
+								{ block: 'component', mods: { whitepaper: 'default' }},
 								{ block: 'pt-card', elem: 'footer', elemMods: { 'space-h': 'm', 'space-v': 'l' } },
 								{ block: 'promo-cards', elem: 'donate-project-action'},
 							],
@@ -1718,8 +1718,8 @@ module.exports = {
 			block: 'promo-cards',
 			mods: { view: 'default' },
 			mix: [
-				{ block: 'theme', mods: { color: 'liquid-default' }},
-				{ block: 'component', mods: { liquid: 'default' }},
+				{ block: 'theme', mods: { color: 'whitepaper-default' }},
+				{ block: 'component', mods: { whitepaper: 'default' }},
 			],
 			content: [
 			{

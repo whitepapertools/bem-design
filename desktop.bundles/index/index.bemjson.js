@@ -14,11 +14,11 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+			mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 		},
 		{
 			block: 'component',
-			mods: { liquid: 'default' }
+			mods: { whitepaper: 'default' }
 		}
 	],
 	content: [
@@ -857,8 +857,8 @@ module.exports = {
 													block: 'pt-card',
 													mix: [
 														{ block: 'article' },
-														{ block: 'theme', mods: { color: 'liquid-inverse' }},
-														{ block: 'component', mods: { liquid: 'inverse' }}
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }}
 													],
 													content: [
 														{
@@ -922,8 +922,8 @@ module.exports = {
 													block: 'pt-card',
 													mix: [
 														{ block: 'article' },
-														{ block: 'theme', mods: { color: 'liquid-inverse' }},
-														{ block: 'component', mods: { liquid: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }},
 													],
 													content: [
 														{
@@ -978,8 +978,8 @@ module.exports = {
 													block: 'pt-card',
 													mix: [
 														{ block: 'article' },
-														{ block: 'theme', mods: { color: 'liquid-inverse' }},
-														{ block: 'component', mods: { liquid: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }},
 													],
 													content: [
 														{
@@ -1166,8 +1166,8 @@ module.exports = {
 												{
 													block: 'event',
 													mix: [
-														{ block: 'theme', mods: { color: 'liquid-inverse' }},
-														{ block: 'component', mods: { liquid: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }},
 														{ block: 'pt-card', view: 'default' }
 													],
 													content: [
@@ -1257,8 +1257,8 @@ module.exports = {
 												{
 													block: 'event',
 													mix: [
-														{ block: 'theme', mods: { color: 'liquid-inverse' }},
-														{ block: 'component', mods: { liquid: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }},
 														{ block: 'pt-card', view: 'default' }
 													],
 													content: [
@@ -1425,7 +1425,7 @@ module.exports = {
 					elem: 'section',
 					mix: [
 						{ block: 'foot' },
-						{ block: 'component', mods: { liquid: 'default' }}
+						{ block: 'component', mods: { whitepaper: 'default' }}
 					],
 					content: {
 						elem: 'container',

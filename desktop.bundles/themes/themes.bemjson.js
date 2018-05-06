@@ -14,7 +14,7 @@ module.exports = {
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+		mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 	},
 	content: [
 		{
@@ -1027,7 +1027,7 @@ module.exports = {
 					elem: 'section',
 					mix: [
 						{ block: 'foot' },
-						{ block: 'component', mods: { liquid: 'default' }}
+						{ block: 'component', mods: { whitepaper: 'default' }}
 					],
 					content: {
 						elem: 'container',

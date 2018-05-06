@@ -11,7 +11,7 @@ module.exports = {
 	],
 	mix: {
 		block: 'theme',
-		mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+		mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 	},
 	scripts: [{ elem: 'js', url: 'illustrations.min.js' }],
 	mods: { theme: 'islands' },
