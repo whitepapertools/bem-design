@@ -46,7 +46,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/themes/themes.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Тема'
@@ -54,7 +54,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/content/content.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Контент'
@@ -62,7 +62,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/patterns/patterns.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Паттерны'
@@ -70,7 +70,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/layouts/layouts.html' },
 
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
@@ -79,7 +79,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/doc/doc.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Обучение'
@@ -87,7 +87,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/assets/assets.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Материалы'
@@ -1016,6 +1016,92 @@ module.exports = {
 									mods: { size: 'xxl', weight: 'bold', font: 'sans' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
 									content: 'Шрифт'
+								},
+								{
+									block: 'fonts',
+									mix: { block: 'tpl-grid', mods: { 'col-gap': 'half', ratio: '1-1' } },
+									content: [
+										{
+											elem: 'item-wrapper',
+											content: [
+												{
+													elem: 'item',
+													elemMods: { view: 'museo' },
+													content: [
+														{
+															block: 'pt-icon-plus',
+															mix: { block: 'theme', mods: { color: 'whitepaper-inverse' } },
+															mods: { 'vertical-align': 'center' },
+															content: [
+																{
+																	elem: 'icon',
+																	elemMods: { 'indent-r': 'l'},
+																	content: {
+																		block: 'image',
+																		url: ''
+																	}
+																},
+																{
+																	elem: 'block',
+																	content: {
+																		block: 'text',
+																		mods: { view: 'primary', size: 'xxxxl', weight: 'bold' },
+																		content: 'Museo'
+																	}
+																}
+															]
+														}
+													]
+												},
+												{
+													block: 'text',
+													mix: { block: 'decorator', mods: { 'indent-t': 's' } },
+													mods: { size: 'l', view: 'primary', weight: 'semibold' },
+													content: "font: 'Museo'"
+												}
+											]
+										},
+										{
+											elem: 'item-wrapper',
+											content: [
+												{
+													elem: 'item',
+													elemMods: { view: 'plex' },
+													content: [
+														{
+															block: 'pt-icon-plus',
+															mix: { block: 'theme', mods: { color: 'whitepaper-inverse' } },
+															mods: { 'vertical-align': 'center' },
+															content: [
+																{
+																	elem: 'icon',
+																	elemMods: { 'indent-r': 'l'},
+																	content: {
+																		block: 'image',
+																		url: '../../../../assets/i/ibm-logo.svg'
+																	}
+																},
+																{
+																	elem: 'block',
+																	content: {
+																		block: 'text',
+																		mods: { size: 'xxxxl', view: 'primary', weight: 'bold', },
+																		content: 'Plex'
+																	}
+																}
+															]
+														}
+													]
+												},
+												{
+													block: 'text',
+													mix: { block: 'decorator', mods: { 'indent-t': 's' } },
+													mods: { size: 'l', view: 'primary', weight: 'semibold' },
+													content: "font: 'Plex'"
+												}
+											]
+										}
+									]
 								}
 							]
 						}
