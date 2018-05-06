@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'BEM Patterns',
+	title: 'Паттерны',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -144,13 +144,19 @@ module.exports = {
 				{
 					elem: 'content',
 					block: 'demo',
-					elemMods: { size: 's' },
+					elemMods: { size: 'm' },
 					content: [
 						{
 							block: 'text',
 							mods: { size: 'xxxxl', weight: 'bold' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+							mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 							content: 'Паттерны'
+						},
+						{
+							block: 'text',
+							mods: { size: 'l' },
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+							content: 'Все бесконечное многообразие интерфейсных множеств сводится к числу фундаментальных конструкций, на основе которых можно получить практически любой визуал.'
 						},
 
 						/* PT-TABLE */
