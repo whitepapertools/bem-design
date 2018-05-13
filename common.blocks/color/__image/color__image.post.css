@@ -1,7 +1,7 @@
 .color__image {
 	width: 120px;
 	height: 72px;
-	margin-bottom: var(--space-xs);
+	margin-bottom: var(--space-s);
 	
 	&_color {
 		/* Базовые цвета */

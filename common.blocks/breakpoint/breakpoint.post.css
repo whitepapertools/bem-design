@@ -1,0 +1,28 @@
+.breakpoint {
+	margin-bottom: var(--space-xl);
+	&:last-child {
+		margin-bottom: 0px;
+	}
+	&__view {
+		height: 40px;
+		background: var(--color-bg-action);
+		margin-bottom: var(--space-s);
+		&_size {
+			&_xl {
+				width: 100%; /* var(--screen-xl) */
+			}
+			&_l {
+				width: 100%; /* var(--screen-l) */
+			}
+			&_m {
+				width: 100%; /* var(--screen-m) */
+			}
+			&_s {
+				width: 720px; /* var(--screen-s) */
+			}
+			&_xs {
+				width: 320px; /* var(--screen-xs) */
+			}
+		}
+	}
+}

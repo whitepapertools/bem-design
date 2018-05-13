@@ -685,12 +685,13 @@ module.exports = {
 									content: 'Переменные отступов используются как для ритма внутри сеток, так и для обозначения уровней вложенности и разделения смысловых сущностей внутри паттернов.'
 								},
 								{
-									block: 'row',
+									elem: 'row',
+									mix: [
+										{ block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+									],
 									content: [
-									{
-										elem: 'col',
-										elemMods: { sw: 4 },
-										content: [
+
 										{
 											block: 'space',
 											content: [
@@ -710,8 +711,7 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-xxxxl'
-												},
-												'48px'
+												}
 												]
 											}]
 										},
@@ -734,8 +734,7 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-xxxl'
-												},
-												'40px'
+												}
 												]
 											}]
 										},
@@ -758,8 +757,7 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-xxl'
-												},
-												'32px'
+												}
 												]
 											}]
 										},
@@ -782,16 +780,11 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-xl'
-												},
-												'24px'
+												}
 												]
 											}]
-										}]
-									},
-									{
-										elem: 'col',
-										elemMods: { sw: 4 },
-										content: [
+										},
+
 										{
 											block: 'space',
 											content: [
@@ -811,9 +804,7 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-l'
-												},
-												'20px'
-												]
+												}]
 											}]
 										},
 										{
@@ -835,9 +826,7 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-m'
-												},
-												'16px'
-												]
+												}]
 											}]
 										},
 										{
@@ -859,16 +848,10 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-s'
-												},
-												'12px'
-												]
+												}]
 											}]
-										}]
-									},
-									{
-										elem: 'col',
-										elemMods: { sw: 4 },
-										content: [
+										},
+
 										{
 											block: 'space',
 											content: [
@@ -888,9 +871,7 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-xs'
-												},
-												'8px'
-												]
+												}]
 											}]
 										},
 										{
@@ -912,9 +893,7 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-xxs'
-												},
-												'4px'
-												]
+												}]
 											}]
 										},
 										{
@@ -936,13 +915,12 @@ module.exports = {
 													block: 'text',
 													mods: { weight: 'bold' },
 													content: '--space-xxxs'
-												},
-												'2px'
-												]
+												}]
 											}]
-										}]
-									}]
-								},
+										}
+
+									]
+								}
 								/* Spaces */
 							]
 						},
@@ -966,7 +944,142 @@ module.exports = {
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 									content: 'Переменные размеров используются в текстовых блоках и подчеркивают информационную иерархию.'
-								}
+								},
+								{
+									elem: 'row',
+									mix: [
+										{ block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+									],
+									content: [
+										{
+											block: 'typography',
+											content: [
+											{
+												elem: 'view',
+												content: [
+												{
+													block: 'text',
+													mods: { size: 'xxxl' },
+													content: 'Typography'
+												}]
+											},
+											{
+												block: 'text',
+												mods: { size: 'm', weight: 'bold' },
+												content: "--size-typo-xxxl"
+											}]
+										},
+										{
+											block: 'typography',
+											content: [
+											{
+												elem: 'view',
+												content: [
+												{
+													block: 'text',
+													mods: { size: 'xxl'},
+													content: 'Typography'
+												}]
+											},
+											{
+												block: 'text',
+												mods: { size: 'm', weight: 'bold' },
+												content: "--size-typo-xxl"
+											}]
+										},
+										{
+											block: 'typography',
+											content: [
+											{
+												elem: 'view',
+												content: [
+												{
+													block: 'text',
+													mods: { size: 'xl'},
+													content: 'Typography'
+												}]
+											},
+											{
+												block: 'text',
+												mods: { size: 'm', weight: 'bold' },
+												content: "--size-typo-xl"
+											}]
+										},
+										{
+											block: 'typography',
+											content: [
+											{
+												elem: 'view',
+												content: [
+												{
+													block: 'text',
+													mods: { size: 'l'},
+													content: 'Typography'
+												}]
+											},
+											{
+												block: 'text',
+												mods: { size: 'm', weight: 'bold' },
+												content: "--size-typo-l"
+											}]
+										},
+										{
+											block: 'typography',
+											content: [
+											{
+												elem: 'view',
+												content: [
+												{
+													block: 'text',
+													mods: { size: 'm'},
+													content: 'Typography'
+												}]
+											},
+											{
+												block: 'text',
+												mods: { size: 'm', weight: 'bold' },
+												content: "--size-typo-m"
+											}]
+										},
+										{
+											block: 'typography',
+											content: [
+											{
+												elem: 'view',
+												content: [
+												{
+													block: 'text',
+													mods: { size: 's'},
+													content: 'Typography'
+												}]
+											},
+											{
+												block: 'text',
+												mods: { size: 'm', weight: 'bold' },
+												content: "--size-typo-s"
+											}]
+										},
+										{
+											block: 'typography',
+											content: [
+											{
+												elem: 'view',
+												content: [
+												{
+													block: 'text',
+													mods: { size: 'xs'},
+													content: 'Typography'
+												}]
+											},
+											{
+												block: 'text',
+												mods: { size: 'm', weight: 'bold' },
+												content: "--size-typo-xs"
+											}]
+										}
+									]
+								},
 							]
 						},
 						/* /Размеры */
@@ -989,6 +1102,106 @@ module.exports = {
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 									content: 'Переменные используются внутри адаптивных модификации сеток.'
+								},
+								{
+									elem: 'section',
+									content: [
+										{
+											block: 'breakpoint',
+											content: [
+												{
+													elem: 'view',
+													elemMods: { size: 'xl' }
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--screen-xl"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'breakpoint',
+											content: [
+												{
+													elem: 'view',
+													elemMods: { size: 'l' }
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--screen-l"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'breakpoint',
+											content: [
+												{
+													elem: 'view',
+													elemMods: { size: 'm' }
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--screen-m"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'breakpoint',
+											content: [
+												{
+													elem: 'view',
+													elemMods: { size: 's' }
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--screen-s"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'breakpoint',
+											content: [
+												{
+													elem: 'view',
+													elemMods: { size: 'xs' }
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--screen-xs"
+														}
+													]
+												}
+											]
+										}
+									]
 								}
 							]
 						},
@@ -1012,6 +1225,99 @@ module.exports = {
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 									content: 'Переменные используются для формирования отступов внутри обвязок и сеток.'
+								},
+								{
+									elem: 'section',
+									mix: [
+										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+									],
+									content: [
+										{
+											block: 'gap',
+											content: [
+												{
+													elem: 'view',
+													content: [
+
+													]
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--col-gap-ful"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'gap',
+											content: [
+												{
+													elem: 'view',
+													content: [
+
+													]
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--col-gap-two-thirds"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'gap',
+											content: [
+												{
+													elem: 'view',
+													content: [
+
+													]
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--col-gap-half"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'gap',
+											content: [
+												{
+													elem: 'view',
+													content: [
+
+													]
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--col-gap-thirds"
+														}
+													]
+												}
+											]
+										},
+									]
 								}
 							]
 						},
@@ -1035,6 +1341,57 @@ module.exports = {
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 									content: 'Переменные используются для формирования ширины элемента обвязки, предназначенного для размещения меню.'
+								},
+								{
+									elem: 'section',
+									mix: [
+										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+									],
+									content: [
+										{
+											block: 'menu',
+											content: [
+												{
+													elem: 'view',
+													content: [
+
+													]
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--menu-unfold"
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'menu',
+											content: [
+												{
+													elem: 'view',
+													content: [
+
+													]
+												},
+												{
+													elem: 'text',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'm', weight: 'bold' },
+															content: "--menu-unfold"
+														}
+													]
+												}
+											]
+										}
+									]
 								}
 							]
 						},

@@ -724,7 +724,7 @@ module.exports = {
 																			attrs: {
 																				'href': '../../../../desktop.bundles/article-vectors/article-vectors.html'
 																			},
-																			content: 'Шаблонизация'
+																			content: 'Как рисовать «векторы»'
 																		}
 																	]
 																}
