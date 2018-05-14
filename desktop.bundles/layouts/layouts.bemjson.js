@@ -45,7 +45,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/themes/themes.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Тема'
@@ -53,7 +53,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/content/content.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Контент'
@@ -61,7 +61,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/patterns/patterns.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Паттерны'
@@ -69,7 +69,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/layouts/layouts.html' },
 
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
@@ -78,7 +78,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/doc/doc.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Обучение'
@@ -86,55 +86,12 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
+											tag: 'a',
 											attrs: { href: '../../../../desktop.bundles/assets/assets.html' },
 											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 											content: 'Материалы'
 										},
-										// {
-										// 	elem: 'item',
-										// 	elemMods: { view: 'dropdown' },
-										// 	content: [
-										// 		{
-										// 			block: 'pt-icon-plus',
-										// 			mods: { 'vertical-align': 'center' },
-										// 			content: [
-										// 				{
-										// 					elem: 'block',
-										// 					content: {
-										// 						block: 'text',
-										// 						mods: { size: 'm', view: 'primary' },
-										// 						content: 'Инфо'
-										// 					}
-										// 				},
-										// 				{
-										// 					elem: 'icon',
-										// 					elemMods: { 'indent-l': 'xs'},
-										// 					content: { block: 'icon', mods: { 'name': 'arrow-down', view: 'ghost', size: 's' }}
-										// 				}
-										// 			]
-										// 		},
-										// 		{
-										// 			elem: 'dropdown',
-										// 			content: [
-										// 				{
-										// 					block: 'text',
-										// 					mods: { size: 'm', view: 'primary' },
-										// 					tag: 'a', attrs: { href: '/templates.html' },
-										// 					mix: { block: 'new-menu', elem: 'dropdown-link' },
-										// 					content: 'Документы'
-										// 				},
-										// 				{
-										// 					block: 'text',
-										// 					mods: { size: 'm', view: 'primary' },
-										// 					tag: 'a', attrs: { href: '/templates.html' },
-										// 					mix: { block: 'new-menu', elem: 'dropdown-link' },
-										// 					content: 'Материалы'
-										// 				},
-										// 			]
-										// 		}
-										// 	]
-										// }
+
 									]
 								}
 							]
@@ -164,7 +121,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/32_4x8_1.svg'
+										url: '/assets/i/layouts/50-50.svg'
 									}
 								]
 							},
@@ -179,7 +136,7 @@ module.exports = {
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "32(4x8)-1"
+									content: "50-50"
 								}]
 							}]
 						},
@@ -192,7 +149,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/32_4x8_2.svg'
+										url: '/assets/i/layouts/70-30.svg'
 									}
 								]
 							},
@@ -207,7 +164,7 @@ module.exports = {
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "32(4x8)-2"
+									content: "70-30"
 								}]
 							}]
 						},
@@ -220,7 +177,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/32_4x8_3.svg'
+										url: '/assets/i/layouts/90-10.svg'
 									}
 								]
 							},
@@ -235,7 +192,7 @@ module.exports = {
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "32(4x8)-3"
+									content: "90-10"
 								}]
 							}]
 						},
@@ -248,7 +205,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/32_4x8_4.svg'
+										url: '/assets/i/layouts/100.svg'
 									}
 								]
 							},
@@ -263,7 +220,7 @@ module.exports = {
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "32(4x8)-4"
+									content: "100"
 								}]
 							}]
 						},
@@ -276,7 +233,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/32_4x8_5.svg'
+										url: '/assets/i/layouts/fold-25-50-25.svg'
 									}
 								]
 							},
@@ -291,7 +248,7 @@ module.exports = {
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "32(4x8)-5"
+									content: "fold-25-50-25"
 								}]
 							}]
 						},
@@ -304,7 +261,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/32_4x8_default.svg'
+										url: '/assets/i/layouts/unfold-25-50-25.svg'
 									}
 								]
 							},
@@ -319,7 +276,7 @@ module.exports = {
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "Add your template"
+									content: "unfold-25-50-25"
 								}]
 							}]
 						}]
@@ -337,7 +294,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/24_4x6_1.svg'
+										url: '/assets/i/layouts/fold-100.svg'
 									}
 								]
 							},
@@ -352,7 +309,7 @@ module.exports = {
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "24(4x6)-1"
+									content: "fold-100"
 								}]
 							}]
 						},
@@ -365,7 +322,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/24_4x6_2.svg'
+										url: '/assets/i/layouts/unfold-100.svg'
 									}
 								]
 							},
@@ -380,7 +337,7 @@ module.exports = {
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "24(4x6)-2"
+									content: "unfold-100"
 								}]
 							}]
 						},
@@ -393,7 +350,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/24_4x6_3.svg'
+										url: '/assets/i/24_4x6_default.svg'
 									}
 								]
 							},
@@ -404,11 +361,54 @@ module.exports = {
 									block: 'text',
 									tag: 'a',
 									attrs: {
-										href: 'https://codepen.io/yegorov/full/BWRVRm',
+										href: 'https://codepen.io/Rochet/full/NwjWOZ/',
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "24(4x6)-3"
+									content: "Add your template"
+								}]
+							}]
+						}]
+					}]
+				},
+				{
+					block: 'demo',
+					elem: 'content',
+					content: [
+					{
+						block: 'text',
+						mods: { size: 'xxxxl', weight: 'bold' },
+						mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
+						content: 'Сетки'
+					},
+					{
+						block: 'layout-list',
+						content: [
+						{
+							block: 'layout-item',
+							content: [
+							{
+								elem: 'view',
+								content: [
+									{
+										block: 'image',
+										width: 348,
+										url: '/assets/i/grids/1-1.svg'
+									}
+								]
+							},
+							{
+								elem: 'name',
+								content: [
+								{
+									block: 'text',
+									tag: 'a',
+									attrs: {
+										href: 'https://codepen.io/yegorov/full/JWNLLO',
+										target: '_blank'
+									},
+									mods: { size: 'm', view: 'link', weight: 'bold' },
+									content: "1-1"
 								}]
 							}]
 						},
@@ -421,7 +421,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/24_4x6_4.svg'
+										url: '/assets/i/grids/1-1-1.svg'
 									}
 								]
 							},
@@ -432,11 +432,11 @@ module.exports = {
 									block: 'text',
 									tag: 'a',
 									attrs: {
-										href: 'https://codepen.io/yegorov/full/mWmjJx',
+										href: 'https://codepen.io/yegorov/full/zZwjrR',
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "24(4x6)-4"
+									content: "1-1-1"
 								}]
 							}]
 						},
@@ -449,7 +449,7 @@ module.exports = {
 									{
 										block: 'image',
 										width: 348,
-										url: '/assets/i/24_4x6_5.svg'
+										url: '/assets/i/grids/1-1-1-1.svg'
 									}
 								]
 							},
@@ -460,11 +460,95 @@ module.exports = {
 									block: 'text',
 									tag: 'a',
 									attrs: {
-										href: 'https://codepen.io/yegorov/full/EWmpWZ/',
+										href: 'https://codepen.io/yegorov/full/MpmGJE',
 										target: '_blank'
 									},
 									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "24(4x6)-5"
+									content: "1-1-1-1"
+								}]
+							}]
+						},
+						{
+							block: 'layout-item',
+							content: [
+							{
+								elem: 'view',
+								content: [
+									{
+										block: 'image',
+										width: 348,
+										url: '/assets/i/grids/9-3.svg'
+									}
+								]
+							},
+							{
+								elem: 'name',
+								content: [
+								{
+									block: 'text',
+									tag: 'a',
+									attrs: {
+										href: 'https://codepen.io/yegorov/full/oZWdGV',
+										target: '_blank'
+									},
+									mods: { size: 'm', view: 'link', weight: 'bold' },
+									content: "9-3"
+								}]
+							}]
+						},
+						{
+							block: 'layout-item',
+							content: [
+							{
+								elem: 'view',
+								content: [
+									{
+										block: 'image',
+										width: 348,
+										url: '/assets/i/grids/4-8.svg'
+									}
+								]
+							},
+							{
+								elem: 'name',
+								content: [
+								{
+									block: 'text',
+									tag: 'a',
+									attrs: {
+										href: 'https://codepen.io/yegorov/full/oZWdGV',
+										target: '_blank'
+									},
+									mods: { size: 'm', view: 'link', weight: 'bold' },
+									content: "4-8 "
+								}]
+							}]
+						},
+						{
+							block: 'layout-item',
+							content: [
+							{
+								elem: 'view',
+								content: [
+									{
+										block: 'image',
+										width: 348,
+										url: '/assets/i/grids/7-5.svg'
+									}
+								]
+							},
+							{
+								elem: 'name',
+								content: [
+								{
+									block: 'text',
+									tag: 'a',
+									attrs: {
+										href: 'https://codepen.io/Rochet/full/zPwYao/',
+										target: '_blank'
+									},
+									mods: { size: 'm', view: 'link', weight: 'bold' },
+									content: "7-5"
 								}]
 							}]
 						},
