@@ -11,7 +11,7 @@
 
 Структура блока
 
-```json
+```js
 {
 	block: 'pt-icon-plus',
 	content: [

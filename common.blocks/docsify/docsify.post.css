@@ -671,14 +671,14 @@ section.cover blockquote > p > a:hover {
 }
 
 .sidebar ul li a:hover {
-	text-decoration: none;
+	color: var(--color-bg-brand);
 }
 
 .sidebar ul li ul {
 	padding: 0;
 }
 
-.sidebar ul li.active > a {
+.sidebar ul .active > a {
 	border-right: 2px solid;
 	color: var(--color-bg-brand);
 	font-weight: 600;

@@ -2,7 +2,7 @@
 
 Паттерн для модальных окон.
 
-```json
+```js
 {
 	block: 'pt-surface',
 	attrs: { id: 'demoModal' }, // у кнопки для вызова такой модалки должен быть атрибут data-name: 'demoModal'
