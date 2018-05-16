@@ -104,13 +104,19 @@ module.exports = {
 					content: [
 						{
 							block: 'text',
+							mix: { block: 'decorator', mods: { 'indent-b': 's' } },
 							mods: { size: 'xxxxl', weight: 'bold' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
 							content: 'Шаблоны'
 						},
 						{
+							block: 'text',
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
+							mods: { size: 'l', view: 'primary', },
+							content: 'Cодержит в себе необходимые элементы в различных модификациях для реализации общих обвязок каркаса/проектов'
+						},
+						{
 							block: 'layout-list',
-							mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'full' } },
+							mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'full' } },
 							content: [
 							{
 								block: 'layout-item',
@@ -134,8 +140,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/JWNLLO',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "50-50"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { structure: '50-50' }"
 									}]
 								}]
 							},
@@ -161,8 +167,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/zZwjrR',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "70-30"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { structure: '70-30' }"
 									}]
 								}]
 							},
@@ -188,8 +194,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/MpmGJE',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "90-10"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { structure: '90-10' }"
 									}]
 								}]
 							},
@@ -215,8 +221,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/oZWdGV',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "100"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "100 (без модификатора)"
 									}]
 								}]
 							},
@@ -242,8 +248,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/oZWdGV',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "fold-25-50-25"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { structure: 'fold-25-50-25' }"
 									}]
 								}]
 							},
@@ -269,8 +275,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/Rochet/full/zPwYao/',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "unfold-25-50-25"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { structure: 'unfold-25-50-25' }"
 									}]
 								}]
 							},
@@ -296,8 +302,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/mWmLYP',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "fold-100"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { structure: 'fold-100' }"
 									}]
 								}]
 							},
@@ -323,8 +329,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/qrmKdW',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "unfold-100"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { structure: 'unfold-100' }"
 									}]
 								}]
 							}]
@@ -337,13 +343,19 @@ module.exports = {
 					content: [
 					{
 						block: 'text',
+						mix: { block: 'decorator', mods: { 'indent-b': 's' } },
 						mods: { size: 'xxxxl', weight: 'bold' },
-						mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
 						content: 'Сетки'
 					},
 					{
+						block: 'text',
+						mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
+						mods: { size: 'l', view: 'primary', },
+						content: 'Управляет ритмом и композицией (расположением блоков) внутри секций'
+					},
+					{
 						block: 'layout-list',
-						mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'full' } },
+						mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'full' } },
 						content: [
 							{
 								block: 'layout-item',
@@ -367,8 +379,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/JWNLLO',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "1-1"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { ratio: '1-1' }"
 									}]
 								}]
 							},
@@ -394,8 +406,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/zZwjrR',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "1-1-1"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { ratio: '1-1-1' }"
 									}]
 								}]
 							},
@@ -421,8 +433,8 @@ module.exports = {
 										// 	href: 'https://codepen.io/yegorov/full/MpmGJE',
 										// 	target: '_blank'
 										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "1-1-1-1"
+										mods: { size: 'm', view: 'primary', weight: 'bold' },
+										content: "mods: { ratio: '1-1-1-1' }"
 									}]
 								}]
 							},
@@ -441,16 +453,36 @@ module.exports = {
 								{
 									elem: 'name',
 									content: [
-									{
-										block: 'text',
-										// tag: 'a',
-										// attrs: {
-										// 	href: 'https://codepen.io/yegorov/full/oZWdGV',
-										// 	target: '_blank'
-										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "9-3"
-									}]
+										{
+											block: 'text',
+											mods: { size: 'm', view: 'primary', weight: 'bold' },
+											content: [
+												{
+													elem: 'row',
+													content: "elem: 'fraction'"
+												},
+												{
+													elem: 'row',
+													content: "elemMods: { col: '9' }"
+												}
+											]
+										},
+										{
+											block: 'text',
+											mix: { block: 'decorator', mods: { 'indent-l': 'xxl' } },
+											mods: { size: 'm', view: 'primary', weight: 'bold' },
+											content: [
+												{
+													elem: 'row',
+													content: "elem: 'fraction'"
+												},
+												{
+													elem: 'row',
+													content: "elemMods: { col: '3' }"
+												}
+											]
+										}
+									]
 								}]
 							},
 							{
@@ -468,16 +500,36 @@ module.exports = {
 								{
 									elem: 'name',
 									content: [
-									{
-										block: 'text',
-										// tag: 'a',
-										// attrs: {
-										// 	href: 'https://codepen.io/yegorov/full/oZWdGV',
-										// 	target: '_blank'
-										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "4-8 "
-									}]
+										{
+											block: 'text',
+											mods: { size: 'm', view: 'primary', weight: 'bold' },
+											content: [
+												{
+													elem: 'row',
+													content: "elem: 'fraction'"
+												},
+												{
+													elem: 'row',
+													content: "elemMods: { col: '4' }"
+												}
+											]
+										},
+										{
+											block: 'text',
+											mix: { block: 'decorator', mods: { 'indent-l': 'xxl' } },
+											mods: { size: 'm', view: 'primary', weight: 'bold' },
+											content: [
+												{
+													elem: 'row',
+													content: "elem: 'fraction'"
+												},
+												{
+													elem: 'row',
+													content: "elemMods: { col: '8' }"
+												}
+											]
+										}
+									]
 								}]
 							},
 							{
@@ -495,16 +547,36 @@ module.exports = {
 								{
 									elem: 'name',
 									content: [
-									{
-										block: 'text',
-										// tag: 'a',
-										// attrs: {
-										// 	href: 'https://codepen.io/Rochet/full/zPwYao/',
-										// 	target: '_blank'
-										// },
-										mods: { size: 'm', view: 'link', weight: 'bold' },
-										content: "7-5"
-									}]
+										{
+											block: 'text',
+											mods: { size: 'm', view: 'primary', weight: 'bold' },
+											content: [
+												{
+													elem: 'row',
+													content: "elem: 'fraction'"
+												},
+												{
+													elem: 'row',
+													content: "elemMods: { col: '7' }"
+												}
+											]
+										},
+										{
+											block: 'text',
+											mix: { block: 'decorator', mods: { 'indent-l': 'xxl' } },
+											mods: { size: 'm', view: 'primary', weight: 'bold' },
+											content: [
+												{
+													elem: 'row',
+													content: "elem: 'fraction'"
+												},
+												{
+													elem: 'row',
+													content: "elemMods: { col: '5' }"
+												}
+											]
+										}
+									]
 								}]
 							}
 						]
