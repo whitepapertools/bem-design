@@ -176,7 +176,7 @@ module.exports = {
 								{
 									elem: 'row',
 									mix: [
-										{ block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
 									],
 									content: [
@@ -1193,7 +1193,7 @@ module.exports = {
 								},
 								{
 									elem: 'row',
-									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 									content: [
 										{
 											block: 'pt-icon-plus',
@@ -2024,7 +2024,7 @@ module.exports = {
 								},
 								{
 									block: 'icon-list',
-									mix: { block: 'tpl-grid', mods: { 'col-gap': 'half', 'row-gap': 'two-thirds', ratio: '1-1-1-1' }},
+									mix: { block: 'tpl-grid', mods: { 'col-gap': 'two-thirds', 'row-gap': 'two-thirds', ratio: '1-1-1-1' }},
 									content: [
 										{
 											block: 'icon-item',
@@ -2085,7 +2085,7 @@ module.exports = {
 								},
 								{
 									elem: 'row',
-									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'full' }},
 									content: [
 										{
 											block: 'pt-icon-plus',
@@ -2225,7 +2225,7 @@ module.exports = {
 								},
 								{
 									elem: 'row',
-									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 									content: [
 										{
 											block: 'pt-icon-plus',
@@ -2386,7 +2386,7 @@ module.exports = {
 								},
 								{
 									elem: 'row',
-									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 									content: [
 										{
 											block: 'pt-icon-plus',

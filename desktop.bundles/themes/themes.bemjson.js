@@ -161,7 +161,6 @@ module.exports = {
 								'id': 'color'
 							},
 							content: [
-								/* Colors */
 								{
 									block: 'decorator',
 									mods: { 'indent-b' : 'xxxxxl' },
@@ -179,12 +178,12 @@ module.exports = {
 										content: 'Переменные цветов используются в модификациях блоков и типографики подчеркивая их смысл или состояние.'
 									},
 									{
-										block: 'row',
+										elem: 'section',
+										mix: [
+											{ block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
+											{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+										],
 										content: [
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
 											{
 												block: 'color',
 												content: [
@@ -197,12 +196,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-brand'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -215,12 +209,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-action'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -233,12 +222,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-selection'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -251,16 +235,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-hover'
 												}]
-											}]
-										}]
-									},
-									{
-										block: 'row',
-										content: [
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -273,12 +248,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-default'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -291,12 +261,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-border'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -309,16 +274,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-ghost'
 												}]
-											}]
-										}]
-									},
-									{
-										block: 'row',
-										content: [
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -331,12 +287,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-soft'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -349,16 +300,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-tone'
 												}]
-											}]
-										}]
-									},
-									{
-										block: 'row',
-										content: [
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -371,12 +313,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-success'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -389,12 +326,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-alert'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -407,16 +339,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-warning'
 												}]
-											}]
-										}]
-									},
-									{
-										block: 'row',
-										content: [
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -429,12 +352,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-system'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -447,24 +365,16 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-bg-normal'
 												}]
-											}]
-										}]
-									}]
-								},
-								/* /Colors */
-
-								/* Typo Colors */
-								{
-									block: 'decorator',
-									mods: { 'indent-b' : 'xxxxxl' },
-									content: [
+											}
+										]
+									},
 									{
-										block: 'row',
+										elem: 'section',
+										mix: [
+											{ block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
+											{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+										],
 										content: [
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
 											{
 												block: 'color',
 												content: [
@@ -477,12 +387,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-typo-primary'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -495,12 +400,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-typo-promo'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -513,12 +413,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-typo-secondary'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -531,16 +426,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-typo-ghost'
 												}]
-											}]
-										}]
-									},
-									{
-										block: 'row',
-										content: [
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -553,12 +439,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-typo-disable'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -571,12 +452,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-typo-success'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -589,24 +465,16 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-typo-alert'
 												}]
-											}]
-										}]
-									}]
-								},
-								/* /Typo Colors */
-
-								/* Link Colors */
-								{
-									block: 'decorator',
-									mods: { 'indent-b' : 'xxxxxl' },
-									content: [
+											}
+										]
+									},
 									{
-										block: 'row',
+										elem: 'section',
+										mix: [
+											{ block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
+											{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+										],
 										content: [
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
 											{
 												block: 'color',
 												content: [
@@ -619,12 +487,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-link'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -637,12 +500,7 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-link-hover'
 												}]
-											}]
-										},
-										{
-											elem: 'col',
-											elemMods: { sw: 3 },
-											content: [
+											},
 											{
 												block: 'color',
 												content: [
@@ -655,11 +513,10 @@ module.exports = {
 													mods: { size: 'm', weight: 'bold' },
 													content: '--color-link-minor'
 												}]
-											}]
-										}]
+											}
+										]
 									}]
-								},
-								/* /Link Colors */
+								}
 							]
 						},
 						/* /Цвета */
@@ -687,11 +544,11 @@ module.exports = {
 								{
 									elem: 'row',
 									mix: [
-										{ block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
 									],
 									content: [
-
+										
 										{
 											block: 'space',
 											content: [
@@ -948,7 +805,7 @@ module.exports = {
 								{
 									elem: 'row',
 									mix: [
-										{ block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
 									],
 									content: [
@@ -1229,7 +1086,7 @@ module.exports = {
 								{
 									elem: 'section',
 									mix: [
-										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
 									],
 									content: [
@@ -1239,7 +1096,12 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															block: 'image',
+															attrs: { style: 'display: block' },
+															width: 468,
+															url: '../../assets/i/col-gap-full.svg'
+														}
 													]
 												},
 												{
@@ -1248,7 +1110,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'm', weight: 'bold' },
-															content: "--col-gap-ful"
+															content: "--col-gap-full"
 														}
 													]
 												}
@@ -1260,7 +1122,12 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															block: 'image',
+															attrs: { style: 'display: block' },
+															width: 468,
+															url: '../../assets/i/col-gap-two-thirds.svg'
+														}
 													]
 												},
 												{
@@ -1281,7 +1148,12 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															block: 'image',
+															attrs: { style: 'display: block' },
+															width: 468,
+															url: '../../assets/i/col-gap-half.svg'
+														}
 													]
 												},
 												{
@@ -1302,7 +1174,12 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															block: 'image',
+															attrs: { style: 'display: block' },
+															width: 468,
+															url: '../../assets/i/col-gap-third.svg'
+														}
 													]
 												},
 												{
@@ -1311,7 +1188,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'm', weight: 'bold' },
-															content: "--col-gap-thirds"
+															content: "--col-gap-third"
 														}
 													]
 												}
@@ -1345,7 +1222,7 @@ module.exports = {
 								{
 									elem: 'section',
 									mix: [
-										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'half', 'row-gap': 'half' }},
+										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
 									],
 									content: [
@@ -1355,7 +1232,10 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															elem: 'menu-image',
+															elemMods: { size: 'unfold' }
+														}
 													]
 												},
 												{
@@ -1376,7 +1256,10 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															elem: 'menu-image',
+															elemMods: { size: 'fold' }
+														}
 													]
 												},
 												{
@@ -1418,7 +1301,7 @@ module.exports = {
 								},
 								{
 									block: 'fonts',
-									mix: { block: 'tpl-grid', mods: { 'col-gap': 'half', ratio: '1-1' } },
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'two-thirds' } },
 									content: [
 										{
 											elem: 'item-wrapper',

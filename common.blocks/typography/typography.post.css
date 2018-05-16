@@ -1,6 +1,4 @@
 .typography {
-	margin-bottom: var(--space-xl);
-
 	&__view {
 		margin-bottom: var(--space-s);
 		box-sizing: border-box;

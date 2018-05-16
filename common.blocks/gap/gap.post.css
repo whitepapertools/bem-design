@@ -1,7 +1,6 @@
 .gap {
 	&__view {
 		height: 240px;
-		background: var(--color-bg-ghost);
 		margin-bottom: var(--space-xs);
 	}
 }
