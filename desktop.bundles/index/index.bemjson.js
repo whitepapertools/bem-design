@@ -236,7 +236,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'l', view: 'primary' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-															content: 'Тема является фундаментальным слоем на основе которого выстраивается дизайн-система'
+															content: 'Тема это фундаментальным слоем на основе которого выстраивается вся дизайн-система'
 														},
 														{
 															block: 'pt-list',
@@ -369,7 +369,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'l', view: 'primary' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-															content: 'Контентом являются мельчайшие блоки позволяющие выразить смысл логической сущности'
+															content: 'Контентом являются мельчайшие блоки позволяющие выразить смысл интерфейсной сущности'
 														},
 														{
 															block: 'pt-list',
@@ -635,7 +635,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'l', view: 'primary' },
 															mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-															content: 'Шаблоны представлют собой каркас, в который помогает паттернам занять свое место в интерфейсе'
+															content: 'Шаблоны представлют собой каркас, который помогает паттернам занять свое место в интерфейсе'
 														},
 														{
 															block: 'pt-list',
@@ -860,6 +860,11 @@ module.exports = {
 														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 														{ block: 'component', mods: { whitepaper: 'inverse' }}
 													],
+													tag: 'a',
+													attrs: {
+														href: 'https://habr.com/company/yamoney/blog/341028/',
+														target: '_blank'
+													},
 													content: [
 														{
 															elem: 'image',
@@ -925,6 +930,11 @@ module.exports = {
 														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 														{ block: 'component', mods: { whitepaper: 'inverse' }},
 													],
+													tag: 'a',
+													attrs: {
+														href: '#',
+														target: '_blank'
+													},
 													content: [
 														{
 															elem: 'header',
@@ -981,6 +991,11 @@ module.exports = {
 														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 														{ block: 'component', mods: { whitepaper: 'inverse' }},
 													],
+													tag: 'a',
+													attrs: {
+														href: 'https://ui8.net/products/kit-bill',
+														target: '_blank'
+													},
 													content: [
 														{
 															elem: 'image',
@@ -1170,6 +1185,11 @@ module.exports = {
 														{ block: 'component', mods: { whitepaper: 'inverse' }},
 														{ block: 'pt-card', view: 'default' }
 													],
+													tag: 'a',
+													attrs: {
+														href: 'http://dribbblemeetup.ru/',
+														target: '_blank'
+													},
 													content: [
 														{
 															block: 'image',
@@ -1261,6 +1281,11 @@ module.exports = {
 														{ block: 'component', mods: { whitepaper: 'inverse' }},
 														{ block: 'pt-card', view: 'default' }
 													],
+													tag: 'a',
+													attrs: {
+														href: 'https://www.youtube.com/watch?v=YUKHcQJEELw',
+														target: '_blank'
+													},
 													content: [
 														{
 															block: 'image',
@@ -1389,26 +1414,11 @@ module.exports = {
 														}
 													]
 												},
-												// {
-												// 	block: 'input',
-												// 	attrs: {
-												// 		'style': 'width: 300px;'
-												// 	},
-												// 	mix: { block: 'decorator', mods: { 'indent-r': 'xs' } },
-												// 	mods: {
-												// 			theme: 'islands',
-												// 			size: 'xl'
-												// 	},
-												// 	placeholder: 'Ваша почта'
-												// },
 												{
 													block: 'button',
-													mods: {
-														theme: 'islands',
-														size: 'xl',
-														view: 'action'
-													},
-													text: 'Подписаться'
+													mods: { theme: 'islands', size: 'xl', view: 'action', type: 'link' },
+													text: 'Телеграм',
+													url: 'http://google.com'
 												}
 											]
 										}
