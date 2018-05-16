@@ -1,55 +1,25 @@
 .breakpoint {
-	margin-bottom: var(--space-xl);
-	&:last-child {
-		margin-bottom: 0px;
-	}
 	&__view {
 		height: 40px;
 		background: var(--color-bg-action);
 		margin-bottom: var(--space-s);
 		position: relative;
+		height: 240px;
 		&_size {
 			&_xl {
-				width: 100%; /* var(--screen-xl) */
-				&::after {
-					content: '';
-					top: 0px;
-					right: 0px;
-					position: absolute;
-					height: 100%;
-					width: 80px;
-					background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%);
-				}
+				
 			}
 			&_l {
-				width: 100%; /* var(--screen-l) */
-				&::after {
-					content: '';
-					top: 0px;
-					right: 0px;
-					position: absolute;
-					height: 100%;
-					width: 120px;
-					background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%);
-				}
+
 			}
 			&_m {
-				width: 100%; /* var(--screen-m) */
-				&::after {
-					content: '';
-					top: 0px;
-					right: 0px;
-					position: absolute;
-					height: 100%;
-					width: 160px;
-					background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%);
-				}
+
 			}
 			&_s {
-				width: 720px; /* var(--screen-s) */
+
 			}
 			&_xs {
-				width: 320px; /* var(--screen-xs) */
+
 			}
 		}
 	}

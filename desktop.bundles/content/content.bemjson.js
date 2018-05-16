@@ -150,7 +150,7 @@ module.exports = {
 						{
 							block: 'text',
 							mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 							content: 'Контент'
 						},
 

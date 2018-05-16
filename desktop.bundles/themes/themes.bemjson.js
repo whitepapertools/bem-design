@@ -150,7 +150,7 @@ module.exports = {
 						{
 							block: 'text',
 							mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 							content: 'Тема'
 						},
 
@@ -973,11 +973,12 @@ module.exports = {
 						},
 						/* /Размеры */
 
+
 						/* Точки перестроения */
 						{
 							elem: 'section',
 							attrs: {
-								'id': 'breakpoint'
+								'id': 'gap'
 							},
 							content: [
 								{
@@ -999,13 +1000,19 @@ module.exports = {
 								},
 								{
 									elem: 'section',
+									mix: [
+										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
+										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
+									],
 									content: [
 										{
 											block: 'breakpoint',
 											content: [
 												{
 													elem: 'view',
-													elemMods: { size: 'xl' }
+													content: [
+
+													]
 												},
 												{
 													elem: 'text',
@@ -1024,7 +1031,9 @@ module.exports = {
 											content: [
 												{
 													elem: 'view',
-													elemMods: { size: 'l' }
+													content: [
+
+													]
 												},
 												{
 													elem: 'text',
@@ -1043,7 +1052,9 @@ module.exports = {
 											content: [
 												{
 													elem: 'view',
-													elemMods: { size: 'm' }
+													content: [
+
+													]
 												},
 												{
 													elem: 'text',
@@ -1062,7 +1073,9 @@ module.exports = {
 											content: [
 												{
 													elem: 'view',
-													elemMods: { size: 's' }
+													content: [
+
+													]
 												},
 												{
 													elem: 'text',
@@ -1081,7 +1094,9 @@ module.exports = {
 											content: [
 												{
 													elem: 'view',
-													elemMods: { size: 'xs' }
+													content: [
+
+													]
 												},
 												{
 													elem: 'text',
@@ -1446,7 +1461,7 @@ module.exports = {
 													block: 'text',
 													mix: { block: 'decorator', mods: { 'indent-t': 's' } },
 													mods: { size: 'm', view: 'primary', weight: 'bold' },
-													content: "font: 'Plex'"
+													content: "font: 'ibm'"
 												}
 											]
 										}
