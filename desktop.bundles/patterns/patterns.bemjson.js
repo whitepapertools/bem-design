@@ -156,7 +156,16 @@ module.exports = {
 							block: 'text',
 							mods: { size: 'l' },
 							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
-							content: 'Все бесконечное многообразие интерфейсных множеств сводится к числу фундаментальных конструкций, на основе которых можно получить практически любой визуал.'
+							content: [
+								{
+									elem: 'row',
+									content: 'Все бесконечное многообразие интерфейсных множеств сводится к числу фундаментальных'
+								},
+								{
+									elem: 'row',
+									content: 'конструкций, на основе которых можно получить практически любой визуал.'
+								}
+							]
 						},
 
 						/* PT-TABLE */
@@ -177,7 +186,16 @@ module.exports = {
 								block: 'text',
 								mods: { size: 'l' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-								content: 'Паттерн { block: \'pt-table\'} используется для представления табличной информации в различных пропорциях.'
+								content: [
+									{
+										elem: 'row',
+										content: 'Паттерн { block: \'pt-table\'} используется для представления табличной информации'
+									},
+									{
+										elem: 'row',
+										content: 'в различных пропорциях.'
+									}
+								]
 							},
 							{
 								block: 'pt-table',
@@ -641,7 +659,16 @@ module.exports = {
 								block: 'text',
 								mods: { size: 'l' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-								content: 'Паттерн { block: \'pt-list\' } используется для представления вертикально повторяющихся пунктов с любым содержимым.'
+								content: [
+									{
+										elem: 'row',
+										content: 'Паттерн { block: \'pt-list\' } используется для представления вертикально повторяющихся'
+									},
+									{
+										elem: 'row',
+										content: 'пунктов с любым содержимым.'
+									}
+								]
 							},
 							{
 								block: 'pt-table',
@@ -990,7 +1017,16 @@ module.exports = {
 								block: 'text',
 								mods: { size: 'l' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-								content: 'Паттерн { block: \'pt-form\' } используется для представления любой информации требующей ввода данных или выбора настроек пользователем для дальнейшей отправки.'
+								content: [
+									{
+										elem: 'row',
+										content: 'Паттерн { block: \'pt-form\' } используется для представления любой информации требующей'
+									},
+									{
+										elem: 'row',
+										content: 'ввода данных или выбора настроек пользователем для дальнейшей отправки.'
+									}
+								]
 							},
 							{
 								block: 'pt-table',
@@ -1494,7 +1530,18 @@ module.exports = {
 								block: 'text',
 								mods: { size: 'l' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-								content: 'Паттерн { block: \'pt-informer\' } используется для представления блоков информирующих об успехе/ошибке или предупреждающих/информирующих о чем либо.'
+								content: [
+									{
+										elem: 'row',
+										content: 'Паттерн { block: pt-informer } используется для представления блоков информирующих'
+									},
+
+
+									{
+										elem: 'row',
+										content: 'об успехе/ошибке или предупреждающих/информирующих о чем либо.'
+									}
+								]
 							},
 							{
 								block: 'pt-table',
@@ -1862,7 +1909,16 @@ module.exports = {
 								block: 'text',
 								mods: { size: 'l' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-								content: 'Паттерн { block: \'pt-icon-plus\' }  используется для представления связки графической и любой другой информации'
+								content: [
+									{
+										elem: 'row',
+										content: 'Паттерн { block: \'pt-icon-plus\' }  используется для представления связки графической'
+									},
+									{
+										elem: 'row',
+										content: 'и любой другой информации'
+									}
+								]
 							},
 							{
 								block: 'pt-table',
@@ -2298,7 +2354,16 @@ module.exports = {
 								block: 'text',
 								mods: { size: 'l' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-								content: 'Паттерн { block: \'pt-surface\' } используется для отображения перекрывающих слоев в которые размещается контент'
+								content: [
+									{
+										block: 'row',
+										content: 'Паттерн { block: \'pt-surface\' } используется для отображения перекрывающих слоев в которые'
+									},
+									{
+										block: 'row',
+										content: 'размещается контент'
+									}
+								]
 							},
 							{
 								block: 'pt-table',

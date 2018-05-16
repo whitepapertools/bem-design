@@ -171,7 +171,16 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-									content: 'Для легкой манипуляции внешним видом любой текст в интерфейсе выводится в { block: \'text\' }'
+									content: [
+										{
+											elem: 'row',
+											content: 'Для легкой манипуляции внешним видом любой текст в интерфейсе выводится'
+										},
+										{
+											elem: 'row',
+											content: 'в { block: \'text\' }'
+										}
+									]
 								},
 								{
 									elem: 'row',
@@ -1189,7 +1198,16 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-									content: 'Блок .brand-logo используется для отображения упрощенной версии логотипа, например в истории или формах оплаты (рядом с подписью).'
+									content: [
+										{
+											elem: 'row',
+											content: 'Блок .brand-logo используется для отображения упрощенной версии логотипа,'
+										},
+										{
+											elem: 'row',
+											content: 'например в истории или формах оплаты (рядом с подписью).'
+										}
+									]
 								},
 								{
 									elem: 'row',
@@ -2020,7 +2038,12 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-									content: 'Для отображения иконок используется { block: \'icon\' }. Иконки используются в различных частях интерфейса, они могут быть как самостоятельными сущностями, находиться внутри контролов или располагаться рядом с текстовыми блоками.'
+									content: [
+										{
+											elem: 'row',
+											content: 'Для отображения иконок используется { block: \'icon\' }.'
+										}
+									]
 								},
 								{
 									block: 'icon-list',
@@ -2081,7 +2104,20 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-									content: 'Для отображения фотографий пользователей и может быть дополнен дополнительными элементами, такими как статус или счетчик используется { block: \'avatar\' }, сами фотографии размещаются в { elem: \'photo\' }'
+									content: [
+										{
+											elem: 'row',
+											content: 'Для отображения фотографий пользователей и может быть дополнен вспомогательными'
+										},
+										{
+											elem: 'row',
+											content: 'элементами, такими как статус или счетчик используется { block: \'avatar\' }, сами'
+										},
+										{
+											elem: 'row',
+											content: 'фотографии размещаются в { elem: \'photo\' }'
+										}
+									]
 								},
 								{
 									elem: 'row',
@@ -2221,7 +2257,12 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-									content: 'Для отображения статусов используется { block: \'badge\' }'
+									content: [
+										{
+											elem: 'row',
+											content: 'Для отображения статусов используется { block: \'badge\' }'
+										}
+									]
 								},
 								{
 									elem: 'row',
@@ -2382,7 +2423,12 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'l' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-									content: 'Для классификации различных сущностей используется { block: \'tag\' }'
+									content: [
+										{
+											elem: 'row',
+											content: 'Для классификации различных сущностей используется { block: \'tag\' }'
+										}
+									]
 								},
 								{
 									elem: 'row',
