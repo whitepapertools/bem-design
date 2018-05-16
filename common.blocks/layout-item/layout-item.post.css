@@ -1,7 +1,8 @@
 .layout-item {
-   margin-bottom: var(--space-xxxl);
   &__view {
-    margin-bottom: var(--space-l);
-    background-repeat: no-repeat;
+    margin-bottom: var(--space-s);
+  }
+  .image {
+    width: 100%;
   }
 }
