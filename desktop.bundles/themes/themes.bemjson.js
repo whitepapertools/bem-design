@@ -1234,7 +1234,15 @@ module.exports = {
 													content: [
 														{
 															elem: 'menu-image',
-															elemMods: { size: 'unfold' }
+															elemMods: { size: 'unfold' },
+															content: [
+																{
+																	block: 'image',
+																	attrs: { style: 'display: block' },
+																	width: 300,
+																	url: '../../assets/i/menu-unfold.svg'
+																}
+															]
 														}
 													]
 												},
@@ -1258,7 +1266,15 @@ module.exports = {
 													content: [
 														{
 															elem: 'menu-image',
-															elemMods: { size: 'fold' }
+															elemMods: { size: 'fold' },
+															content: [
+																{
+																	block: 'image',
+																	attrs: { style: 'display: block' },
+																	width: 56,
+																	url: '../../assets/i/menu-fold.svg'
+																}
+															]
 														}
 													]
 												},
@@ -1268,7 +1284,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'm', weight: 'bold' },
-															content: "--menu-unfold"
+															content: "--menu-fold"
 														}
 													]
 												}
