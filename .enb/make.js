@@ -45,15 +45,7 @@ const techs = {
         { path: 'node_modules/bem-components-custom/desktop.blocks', check: false },
         { path: 'node_modules/bem-components-custom/design/common.blocks', check: false },
         { path: 'node_modules/bem-components-custom/design/desktop.blocks', check: false },
-        { path: 'node_modules/bem-themes/common.blocks', check: false },
-        { path: 'node_modules/bem-animations/common.blocks', check: false },
-        { path: 'node_modules/bem-icons/common.blocks', check: false },
-        { path: 'node_modules/bem-layouts/common.blocks', check: false },
-        { path: 'node_modules/bem-logos/common.blocks', check: false },
-        { path: 'node_modules/bem-patterns/common.blocks', check: false },
-        { path: 'node_modules/bem-typo/common.blocks', check: false },
-        { path: 'node_modules/bem-vectors/common.blocks', check: false },
-				{ path: 'node_modules/bem-social/common.blocks', check: false }
+        { path: 'node_modules/whitepaper-bem', check: false },
     ];
 
 module.exports = function(config) {
