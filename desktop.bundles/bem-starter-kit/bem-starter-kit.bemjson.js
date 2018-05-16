@@ -14,11 +14,11 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+			mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 		},
 		{
 			block: 'component',
-			mods: { liquid: 'default' }
+			mods: { whitepaper: 'default' }
 		}
 	],
 	content: [
@@ -588,8 +588,8 @@ module.exports = {
 																			elem: 'item',
 																			elemMods: { view: 'brand' },
 																			mix: [
-																				{ block: 'theme', mods: { color: 'liquid-brand' }},
-																				{ block: 'component', mods: { liquid: 'brand' }},
+																				{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+																				{ block: 'component', mods: { whitepaper: 'brand' }},
 																			],
 																			content: [
 																				{
@@ -749,8 +749,8 @@ module.exports = {
 																					elem: 'item',
 																					elemMods: { view: 'brand' },
 																					mix: [
-																						{ block: 'theme', mods: { color: 'liquid-brand' }},
-																						{ block: 'component', mods: { liquid: 'brand' }},
+																						{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+																						{ block: 'component', mods: { whitepaper: 'brand' }},
 																					],
 																					content: [
 																						{
@@ -2430,8 +2430,8 @@ module.exports = {
 														{
 															elem: 'description',
 															mix: [
-																{ block: 'theme', mods: { color: 'liquid-brand' }},
-																{ block: 'component', mods: { liquid: 'brand' }},
+																{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+																{ block: 'component', mods: { whitepaper: 'brand' }},
 																{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' } },
 															],
 															content: [
@@ -2637,8 +2637,8 @@ module.exports = {
 														{
 															elem: 'description',
 															mix: [
-																{ block: 'theme', mods: { color: 'liquid-brand' }},
-																{ block: 'component', mods: { liquid: 'brand' }},
+																{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+																{ block: 'component', mods: { whitepaper: 'brand' }},
 																{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
 															],
 															content: [
@@ -2923,8 +2923,8 @@ module.exports = {
 												{
 													block: 'article-preview',
 													mix: [
-														{ block: 'theme', mods: { color: 'liquid-inverse' }},
-														{ block: 'component', mods: { liquid: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }},
 														{ block: 'pt-card' }
 													],
 													content: [
@@ -3016,8 +3016,8 @@ module.exports = {
 												{
 													block: 'answer',
 													mix: [
-														{ block: 'theme', mods: { color: 'liquid-brand' }},
-														{ block: 'component', mods: { liquid: 'brand' }},
+														{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+														{ block: 'component', mods: { whitepaper: 'brand' }},
 														{ block: 'pt-card' }
 													],
 													content: [
@@ -3617,8 +3617,8 @@ module.exports = {
 														{
 															elem: 'footer',
 															mix: [
-																{ block: 'theme', mods: { color: 'liquid-brand' }},
-																{ block: 'component', mods: { liquid: 'brand' }},
+																{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+																{ block: 'component', mods: { whitepaper: 'brand' }},
 																{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' }}
 															],
 															elemMods: { state: 'unfold' },
@@ -4224,8 +4224,8 @@ module.exports = {
 																	block: 'bank-card',
 																	mods: { view: 'brand' },
 																	mix: [
-																		{ block: 'theme', mods: { color: 'liquid-brand' }},
-																		{ block: 'component', mods: { liquid: 'brand' }},
+																		{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+																		{ block: 'component', mods: { whitepaper: 'brand' }},
 																		{ block: 'decorator', mods: { 'indent-h': 'xl'}}
 																	],
 																	content: [
@@ -4574,8 +4574,8 @@ module.exports = {
 												{
 													block: 'tariff',
 													mix: [
-														{ block: 'theme', mods: { color: 'liquid-brand' }},
-														{ block: 'component', mods: { liquid: 'brand' }},
+														{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+														{ block: 'component', mods: { whitepaper: 'brand' }},
 														{ block: 'pt-card' }
 													],
 													content: [
@@ -4725,8 +4725,8 @@ module.exports = {
 													block: 'tariff',
 													mods: { view: 'image' },
 													mix: [
-														{ block: 'theme', mods: { color: 'liquid-inverse' }},
-														{ block: 'component', mods: { liquid: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }},
 														{ block: 'pt-card' }
 													],
 													content: [
