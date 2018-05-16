@@ -104,15 +104,30 @@ module.exports = {
 					content: [
 						{
 							block: 'text',
-							mix: { block: 'decorator', mods: { 'indent-b': 's' } },
 							mods: { size: 'xxxxl', weight: 'bold' },
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
 							content: 'Шаблоны'
 						},
 						{
 							block: 'text',
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
-							mods: { size: 'l', view: 'primary', },
-							content: 'Cодержит в себе необходимые элементы в различных модификациях для реализации общих обвязок каркаса/проектов'
+							mods: { size: 'xxl', weight: 'bold' },
+							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+							content: 'Обвязка'
+						},
+						{
+							block: 'text',
+							mods: { size: 'l' },
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+							content: [
+								{
+									elem: 'row',
+									content: 'Cодержит в себе необходимые элементы в различных модификациях для реализации общих'
+								},
+								{
+									elem: 'row',
+									content: 'обвязок каркаса/проектов.'
+								}
+							]
 						},
 						{
 							block: 'layout-list',
@@ -343,15 +358,15 @@ module.exports = {
 					content: [
 					{
 						block: 'text',
-						mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-						mods: { size: 'xxxxl', weight: 'bold' },
+						mods: { size: 'xxl', weight: 'bold' },
+						mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 						content: 'Сетки'
 					},
 					{
 						block: 'text',
-						mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
-						mods: { size: 'l', view: 'primary', },
-						content: 'Управляет ритмом и композицией (расположением блоков) внутри секций'
+						mods: { size: 'l' },
+						mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+						content: 'Управляет ритмом и композицией (расположением блоков) внутри секций.'
 					},
 					{
 						block: 'layout-list',

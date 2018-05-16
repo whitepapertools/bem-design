@@ -150,7 +150,7 @@ module.exports = {
 						{
 							block: 'text',
 							mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 							content: 'Тема'
 						},
 
@@ -1461,7 +1461,7 @@ module.exports = {
 													block: 'text',
 													mix: { block: 'decorator', mods: { 'indent-t': 's' } },
 													mods: { size: 'm', view: 'primary', weight: 'bold' },
-													content: "font: 'Plex'"
+													content: "font: 'ibm'"
 												}
 											]
 										}

@@ -149,13 +149,13 @@ module.exports = {
 						{
 							block: 'text',
 							mods: { size: 'xxxxl', weight: 'bold' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+							mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 							content: 'Паттерны'
 						},
 						{
 							block: 'text',
 							mods: { size: 'l' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 							content: [
 								{
 									elem: 'row',
