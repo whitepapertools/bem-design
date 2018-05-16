@@ -102,274 +102,234 @@ module.exports = {
 					block: 'demo',
 					elem: 'content',
 					content: [
-					{
-						block: 'text',
-						mods: { size: 'xxxxl', weight: 'bold' },
-						mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
-						content: 'Шаблоны'
-					},
-					/* 32-8-4 */
-					{
-						block: 'layout-list',
-						content: [
 						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
-									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/layouts/50-50.svg'
-									}
-								]
-							},
-							{
-								elem: 'name',
-								content: [
-								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/JWNLLO',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "50-50"
-								}]
-							}]
+							block: 'text',
+							mods: { size: 'xxxxl', weight: 'bold' },
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
+							content: 'Шаблоны'
 						},
 						{
-							block: 'layout-item',
+							block: 'layout-list',
+							mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'full' } },
 							content: [
 							{
-								elem: 'view',
-								content: [
-									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/layouts/70-30.svg'
-									}
-								]
-							},
-							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/zZwjrR',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "70-30"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/layouts/50-50.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/layouts/90-10.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/JWNLLO',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "50-50"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/MpmGJE',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "90-10"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/layouts/70-30.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/layouts/100.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/zZwjrR',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "70-30"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/oZWdGV',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "100"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/layouts/90-10.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/layouts/fold-25-50-25.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/MpmGJE',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "90-10"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/oZWdGV',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "fold-25-50-25"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/layouts/100.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/layouts/unfold-25-50-25.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/oZWdGV',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "100"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/Rochet/full/zPwYao/',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "unfold-25-50-25"
-								}]
-							}]
-						}]
-					},
-					/* 24-4-6 */
-					{
-						block: 'layout-list',
-						content: [
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/layouts/fold-25-50-25.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/layouts/fold-100.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/oZWdGV',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "fold-25-50-25"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/mWmLYP',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "fold-100"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/layouts/unfold-25-50-25.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/layouts/unfold-100.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/Rochet/full/zPwYao/',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "unfold-25-50-25"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/qrmKdW',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "unfold-100"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/layouts/fold-100.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/24_4x6_default.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/mWmLYP',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "fold-100"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/Rochet/full/NwjWOZ/',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "Add your template"
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/layouts/unfold-100.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
+									{
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/qrmKdW',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "unfold-100"
+									}]
 								}]
 							}]
-						}]
-					}]
+						}
+					]
 				},
 				{
 					block: 'demo',
@@ -383,203 +343,171 @@ module.exports = {
 					},
 					{
 						block: 'layout-list',
+						mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'half', 'row-gap': 'full' } },
 						content: [
-						{
-							block: 'layout-item',
-							content: [
 							{
-								elem: 'view',
-								content: [
-									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/grids/1-1.svg'
-									}
-								]
-							},
-							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/JWNLLO',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "1-1"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/grids/1-1.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/grids/1-1-1.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/JWNLLO',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "1-1"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/zZwjrR',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "1-1-1"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/grids/1-1-1.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/grids/1-1-1-1.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/zZwjrR',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "1-1-1"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/MpmGJE',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "1-1-1-1"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/grids/1-1-1-1.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/grids/9-3.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/MpmGJE',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "1-1-1-1"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/oZWdGV',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "9-3"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/grids/9-3.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/grids/4-8.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/oZWdGV',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "9-3"
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/yegorov/full/oZWdGV',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "4-8 "
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/grids/4-8.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/grids/7-5.svg'
-									}
-								]
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/yegorov/full/oZWdGV',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "4-8 "
+									}]
+								}]
 							},
 							{
-								elem: 'name',
+								block: 'layout-item',
 								content: [
 								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/Rochet/full/zPwYao/',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "7-5"
-								}]
-							}]
-						},
-						{
-							block: 'layout-item',
-							content: [
-							{
-								elem: 'view',
-								content: [
+									elem: 'view',
+									content: [
+										{
+											block: 'image',
+											url: '/assets/i/grids/7-5.svg'
+										}
+									]
+								},
+								{
+									elem: 'name',
+									content: [
 									{
-										block: 'image',
-										width: 348,
-										url: '/assets/i/24_4x6_default.svg'
-									}
-								]
-							},
-							{
-								elem: 'name',
-								content: [
-								{
-									block: 'text',
-									tag: 'a',
-									attrs: {
-										href: 'https://codepen.io/Rochet/full/NwjWOZ/',
-										target: '_blank'
-									},
-									mods: { size: 'm', view: 'link', weight: 'bold' },
-									content: "Add your template"
+										block: 'text',
+										// tag: 'a',
+										// attrs: {
+										// 	href: 'https://codepen.io/Rochet/full/zPwYao/',
+										// 	target: '_blank'
+										// },
+										mods: { size: 'm', view: 'link', weight: 'bold' },
+										content: "7-5"
+									}]
 								}]
-							}]
-						}]
+							}
+						]
 					}]
 				},
 				/* Footer */
