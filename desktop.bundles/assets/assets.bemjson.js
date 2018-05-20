@@ -21,127 +21,14 @@ module.exports = {
 			block: 'tpl-layout',
 			attrs: { style: 'position: relative; top: 60px' },
 			content: [
+
+				/* Menu */
 				{
 					block: 'new-menu',
-					mix: { block: 'tpl-layout', elem: 'section' },
-					content: [
-						{
-							elem: 'container',
-							mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }, },
-							content: [
-								{
-									elem: 'logo',
-									tag: 'a',
-									attrs: { href: '../../../../desktop.bundles/index/index.html' },
-									content: {
-										block: 'image',
-										attrs: { style: 'display: block' },
-										width: 44,
-										url: '../../assets/i/bem-design.svg'
-									}
-								},
-								{
-									elem: 'nav',
-									content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/themes/themes.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Тема'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/content/content.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Контент'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/patterns/patterns.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Паттерны'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/layouts/layouts.html' },
-
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Шаблоны'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/doc/doc.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Обучение'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/assets/assets.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Материалы'
-										},
-										// {
-										// 	elem: 'item',
-										// 	elemMods: { view: 'dropdown' },
-										// 	content: [
-										// 		{
-										// 			block: 'pt-icon-plus',
-										// 			mods: { 'vertical-align': 'center' },
-										// 			content: [
-										// 				{
-										// 					elem: 'block',
-										// 					content: {
-										// 						block: 'text',
-										// 						mods: { size: 'm', view: 'primary' },
-										// 						content: 'Инфо'
-										// 					}
-										// 				},
-										// 				{
-										// 					elem: 'icon',
-										// 					elemMods: { 'indent-l': 'xs'},
-										// 					content: { block: 'icon', mods: { 'name': 'arrow-down', view: 'ghost', size: 's' }}
-										// 				}
-										// 			]
-										// 		},
-										// 		{
-										// 			elem: 'dropdown',
-										// 			content: [
-										// 				{
-										// 					block: 'text',
-										// 					mods: { size: 'm', view: 'primary' },
-										// 					tag: 'a', attrs: { href: '/templates.html' },
-										// 					mix: { block: 'new-menu', elem: 'dropdown-link' },
-										// 					content: 'Документы'
-										// 				},
-										// 				{
-										// 					block: 'text',
-										// 					mods: { size: 'm', view: 'primary' },
-										// 					tag: 'a', attrs: { href: '/templates.html' },
-										// 					mix: { block: 'new-menu', elem: 'dropdown-link' },
-										// 					content: 'Материалы'
-										// 				},
-										// 			]
-										// 		}
-										// 	]
-										// }
-									]
-								}
-							]
-						}
-					]
 				},
+				/* /Menu */
+
+				/* Content */
 				{
 					block: 'demo',
 					elem: 'content',
@@ -150,20 +37,17 @@ module.exports = {
 						{
 							block: 'text',
 							mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
 							content: 'Материалы'
 						},
 
 						/* KIT BILL */
 						{
 							elem: 'section',
+							mix: { block: 'decorator', mods: { 'space-t': 'xxxxl' }},
 							content: [
 								{
 									elem: 'row',
-									mix: [
-										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'full' }},
-										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
-									],
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'full' }},
 									content: [
 										{
 											block: 'wrap',
@@ -193,7 +77,7 @@ module.exports = {
 											]
 										},
 										{
-											block: 'cover',
+											elem: 'cover',
 											attrs: { 
 												'style': 'height: 351px; overflow: hidden; background: var(--color-bg-ghost);'
 											},
@@ -217,10 +101,7 @@ module.exports = {
 							content: [
 								{
 									elem: 'row',
-									mix: [
-										{ block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'full' }},
-										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
-									],
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'full' }},
 									content: [
 										{
 											block: 'wrap',
@@ -250,7 +131,7 @@ module.exports = {
 											]
 										},
 										{
-											block: 'cover',
+											elem: 'cover',
 											attrs: { 
 												'style': 'height: 351px; overflow: hidden; background: var(--color-bg-ghost);'
 											},
@@ -269,82 +150,14 @@ module.exports = {
 						/* BEM STARTER KIT */
 					]
 				},
+				/* Content */
+
 				/* Footer */
 				{
-					elem: 'section',
-					mix: [
-						{ block: 'foot' },
-						{ block: 'component', mods: { whitepaper: 'default' }}
-					],
-					content: {
-						elem: 'container',
-						elemMods: { size: 'm', align: 'center' },
-						mix: { block: 'foot', elem: 'container' },
-						content: [
-							{
-								block: 'text',
-								mods: { size: 'm', view: 'secondary' },
-								content: '© 2018 White Paper'
-							},
-							{
-								block: 'foot',
-								elem: 'social',
-								content: [
-									// {
-									// 	block: 'social-icon',
-									// 	mods: { name: 'ok', size: 'm', view: 'primary' },
-									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-									// 	tag: 'a',
-									// 	attrs: { href: 'https://github.com/whitepapertools' }
-									// },
-									// {
-									// 	block: 'social-icon',
-									// 	mods: { name: 'ya', size: 'm', view: 'primary' },
-									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-									// 	tag: 'a',
-									// 	attrs: { href: 'https://github.com/whitepapertools' }
-									// },
-									{
-										block: 'social-icon',
-										mods: { name: 'github', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://github.com/whitepapertools' }
-									},
-									{
-										block: 'social-icon',
-										mods: { name: 'telegram', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://t.me/whitepapertools' }
-									},
-									{
-										block: 'social-icon',
-										mods: { name: 'twitter', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://twitter.com/whitepapertools' }
-									},
-									{
-										block: 'social-icon',
-										mods: { name: 'codepen', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://codepen.io/whitepapertools' }
-									},
-									{
-										block: 'social-icon',
-										mods: { name: 'dribbble', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://dribbble.com/whitepapertools' }
-									}
-								]
-							}
-						]
-					}
+					block: 'footer',
 				}
 				/* /Footer */
+
 			]
 		}
 	]

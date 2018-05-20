@@ -1,7 +1,7 @@
 .demo__content {
 	/*position: relative;*/
 	display: block;
-	padding: var(--space-xxxxxl) 0px;
+	padding: var(--space-xxxxxl) 0px calc( 2 * $space-xxxxxl);
 	margin: auto;
 	width: 1140px;
 

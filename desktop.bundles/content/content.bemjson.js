@@ -21,127 +21,14 @@ module.exports = {
 			block: 'tpl-layout',
 			attrs: { style: 'position: relative; top: 60px' },
 			content: [
+
+				/* Menu */
 				{
 					block: 'new-menu',
-					mix: { block: 'tpl-layout', elem: 'section' },
-					content: [
-						{
-							elem: 'container',
-							mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }, },
-							content: [
-								{
-									elem: 'logo',
-									tag: 'a',
-									attrs: { href: '../../../../desktop.bundles/index/index.html' },
-									content: {
-										block: 'image',
-										attrs: { style: 'display: block' },
-										width: 44,
-										url: '../../assets/i/bem-design.svg'
-									}
-								},
-								{
-									elem: 'nav',
-									content: [
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/themes/themes.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Тема'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/content/content.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Контент'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/patterns/patterns.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Паттерны'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/layouts/layouts.html' },
-
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Шаблоны'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/doc/doc.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Обучение'
-										},
-										{
-											block: 'text',
-											mods: { size: 'm', view: 'primary' },
-											tag: 'a', 
-											attrs: { href: '../../../../desktop.bundles/assets/assets.html' },
-											mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
-											content: 'Материалы'
-										},
-										// {
-										// 	elem: 'item',
-										// 	elemMods: { view: 'dropdown' },
-										// 	content: [
-										// 		{
-										// 			block: 'pt-icon-plus',
-										// 			mods: { 'vertical-align': 'center' },
-										// 			content: [
-										// 				{
-										// 					elem: 'block',
-										// 					content: {
-										// 						block: 'text',
-										// 						mods: { size: 'm', view: 'primary' },
-										// 						content: 'Инфо'
-										// 					}
-										// 				},
-										// 				{
-										// 					elem: 'icon',
-										// 					elemMods: { 'indent-l': 'xs'},
-										// 					content: { block: 'icon', mods: { 'name': 'arrow-down', view: 'ghost', size: 's' }}
-										// 				}
-										// 			]
-										// 		},
-										// 		{
-										// 			elem: 'dropdown',
-										// 			content: [
-										// 				{
-										// 					block: 'text',
-										// 					mods: { size: 'm', view: 'primary' },
-										// 					tag: 'a', attrs: { href: '/templates.html' },
-										// 					mix: { block: 'new-menu', elem: 'dropdown-link' },
-										// 					content: 'Документы'
-										// 				},
-										// 				{
-										// 					block: 'text',
-										// 					mods: { size: 'm', view: 'primary' },
-										// 					tag: 'a', attrs: { href: '/templates.html' },
-										// 					mix: { block: 'new-menu', elem: 'dropdown-link' },
-										// 					content: 'Материалы'
-										// 				},
-										// 			]
-										// 		}
-										// 	]
-										// }
-									]
-								}
-							]
-						}
-					]
 				},
+				/* /Menu */
+
+				/* Content */
 				{
 					block: 'demo',
 					elem: 'content',
@@ -150,13 +37,13 @@ module.exports = {
 						{
 							block: 'text',
 							mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 							content: 'Контент'
 						},
 
 						/* Типографика */
 						{
 							elem: 'section',
+							mix: { block: 'decorator', mods: { 'space-t': 'xxxxl' }},
 							attrs: {
 								'id': 'text'
 							},
@@ -205,16 +92,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: "mods: { size: 'xxxl' }"
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'font-size: 32px'
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'line-height: 42px'
 											}]
 										},
 										{
@@ -233,16 +110,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { size: 'xxl' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'font-size: 24px'
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'line-height: 34px'
 											}]
 										},
 										{
@@ -261,16 +128,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { size: 'xl' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'font-size: 20px'
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'line-height: 28px'
 											}]
 										},
 										{
@@ -289,16 +146,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: "mods: { size: 'l' }"
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'font-size: 18px'
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'line-height: 25px'
 											}]
 										},
 										{
@@ -317,16 +164,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: "mods: { size: 'm' }"
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'font-size: 15px'
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'line-height: 21px'
 											}]
 										},
 										{
@@ -345,16 +182,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: "mods: { size: 's' }"
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'font-size: 13px'
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'line-height: 18px'
 											}]
 										},
 										{
@@ -373,16 +200,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: "mods: { size: 'xs' }"
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'font-size: 11px'
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'line-height: 15px'
 											}]
 										}
 									]
@@ -410,11 +227,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { view: 'primary' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: '#000000'
 											}]
 										},
 										{
@@ -433,11 +245,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { view: 'promo' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'rgba(0, 0, 0, 0.7)'
 											}]
 										},
 										{
@@ -456,11 +263,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { view: 'secondary' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'rgba(0, 0, 0, 0.60)'
 											}]
 										},
 										{
@@ -479,11 +281,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { view: 'ghost' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'rgba(0, 0, 0, 0.30)'
 											}]
 										},
 										{
@@ -502,11 +299,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { view: 'disable' }"
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'rgba(0,0,0,0.30)'
 											}]
 										},
 										{
@@ -525,11 +317,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { view: 'link' }"
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: '#0070F0'
 											}]
 										}
 
@@ -558,11 +345,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { weight: 'bold' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'weight: bold'
 											}]
 										}
 									]
@@ -590,11 +372,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { transform: 'uppercase' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'transform: uppercase'
 											}]
 										}
 									]
@@ -622,11 +399,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { spacing: 's' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'letter-spacing: 1px'
 											}]
 										},
 										{
@@ -645,11 +417,6 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', weight: 'bold' },
 												content: " mods: { spacing: 'm' } "
-											},
-											{
-												block: 'text',
-												mods: { size: 'm' },
-												content: 'letter-spacing: 2px'
 											}]
 										}
 									]
@@ -678,11 +445,6 @@ module.exports = {
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
 													content: " mods: { style: 'italic' } "
-												},
-												{
-													block: 'text',
-													mods: { size: 'm' },
-													content: 'font-style: italic'
 												}]
 											}]
 										}
@@ -2631,82 +2393,14 @@ module.exports = {
 						/* /Теги */
 					]
 				},
+				/* /Content */
+
 				/* Footer */
 				{
-					elem: 'section',
-					mix: [
-						{ block: 'foot' },
-						{ block: 'component', mods: { whitepaper: 'default' }}
-					],
-					content: {
-						elem: 'container',
-						elemMods: { size: 'm', align: 'center' },
-						mix: { block: 'foot', elem: 'container' },
-						content: [
-							{
-								block: 'text',
-								mods: { size: 'm', view: 'secondary' },
-								content: '© 2018 White Paper'
-							},
-							{
-								block: 'foot',
-								elem: 'social',
-								content: [
-									// {
-									// 	block: 'social-icon',
-									// 	mods: { name: 'ok', size: 'm', view: 'primary' },
-									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-									// 	tag: 'a',
-									// 	attrs: { href: 'https://github.com/whitepapertools' }
-									// },
-									// {
-									// 	block: 'social-icon',
-									// 	mods: { name: 'ya', size: 'm', view: 'primary' },
-									// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-									// 	tag: 'a',
-									// 	attrs: { href: 'https://github.com/whitepapertools' }
-									// },
-									{
-										block: 'social-icon',
-										mods: { name: 'github', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://github.com/whitepapertools' }
-									},
-									{
-										block: 'social-icon',
-										mods: { name: 'telegram', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://t.me/whitepapertools' }
-									},
-									{
-										block: 'social-icon',
-										mods: { name: 'twitter', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://twitter.com/whitepapertools' }
-									},
-									{
-										block: 'social-icon',
-										mods: { name: 'codepen', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://codepen.io/whitepapertools' }
-									},
-									{
-										block: 'social-icon',
-										mods: { name: 'dribbble', size: 'm', view: 'primary' },
-										mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-										tag: 'a',
-										attrs: { href: 'https://dribbble.com/whitepapertools' }
-									}
-								]
-							}
-						]
-					}
+					block: 'footer',
 				}
 				/* /Footer */
+
 			]
 		}
 	]

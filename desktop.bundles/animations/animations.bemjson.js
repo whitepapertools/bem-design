@@ -17,324 +17,266 @@ module.exports = {
 		mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 	},
 	content: [
-	{
-		block: 'demo',
-		elem: 'content',
-		elemMods: { size: 'm' },
-		content: [
+
+		/* Menu */
 		{
-			block: 'text',
-			mods: { size: 'xxxxl', weight: 'bold', view: 'primary', font: 'sans' },
-			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
-			content: 'Animations'
+			block: 'new-menu',
 		},
+		/* /Menu */
+		
+		/* Content */
 		{
-			block: 'animation-list',
+			block: 'demo',
+			elem: 'content',
+			elemMods: { size: 'm' },
 			content: [
 			{
-				block: 'animation-item',
-				content: [
-				{
-					elem: 'view',
-					mix: [{ block: 'js-paranja' }],
-					content: [
-					{
-						block: 'text',
-						mods: { view: 'primary', size: 'm' },
-						content: 'click here'
-					},
-					{
-						elem: 'paranja',
-						mix: { block: 'animation', mods: { 'fade': 'out' } },
-					}]
-				},
-				{
-					block: 'text',
-					mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
-					content: "Fade In / Fade Out"
-				},
-				{
-					block: 'text',
-					mods: { size: 's', view: 'primary', font: 'sans' },
-					content: "mods: { 'fade': 'in' }   /   mods: { 'fade': 'out' }"
-				}]
+				block: 'text',
+				mods: { size: 'xxxxl', weight: 'bold', view: 'primary', font: 'sans' },
+				mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+				content: 'Animations'
 			},
 			{
-				block: 'animation-item',
+				block: 'animation-list',
 				content: [
 				{
-					elem: 'view',
-					mix: [{ block: 'js-modal-top' }],
+					block: 'animation-item',
 					content: [
+					{
+						elem: 'view',
+						mix: [{ block: 'js-paranja' }],
+						content: [
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
+						{
+							elem: 'paranja',
+							mix: { block: 'animation', mods: { 'fade': 'out' } },
+						}]
+					},
 					{
 						block: 'text',
-						mods: { view: 'primary', size: 'm' },
-						content: 'click here'
+						mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
+						content: "Fade In / Fade Out"
 					},
-					{
-						elem: 'modal',
-						attrs: { style: 'display: none;' },
-						mix: { block: 'animation', mods: { to: 'bottom' } },
-					}]
-				},
-				{
-					block: 'text',
-					mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
-					content: "From top to bottom"
-				},
-				{
-					block: 'text',
-					mods: { size: 's', view: 'primary', font: 'sans' },
-					content: "mods: { 'from': 'top' }   /   mods: { 'to': 'bottom' }"
-				}]
-			},
-			{
-				block: 'animation-item',
-				content: [
-				{
-					elem: 'view',
-					mix: [{ block: 'js-modal-bottom' }],
-					content: [
 					{
 						block: 'text',
-						mods: { view: 'primary', size: 'm' },
-						content: 'click here'
-					},
-					{
-						elem: 'modal',
-						attrs: { style: 'display: none;' },
-						mix: { block: 'animation', mods: { to: 'top' } },
+						mods: { size: 's', view: 'primary', font: 'sans' },
+						content: "mods: { 'fade': 'in' }   /   mods: { 'fade': 'out' }"
 					}]
 				},
 				{
-					block: 'text',
-					mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
-					content: "From bottom to top"
-				},
-				{
-					block: 'text',
-					mods: { size: 's', view: 'primary', font: 'sans' },
-					content: "mods: { 'from': 'bottom' }   /   mods: { 'to': 'top' }"
-				}]
-			},
-			{
-				block: 'animation-item',
-				content: [
-				{
-					elem: 'view',
-					mix: [{ block: 'js-modal-right' }],
+					block: 'animation-item',
 					content: [
+					{
+						elem: 'view',
+						mix: [{ block: 'js-modal-top' }],
+						content: [
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
+						{
+							elem: 'modal',
+							attrs: { style: 'display: none;' },
+							mix: { block: 'animation', mods: { to: 'bottom' } },
+						}]
+					},
 					{
 						block: 'text',
-						mods: { view: 'primary', size: 'm' },
-						content: 'click here'
+						mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
+						content: "From top to bottom"
 					},
-					{
-						elem: 'modal',
-						attrs: { style: 'display: none;' },
-						mix: { block: 'animation', mods: { to: 'left' } },
-					}]
-				},
-				{
-					block: 'text',
-					mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
-					content: "From right to left"
-				},
-				{
-					block: 'text',
-					mods: { size: 's', view: 'primary', font: 'sans' },
-					content: "mods: { 'from': 'right' }   /   mods: { 'to': 'left' }"
-				}]
-			},
-			{
-				block: 'animation-item',
-				content: [
-				{
-					elem: 'view',
-					mix: [{ block: 'js-modal-left' }],
-					content: [
 					{
 						block: 'text',
-						mods: { view: 'primary', size: 'm' },
-						content: 'click here'
-					},
-					{
-						elem: 'modal',
-						attrs: { style: 'display: none;' },
-						mix: { block: 'animation', mods: { to: 'right' } },
+						mods: { size: 's', view: 'primary', font: 'sans' },
+						content: "mods: { 'from': 'top' }   /   mods: { 'to': 'bottom' }"
 					}]
 				},
 				{
-					block: 'text',
-					mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
-					content: "From left to right"
-				},
-				{
-					block: 'text',
-					mods: { size: 's', view: 'primary', font: 'sans' },
-					content: "mods: { 'from': 'left' }   /   mods: { 'to': 'right' }"
-				}]
-			},
-			// {
-			// 	block: 'animation-item',
-			// 	content: [
-			// 	{
-			// 		elem: 'view',
-			// 		content: [
-			// 		{
-			// 			block: 'e-accordion',
-			// 			content: [
-			// 			{
-			// 				elem: 'item',
-			// 				content: [
-			// 				{
-			// 					elem: 'short',
-			// 					mix: { block: 'decorator', mods: { 'space-a': 'm' } },
-			// 					content: {
-			// 						block: 'text',
-			// 						mods: { size: 'm', view: 'link', font: 'sans' },
-			// 						content: 'click me!'
-			// 					}
-			// 				},
-			// 				{
-			// 					elem: 'more',
-			// 					mix: { block: 'decorator', mods: { 'space-a': 'm' } },
-			// 					content: {
-			// 						block: 'text',
-			// 						mods: { size: 'm', view: 'primary', font: 'sans' },
-			// 						content: 'here I am!'
-			// 					}
-			// 				}]
-			// 			}]
-			// 		}]
-			// 	},
-			// 	{
-			// 		elem: 'name',
-			// 		content: [
-			// 		{
-			// 			block: 'text',
-			// 			mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
-			// 			content: "Accordion toggle"
-			// 		},
-			// 		{
-			// 			block: 'text',
-			// 			mods: { size: 's', view: 'primary', font: 'sans' },
-			// 			content: "block: 'e-accordion'   /   elem: 'short'   /   elem: 'more'"
-			// 		}]
-			// 	}]
-			// },
-			{
-				block: 'animation-item',
-				content: [
-				{
-					elem: 'view',
+					block: 'animation-item',
 					content: [
 					{
-						block: 'decorator',
-						mods: { 'indent-a': 's' },
-						content: {
-							block: 'button',
-							mix: [{ block: 'animation' }, { block: 'js-shake-horizontal' }],
-							content: 'Shake me horizontal!'
-						}
+						elem: 'view',
+						mix: [{ block: 'js-modal-bottom' }],
+						content: [
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
+						{
+							elem: 'modal',
+							attrs: { style: 'display: none;' },
+							mix: { block: 'animation', mods: { to: 'top' } },
+						}]
 					},
 					{
-						block: 'decorator',
-						mods: { 'indent-a': 's' },
-						content: {
-							block: 'button',
-							mix: [{ block: 'animation' }, { block: 'js-shake-radial' }],
-							content: 'Shake me radial!'
-						}
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
+						content: "From bottom to top"
+					},
+					{
+						block: 'text',
+						mods: { size: 's', view: 'primary', font: 'sans' },
+						content: "mods: { 'from': 'bottom' }   /   mods: { 'to': 'top' }"
 					}]
 				},
 				{
-					block: 'text',
-					mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
-					content: "Shake"
+					block: 'animation-item',
+					content: [
+					{
+						elem: 'view',
+						mix: [{ block: 'js-modal-right' }],
+						content: [
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
+						{
+							elem: 'modal',
+							attrs: { style: 'display: none;' },
+							mix: { block: 'animation', mods: { to: 'left' } },
+						}]
+					},
+					{
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
+						content: "From right to left"
+					},
+					{
+						block: 'text',
+						mods: { size: 's', view: 'primary', font: 'sans' },
+						content: "mods: { 'from': 'right' }   /   mods: { 'to': 'left' }"
+					}]
 				},
 				{
-					block: 'text',
-					mods: { size: 's', view: 'primary', font: 'sans' },
-					content: "mods: { shake: 'horizontal' }   /   mods: { shake: 'radial' }"
+					block: 'animation-item',
+					content: [
+					{
+						elem: 'view',
+						mix: [{ block: 'js-modal-left' }],
+						content: [
+						{
+							block: 'text',
+							mods: { view: 'primary', size: 'm' },
+							content: 'click here'
+						},
+						{
+							elem: 'modal',
+							attrs: { style: 'display: none;' },
+							mix: { block: 'animation', mods: { to: 'right' } },
+						}]
+					},
+					{
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
+						content: "From left to right"
+					},
+					{
+						block: 'text',
+						mods: { size: 's', view: 'primary', font: 'sans' },
+						content: "mods: { 'from': 'left' }   /   mods: { 'to': 'right' }"
+					}]
+				},
+				// {
+				// 	block: 'animation-item',
+				// 	content: [
+				// 	{
+				// 		elem: 'view',
+				// 		content: [
+				// 		{
+				// 			block: 'e-accordion',
+				// 			content: [
+				// 			{
+				// 				elem: 'item',
+				// 				content: [
+				// 				{
+				// 					elem: 'short',
+				// 					mix: { block: 'decorator', mods: { 'space-a': 'm' } },
+				// 					content: {
+				// 						block: 'text',
+				// 						mods: { size: 'm', view: 'link', font: 'sans' },
+				// 						content: 'click me!'
+				// 					}
+				// 				},
+				// 				{
+				// 					elem: 'more',
+				// 					mix: { block: 'decorator', mods: { 'space-a': 'm' } },
+				// 					content: {
+				// 						block: 'text',
+				// 						mods: { size: 'm', view: 'primary', font: 'sans' },
+				// 						content: 'here I am!'
+				// 					}
+				// 				}]
+				// 			}]
+				// 		}]
+				// 	},
+				// 	{
+				// 		elem: 'name',
+				// 		content: [
+				// 		{
+				// 			block: 'text',
+				// 			mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
+				// 			content: "Accordion toggle"
+				// 		},
+				// 		{
+				// 			block: 'text',
+				// 			mods: { size: 's', view: 'primary', font: 'sans' },
+				// 			content: "block: 'e-accordion'   /   elem: 'short'   /   elem: 'more'"
+				// 		}]
+				// 	}]
+				// },
+				{
+					block: 'animation-item',
+					content: [
+					{
+						elem: 'view',
+						content: [
+						{
+							block: 'decorator',
+							mods: { 'indent-a': 's' },
+							content: {
+								block: 'button',
+								mix: [{ block: 'animation' }, { block: 'js-shake-horizontal' }],
+								content: 'Shake me horizontal!'
+							}
+						},
+						{
+							block: 'decorator',
+							mods: { 'indent-a': 's' },
+							content: {
+								block: 'button',
+								mix: [{ block: 'animation' }, { block: 'js-shake-radial' }],
+								content: 'Shake me radial!'
+							}
+						}]
+					},
+					{
+						block: 'text',
+						mods: { size: 'm', view: 'primary', weight: 'bold', font: 'sans' },
+						content: "Shake"
+					},
+					{
+						block: 'text',
+						mods: { size: 's', view: 'primary', font: 'sans' },
+						content: "mods: { shake: 'horizontal' }   /   mods: { shake: 'radial' }"
+					}]
 				}]
 			}]
-		}]
-	},
-	/* Footer */
-	{
-		elem: 'section',
-		mix: [
-			{ block: 'foot' },
-			{ block: 'component', mods: { whitepaper: 'default' }}
-		],
-		content: {
-			elem: 'container',
-			elemMods: { size: 'm', align: 'center' },
-			mix: { block: 'foot', elem: 'container' },
-			content: [
-				{
-					block: 'text',
-					mods: { size: 'm', view: 'secondary' },
-					content: '© 2018 White Paper'
-				},
-				{
-					block: 'foot',
-					elem: 'social',
-					content: [
-						// {
-						// 	block: 'social-icon',
-						// 	mods: { name: 'ok', size: 'm', view: 'primary' },
-						// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-						// 	tag: 'a',
-						// 	attrs: { href: 'https://github.com/whitepapertools' }
-						// },
-						// {
-						// 	block: 'social-icon',
-						// 	mods: { name: 'ya', size: 'm', view: 'primary' },
-						// 	mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-						// 	tag: 'a',
-						// 	attrs: { href: 'https://github.com/whitepapertools' }
-						// },
-						{
-							block: 'social-icon',
-							mods: { name: 'github', size: 'm', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://github.com/whitepapertools' }
-						},
-						{
-							block: 'social-icon',
-							mods: { name: 'telegram', size: 'm', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://t.me/whitepapertools' }
-						},
-						{
-							block: 'social-icon',
-							mods: { name: 'twitter', size: 'm', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://twitter.com/whitepapertools' }
-						},
-						{
-							block: 'social-icon',
-							mods: { name: 'codepen', size: 'm', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://codepen.io/whitepapertools' }
-						},
-						{
-							block: 'social-icon',
-							mods: { name: 'dribbble', size: 'm', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://dribbble.com/whitepapertools' }
-						}
-					]
-				}
-			]
+		},
+		/* /Content */
+
+		/* Footer */
+		{
+			block: 'footer',
 		}
-	}]
-	/* /Footer */
+		/* /Footer */
+
+	]
+	
 };

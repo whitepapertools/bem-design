@@ -17,7 +17,9 @@
 
 	&__logo {
 		display: block;
-		& > img { display: block; }
+		width: 96px;
+		height: 32px;
+		background: #000;
 	}
 
 	&__nav {
