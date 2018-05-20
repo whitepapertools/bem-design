@@ -4,7 +4,7 @@
 		background: var(--color-bg-action);
 		margin-bottom: var(--space-s);
 		position: relative;
-		height: 240px;
+		height: 320px;
 		&_size {
 			&_xl {
 				

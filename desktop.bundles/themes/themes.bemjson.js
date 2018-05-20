@@ -1005,42 +1005,46 @@ module.exports = {
 										{ block: 'decorator', mods: { 'indent-b': 'xxxxl' }}
 									],
 									content: [
+										// {
+										// 	block: 'breakpoint',
+										// 	content: [
+										// 		{
+										// 			elem: 'view',
+										// 			content: [
+
+										// 			]
+										// 		},
+										// 		{
+										// 			elem: 'text',
+										// 			content: [
+										// 				{
+										// 					block: 'text',
+										// 					mods: { size: 'm', weight: 'bold' },
+										// 					content: "--screen-xl"
+										// 				}
+										// 			]
+										// 		}
+										// 	]
+										// },
 										{
 											block: 'breakpoint',
 											content: [
 												{
 													elem: 'view',
 													content: [
-
-													]
-												},
-												{
-													elem: 'text',
-													content: [
 														{
-															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
-															content: "--screen-xl"
+															block: 'image',
+															width: 460,
+															url: '../../../../assets/i/screen-l.svg'
 														}
 													]
-												}
-											]
-										},
-										{
-											block: 'breakpoint',
-											content: [
-												{
-													elem: 'view',
-													content: [
-
-													]
 												},
 												{
 													elem: 'text',
 													content: [
 														{
 															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
+															mods: { size: 'm', weight: 'bold', align: 'center' },
 															content: "--screen-l"
 														}
 													]
@@ -1053,7 +1057,11 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															block: 'image',
+															width: 460,
+															url: '../../../../assets/i/screen-m.svg'
+														}
 													]
 												},
 												{
@@ -1061,7 +1069,7 @@ module.exports = {
 													content: [
 														{
 															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
+															mods: { size: 'm', weight: 'bold', align: 'center' },
 															content: "--screen-m"
 														}
 													]
@@ -1074,7 +1082,11 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															block: 'image',
+															width: 460,
+															url: '../../../../assets/i/screen-s.svg'
+														}
 													]
 												},
 												{
@@ -1082,7 +1094,7 @@ module.exports = {
 													content: [
 														{
 															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
+															mods: { size: 'm', weight: 'bold', align: 'center' },
 															content: "--screen-s"
 														}
 													]
@@ -1095,7 +1107,11 @@ module.exports = {
 												{
 													elem: 'view',
 													content: [
-
+														{
+															block: 'image',
+															width: 460,
+															url: '../../../../assets/i/screen-xs.svg'
+														}
 													]
 												},
 												{
@@ -1103,7 +1119,7 @@ module.exports = {
 													content: [
 														{
 															block: 'text',
-															mods: { size: 'm', weight: 'bold' },
+															mods: { size: 'm', weight: 'bold', align: 'center' },
 															content: "--screen-xs"
 														}
 													]
