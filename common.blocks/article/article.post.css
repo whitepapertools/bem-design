@@ -3,4 +3,15 @@
 	background-color: black;
 	display: block;
 	overflow: hidden;
+	&_view {
+		&_habr {
+			background: #6a858c;
+		}
+		&_codepen {
+			background: #191919;
+		}
+		&_ui8 {
+			background: #232323;
+		}
+	}
 }

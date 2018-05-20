@@ -741,7 +741,7 @@ module.exports = {
 												{
 													block: 'pt-card',
 													mix: [
-														{ block: 'article' },
+														{ block: 'article', mods: { view: 'habr' }},
 														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 														{ block: 'component', mods: { whitepaper: 'inverse' }}
 													],
@@ -751,16 +751,6 @@ module.exports = {
 														target: '_blank'
 													},
 													content: [
-														{
-															elem: 'image',
-															mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
-															content: [
-																{
-																	block: 'image',
-																	url: '../../assets/i/meeq.png'
-																}
-															]
-														},
 														{
 															elem: 'header',
 															elemMods: { 'space-a': 'xxl' },
@@ -780,10 +770,9 @@ module.exports = {
 																	elem: 'info',
 																	content: [
 																		{
-																			block: 'image',
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																			width: 69,
-																			url: '../../assets/i/prototyping-tool.svg'
+																			block: 'brand-logo',
+																			mods: { name: 'habr', size: 'm' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }}
 																		},
 																		{
 																			block: 'text',
@@ -794,7 +783,67 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 'm' },
-																			content: 'Мы сделали БЭМ-платформу основным инструментом дизайнеров для построения интерфейсов, дополнив ее всем необходимым арсеналом для масштабирования'
+																			content: 'Мы сделали БЭМ-платформу инструментом для построения интерфейсов, дополнив ее арсеналом для масштабирования.'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
+											mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' } },
+											content: [
+												{
+													block: 'pt-card',
+													mix: [
+														{ block: 'article', mods: { view: 'ui8' }},
+														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+														{ block: 'component', mods: { whitepaper: 'inverse' }},
+													],
+													tag: 'a',
+													attrs: {
+														href: 'https://ui8.net/products/kit-bill',
+														target: '_blank'
+													},
+													content: [
+														{
+															elem: 'header',
+															elemMods: { 'space-a': 'xxl' },
+															content: [
+																{
+																	block: 'text',
+																	mods: { view: 'primary', size: 'm', weight: 'light' },
+																	content: 'Материалы'
+																}
+															]
+														},
+														{
+															elem: 'footer',
+															elemMods: { 'space-a': 'xxl' },
+															content: [
+																{
+																	elem: 'info',
+																	content: [
+																		{
+																			block: 'brand-logo',
+																			mods: { name: 'ui8', size: 'm' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }}
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xxxl', weight: 'light' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																			content: 'Kit Bill'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'm' },
+																			content: 'Карточки отлично подходят для высокой детализации прототипов. Они помогают расширять и масштабировать интерфейсы.'
 																		}
 																	]
 																}
@@ -811,13 +860,13 @@ module.exports = {
 												{
 													block: 'pt-card',
 													mix: [
-														{ block: 'article' },
+														{ block: 'article', mods: { view: 'codepen' }},
 														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 														{ block: 'component', mods: { whitepaper: 'inverse' }},
 													],
 													tag: 'a',
 													attrs: {
-														href: '#',
+														href: 'http://codepen.io',
 														target: '_blank'
 													},
 													content: [
@@ -840,92 +889,20 @@ module.exports = {
 																	elem: 'info',
 																	content: [
 																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'xxxl', weight: 'light' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																			content: 'Telegram'
-																		},
-																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'm' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-																			content: 'Мы эксперементируем над форматами работы и ищем людей заинтересованных в работе и развитие наших продуктов.'
-																		},
-																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'm' },
-																			content: 'Мы уверены что сильное комьюните создает мощные продукты'
-																		}
-																	]
-																}
-															]
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '4'},
-											mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' } },
-											content: [
-												{
-													block: 'pt-card',
-													mix: [
-														{ block: 'article' },
-														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-														{ block: 'component', mods: { whitepaper: 'inverse' }},
-													],
-													tag: 'a',
-													attrs: {
-														href: 'https://ui8.net/products/kit-bill',
-														target: '_blank'
-													},
-													content: [
-														{
-															elem: 'image',
-															mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
-															content: [
-																{
-																	block: 'image',
-																	url: '../../assets/i/sunset.png'
-																}
-															]
-														},
-														{
-															elem: 'header',
-															elemMods: { 'space-a': 'xxl' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { view: 'primary', size: 'm', weight: 'light' },
-																	content: 'Материалы'
-																}
-															]
-														},
-														{
-															elem: 'footer',
-															elemMods: { 'space-a': 'xxl' },
-															content: [
-																{
-																	elem: 'info',
-																	content: [
-																		{
-																			block: 'image',
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																			width: 53,
-																			url: '../../assets/i/bem-design-inverse.svg'
+																			block: 'brand-logo',
+																			mods: { name: 'codepen', size: 'm' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }}
 																		},
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 'xxxl', weight: 'light' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																			content: 'Kit Bill'
+																			content: 'CodePen'
 																		},
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 'm' },
-																			content: 'Scalable cards based on BEM. Good for hight fidelity prototyping. Components help to create extendable and reusable user interface'
+																			content: 'Мы экспериментируем с подачей и для наглядности структуры публикуем небольшие демо-примеры интерфейсных блоков.'
 																		}
 																	]
 																}
@@ -1118,7 +1095,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'brand-logo',
-																							mods: { name: 'pitercss', size: 'm' },
+																							mods: { name: 'dribbble', size: 'm' },
 																						}
 																					]
 																				}
@@ -1128,13 +1105,13 @@ module.exports = {
 																			block: 'text',
 																			mods: { view: 'primary', size: 'xxxl', weight: 'light' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-																			content: 'PiterCSS'
+																			content: 'Суббота, Июнь 2е'
 																		},
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 'l', weight: 'light' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
-																			content: 'Ежемесячные встречи по фронтенду в Петербурге. Декларативный дизайн. Юлия Музафарова'
+																			content: 'Cерия конференций по дизайну Dribbble Meetup. Декларативный дизайн. Юлия Музафарова'
 																		}
 																	]
 																}
@@ -1147,7 +1124,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { view: 'primary', size: 'm' },
-																	content: '@pitercss_meetup'
+																	content: '@dribbbleru'
 																}
 															]
 														}
