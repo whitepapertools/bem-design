@@ -6,11 +6,11 @@ module.exports = {
 	head: [
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-		{ elem: 'css', url: 'icons.min.css' },
+		{ elem: 'css', url: 'icon.min.css' },
 		{ elem: 'css', url: '/assets/bem-grid/bem-grid-l.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' }
 	],
-	scripts: [{ elem: 'js', url: 'icons.min.js' }],
+	scripts: [{ elem: 'js', url: 'icon.min.js' }],
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
@@ -21,12 +21,12 @@ module.exports = {
 			block: 'tpl-layout',
 			attrs: { style: 'position: relative; top: 60px' },
 			content: [
-			
+
 				/* Menu */
 				{
 					block: 'new-menu',
 				},
-				/* Menu */
+				/* /Menu */
 
 				/* Content */
 				{
@@ -37,15 +37,23 @@ module.exports = {
 						{
 							block: 'text',
 							mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 							content: 'Иконки'
 						},
 						{
+							block: 'text',
+							mods: { size: 'l' },
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
+							content: [
+								{
+									elem: 'row',
+									content: 'Для отображения иконок используется { block: \'icon\' }.'
+								}
+							]
+						},
+						{
 							block: 'icon-list',
-							mix: [
-								{ block: 'tpl-grid', mods: { 'col-gap': 'half', 'row-gap': 'two-thirds', ratio: '1-1-1-1' } },
-								{ block: 'decorator', mods: { 'indent-b': 'xxxl' } },
-							],
+							mix: { block: 'tpl-grid', mods: { 'col-gap': 'two-thirds', 'row-gap': 'two-thirds', ratio: '1-1-1-1' }},
 							content: [
 								{
 									block: 'icon-item',
@@ -346,18 +354,19 @@ module.exports = {
 								{
 									block: 'icon-item',
 									name: 'wait'
-								},
+								}
 							]
 						}
 					]
 				},
 				/* /Content */
-				
+
 				/* Footer */
 				{
 					block: 'footer',
 				}
 				/* /Footer */
+
 			]
 		}
 	]

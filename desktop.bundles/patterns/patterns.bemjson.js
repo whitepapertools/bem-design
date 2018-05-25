@@ -35,13 +35,14 @@ module.exports = {
 					content: [
 						{
 							block: 'text',
-							mods: { size: 'xxxxl', weight: 'bold' },
-							mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+							mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
+							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 							content: 'Паттерны'
 						},
 						{
 							block: 'text',
 							mods: { size: 'l' },
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 							content: [
 								{
 									elem: 'row',
@@ -59,9 +60,6 @@ module.exports = {
 							elem: 'section',
 							mix: { block: 'decorator', mods: { 'space-t': 'xxxxl' }},
 							block: 'demo',
-							attrs: {
-								'id': 'pt-table'
-							},
 							content: [
 								{
 									elem: 'pattern',

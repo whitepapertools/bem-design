@@ -46,7 +46,7 @@ module.exports = {
 							content: [
 								{
 									block: 'text',
-									mods: { view: 'primary', size: 'xxxl', weight: 'bold', align: 'center' },
+									mods: { view: 'primary', size: 'xxxl', weight: 'bold' },
 									attrs: { 'style': 'font-size: 160px;' },
 									content: 'White Paper'
 								}
