@@ -12,7 +12,7 @@
 			},
 			{
 				block: 'social-icon',
-				mods: { size: 'm', view: 'primary', name: ['github','telegram', 'twitter', 'codepen', 'dribbble' ]}
+				mods: { size: 'l', view: 'primary', name: ['github','telegram', 'twitter', 'codepen', 'dribbble' ]}
 			},
 			{
 				block: 'decorator',

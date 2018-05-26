@@ -11,6 +11,20 @@
 				mods: { size: 'm', align: 'center' }
 			},
 			{
+				block: 'pt-icon-plus',
+				mods: { 'vertical-align': 'center' }
+			},
+			{
+				block: 'pt-icon-plus',
+				elem: 'icon',
+				mods: { 'indent-l': 'xs' }
+			},
+			{
+				block: 'icon', 
+				mods: { name: 'arrow-down', view: 'ghost', size: 's' }
+			},
+			
+			{
 				block: 'social-icon',
 				mods: { size: 'm', view: 'primary', name: ['github','telegram', 'twitter', 'codepen', 'dribbble' ]}
 			}

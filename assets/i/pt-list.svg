@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <g fill="none" fill-rule="evenodd" transform="translate(10 59)">
+    <polygon fill="#000000" fill-rule="nonzero" points="0 66 460 25 374.586 362 50.582 333" opacity=".1"/>
+    <polygon fill="#000000" fill-rule="nonzero" points="118 12 404 12 424 285 107 301"/>
+    <g stroke="#FFFFFF" stroke-width="4" transform="translate(146 40)">
+      <polyline points="0 10.513 10.513 0 21.059 9.513 31.097 0 41.092 9.513 51.095 0 62.054 10.513"/>
+      <polyline points="60 10.513 70.513 0 81.059 9.513 91.097 0 101.092 9.513 111.095 0 122.054 10.513"/>
+      <polyline points="120 10.513 130.513 0 141.059 9.513 151.097 0 161.092 9.513 171.095 0 182.054 10.513"/>
+      <polyline points="180 10.513 190.513 0 201.059 9.513 211.097 0 221.092 9.513 231.095 0 242.054 10.513"/>
+    </g>
+    <g stroke="#FFFFFF" stroke-width="4" transform="translate(146 108)">
+      <polyline points="0 10.513 10.513 0 21.059 9.513 31.097 0 41.092 9.513 51.095 0 62.054 10.513"/>
+      <polyline points="60 10.513 70.513 0 81.059 9.513 91.097 0 101.092 9.513 111.095 0 122.054 10.513"/>
+      <polyline points="120 10.513 130.513 0 141.059 9.513 151.097 0 161.092 9.513 171.095 0 182.054 10.513"/>
+      <polyline points="180 10.513 190.513 0 201.059 9.513 211.097 0 221.092 9.513 231.095 0 242.054 10.513"/>
+    </g>
+    <g stroke="#FFFFFF" stroke-width="4" transform="translate(146 176)">
+      <polyline points="0 10.513 10.513 0 21.059 9.513 31.097 0 41.092 9.513 51.095 0 62.054 10.513"/>
+      <polyline points="60 10.513 70.513 0 81.059 9.513 91.097 0 101.092 9.513 111.095 0 122.054 10.513"/>
+      <polyline points="120 10.513 130.513 0 141.059 9.513 151.097 0 161.092 9.513 171.095 0 182.054 10.513"/>
+      <polyline points="180 10.513 190.513 0 201.059 9.513 211.097 0 221.092 9.513 231.095 0 242.054 10.513"/>
+    </g>
+    <g stroke="#1373ED" stroke-width="4" transform="translate(146 244)">
+      <polyline points="0 10.513 10.513 0 21.059 9.513 31.097 0 41.092 9.513 51.095 0 62.054 10.513"/>
+      <polyline points="60 10.513 70.513 0 81.059 9.513 91.097 0 101.092 9.513 111.095 0 122.054 10.513"/>
+      <polyline points="120 10.513 130.513 0 141.059 9.513 151.097 0 161.092 9.513 171.095 0 182.054 10.513"/>
+      <polyline points="180 10.513 190.513 0 201.059 9.513 211.097 0 221.092 9.513 231.095 0 242.054 10.513"/>
+    </g>
+    <path stroke="#FFFFFF" stroke-width="4" d="M116 81L407 81M116 149L423 149M116 217L423 217"/>
+    <g transform="translate(40)">
+      <polygon fill="#FFFFFF" fill-rule="nonzero" stroke="#000000" stroke-width="4" points=".175 0 22.839 270 89.065 270 97.933 0"/>
+      <circle cx="50" cy="33" r="18" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="4"/>
+      <circle cx="51" cy="101" r="20" fill="#1373ED" fill-rule="nonzero"/>
+      <circle cx="53" cy="169" r="18" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="4"/>
+      <circle cx="56" cy="237" r="18" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="4"/>
+      <path stroke="#000000" stroke-width="4" d="M6 67L95.0702739 67M14 135L92.0702739 135M18 203L91.0702739 203"/>
+    </g>
+  </g>
+</svg>

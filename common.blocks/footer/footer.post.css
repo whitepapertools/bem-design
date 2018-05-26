@@ -1,14 +1,11 @@
 .footer {
 	padding: var(--space-xxxl) 0;
-	border-top: 1px solid var(--color-bg-border);
-
 	&__container {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
 	}
-
 	&__social {
 		display: flex;
 		flex-flow: row nowrap;

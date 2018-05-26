@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'BEM Icons article',
+	title: 'Как рисовать иконки',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -17,19 +17,18 @@ module.exports = {
 	},
 	content: [
 		{
-			block: 'tpl-layout',
-			attrs: { style: 'position: relative; top: 60px' },
+			block: 'demo',
 			content: [
 			
 				/* Menu */
 				{
 					block: 'new-menu',
+					mix: { block: 'demo', elem: 'nav' }
 				},
 				/* /Menu */
 
 				/* Content */
 				{
-					block: 'demo',
 					elem: 'content',
 					elemMods: { size: 's' },
 					content: [
@@ -172,6 +171,7 @@ module.exports = {
 				/* Footer */
 				{
 					block: 'footer',
+					mix: { block: 'demo', elem: 'footer' }
 				}
 				/* /Footer */
 

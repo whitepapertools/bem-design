@@ -6,7 +6,7 @@
 	width: 100%;
 	top: 0;
 	z-index: 100;
-
+	
 	&__container {
 		height: 100%;
 		display: flex;
@@ -63,17 +63,16 @@
 	&__dropdown {
 		position: absolute;
 		visibility: hidden;
-		opacity: 0;
-		width: 160px;
 		display: flex;
+		opacity: 0;
+		width: 200px;
 		flex-flow: column;
 		background: var(--color-bg-default);
 		box-shadow: 0 0px 2px rgba(0,0,0,0.03), 0 1px 4px rgba(0,0,0,0.12), 0 12px 8px -3px rgba(0,0,0,0.06);
-		right: -12px;
+		left: calc(-1 * var(--space-l));
 		top: 100%;
 		transform: translateY(var(--space-xs));
 		transition: transform .2s, opacity .2s, visibility .2s;
-
 		&-link {
 			padding: var(--space-m) var(--space-l);
 			text-decoration: none;
@@ -82,7 +81,8 @@
 			border-bottom: 1px solid var(--color-border);
 			&:last-child { border-bottom: none;}
 			&:hover {
-				color: var(--color-link);
+				/* color: var(--color-link); */
+				background: var(--color-bg-selection);
 			}
 		}
 	}

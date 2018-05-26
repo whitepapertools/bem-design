@@ -1,7 +1,6 @@
 .breakpoint {
 	&__view {
 		height: 40px;
-		background: var(--color-bg-action);
 		margin-bottom: var(--space-s);
 		position: relative;
 		height: 320px;

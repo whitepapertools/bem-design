@@ -18,19 +18,18 @@ module.exports = {
 	},
 	content: [
 		{
-			block: 'tpl-layout',
-			attrs: { style: 'position: relative; top: 60px' },
+			block: 'demo',
 			content: [
 
 				/* Menu */
 				{
 					block: 'new-menu',
+					mix: { block: 'demo', elem: 'nav' }
 				},
 				/* /Menu */
 
 				/* Content */
 				{
-					block: 'demo',
 					elem: 'content',
 					elemMods: { size: 'm' },
 					content: [
@@ -364,6 +363,7 @@ module.exports = {
 				/* Footer */
 				{
 					block: 'footer',
+					mix: { block: 'demo', elem: 'footer' }
 				}
 				/* /Footer */
 

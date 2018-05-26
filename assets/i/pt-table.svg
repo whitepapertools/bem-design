@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <g fill="none" fill-rule="evenodd" transform="translate(10 50)">
+    <polygon fill="#000000" fill-rule="nonzero" points="0 26 460 110 358.678 380 91.189 368" opacity=".1"/>
+    <polygon fill="#000000" fill-rule="nonzero" points="28 59 422 59 422 313 28 333"/>
+    <polygon stroke="#FFFFFF" stroke-width="4" points="50 103 50 287 86 287 86 103"/>
+    <polygon stroke="#FFFFFF" stroke-width="4" points="110 103 110 287 166 287 166 103"/>
+    <polygon fill="#0070F0" fill-rule="nonzero" points="362 101 402 101 402 289 362 289"/>
+    <polygon stroke="#FFFFFF" stroke-width="4" points="190 103 190 287 340 287 340 103"/>
+    <polygon fill="#FFFFFF" fill-rule="nonzero" stroke="#000000" stroke-width="4" points="50 10 441 0 441 87 50 77"/>
+    <polygon fill="#1373ED" fill-rule="nonzero" points="89 24 112 63 66 63"/>
+    <path fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="4" d="M127 35L403 35M127 52L322 52"/>
+  </g>
+</svg>
