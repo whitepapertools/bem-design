@@ -76,17 +76,9 @@ module.exports = {
 											]
 										},
 										{
-											elem: 'cover',
-											attrs: { 
-												'style': 'height: 480px;'
-											},
-											content: [
-												{
-													block: 'image',
-													url: '../../../../assets/i/pt-card.svg',
-													height: 480,
-												}
-											]
+											block: 'image',
+											url: '../../../../assets/i/pt-card.svg',
+											height: 480,
 										}
 									]
 								}
@@ -104,17 +96,9 @@ module.exports = {
 									mix: { block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'full' }},
 									content: [
 										{
-											elem: 'cover',
-											attrs: { 
-												'style': 'height: 480px;'
-											},
-											content: [
-												{
-													block: 'image',
-													url: '../../../../assets/i/pt-list.svg',
-													height: 480,
-												}
-											]
+											block: 'image',
+											url: '../../../../assets/i/pt-list.svg',
+											height: 480,
 										},
 										{
 											block: 'wrap',
@@ -186,17 +170,9 @@ module.exports = {
 											]
 										},
 										{
-											elem: 'cover',
-											attrs: { 
-												'style': 'height: 480px;'
-											},
-											content: [
-												{
-													block: 'image',
-													url: '../../../../assets/i/pt-table.svg',
-													height: 480,
-												}
-											]
+											block: 'image',
+											url: '../../../../assets/i/pt-table.svg',
+											height: 480,
 										}
 									]
 								}
@@ -214,17 +190,9 @@ module.exports = {
 									mix: { block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'full' }},
 									content: [
 										{
-											elem: 'cover',
-											attrs: { 
-												'style': 'height: 480px;'
-											},
-											content: [
-												{
-													block: 'image',
-													url: '../../../../assets/i/pt-informer.svg',
-													height: 480,
-												}
-											]
+											block: 'image',
+											url: '../../../../assets/i/pt-informer.svg',
+											height: 480,
 										},
 										{
 											block: 'wrap',
@@ -242,7 +210,7 @@ module.exports = {
 															block: 'text',
 															mods: { view: 'primary', size: 'l' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: '...'
+															content: 'Используется для представления станусной информации: ошибка, успех, предупреджение.'
 														},
 														{
 															block: 'text',
@@ -284,7 +252,7 @@ module.exports = {
 															block: 'text',
 															mods: { view: 'primary', size: 'l' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: '...'
+															content: 'Используется для комбинации иконок (графики) и текста (чего угодно).'
 														},
 														{
 															block: 'text',
@@ -296,17 +264,9 @@ module.exports = {
 											]
 										},
 										{
-											elem: 'cover',
-											attrs: { 
-												'style': 'height: 480px;'
-											},
-											content: [
-												{
-													block: 'image',
-													url: '../../../../assets/i/pt-icon-plus.svg',
-													height: 480,
-												}
-											]
+											block: 'image',
+											url: '../../../../assets/i/pt-icon-plus.svg',
+											height: 480,
 										}
 									]
 								}
@@ -324,17 +284,9 @@ module.exports = {
 									mix: { block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'full' }},
 									content: [
 										{
-											elem: 'cover',
-											attrs: { 
-												'style': 'height: 480px;'
-											},
-											content: [
-												{
-													block: 'image',
-													url: '../../../../assets/i/pt-surface.svg',
-													height: 480,
-												}
-											]
+											block: 'image',
+											url: '../../../../assets/i/pt-surface.svg',
+											height: 480,
 										},
 										{
 											block: 'wrap',
@@ -352,7 +304,7 @@ module.exports = {
 															block: 'text',
 															mods: { view: 'primary', size: 'l' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: '...'
+															content: 'Используется для представления перекрывающего слоя / модального блока.'
 														},
 														{
 															block: 'text',
@@ -366,9 +318,55 @@ module.exports = {
 									]
 								}
 							]
-						}
+						},
 						/* pt-surface */
 
+						/* pt-form */
+						{
+							elem: 'section',
+							attrs: { 'id': 'pt-informer' },
+							content: [
+								{
+									elem: 'row',
+									mix: { block: 'tpl-grid', mods: { ratio: '1-1', 'col-gap': 'full' }},
+									content: [
+										{
+											block: 'wrap',
+											content: [
+												{
+													elem: 'content',
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'xxxl', weight: 'bold'  },
+															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+															content: 'Форма',
+														},
+														{
+															block: 'text',
+															mods: { view: 'primary', size: 'l' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+															content: 'Используется для представления информаци, которая помогает получать данные от пользователя (инпуты, селекты, чекбоксы, ...). Наиболее частая структара: набор пунктовс лейблом и контроллом + акцентная кнопка.'
+														},
+														{
+															block: 'text',
+															mods: { view: 'link', size: 'l' },
+															content: 'Подробнее'
+														}
+													] 
+												}
+											]
+										},
+										{
+											block: 'image',
+											url: '../../../../assets/i/pt-form.svg',
+											height: 480,
+										}
+									]
+								}
+							]
+						},
+						/* pt-form */
 					]
 				},
 				/* Content */
