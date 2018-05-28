@@ -43,6 +43,13 @@ space-a                        | xs / s / m / l / xl / xxl
 space-h                        | xs / s / m / l / xl / xxl
 space-v                        | xs / s / m / l / xl / xxl
 
+Модификаторы `pt-card__header` | Значение
+------------------------------ | -------------------------
+align                          | center / right
+space-a                        | xs / s / m / l / xl / xxl
+space-h                        | xs / s / m / l / xl / xxl
+space-v                        | xs / s / m / l / xl / xxl
+
 ### Задание
 
 Опиши `header` карточки
@@ -77,6 +84,14 @@ space-l                         | xs / s / m / l / xl / xxl
 Располагается поверх всего контента и висит в внизу карточки. Выполняет роль подвала. Может использоваться, как подвал карточки, так и как подвал контента.
 
 Модификаторы элемента `footer`  | Значение
+------------------------------- | -------------------------
+align                           | center / right / between
+space-a                         | xs / s / m / l / xl / xxl
+space-h                         | xs / s / m / l / xl / xxl
+space-v                         | xs / s / m / l / xl / xxl
+space-b                         | xs / s / m / l / xl / xxl
+
+Модификаторы `pt-card__footer` | Значение
 ------------------------------- | -------------------------
 align                           | center / right / between
 space-a                         | xs / s / m / l / xl / xxl

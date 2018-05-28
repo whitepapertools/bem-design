@@ -6,7 +6,7 @@
 
 ```js
 {
-	block: 'pt-tag',
+	block: 'tag',
 	mods: { view: 'default' },
 	content: [
 	{
@@ -29,7 +29,7 @@
 
 ## Задание
 
-Оберни метки в конце статьи в `pt-tag`.
+Оберни метки в конце статьи в `tag`.
 
 <iframe height='500' scrolling='no' title='tag. Теория 1' src='//codepen.io/bem_design/embed/093f2fd999b676a1986b847dc827945d/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/093f2fd999b676a1986b847dc827945d/'>tag. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>

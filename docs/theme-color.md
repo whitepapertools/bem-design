@@ -15,5 +15,5 @@
 Чтобы применить цвет к своему локальном ублоку, используй [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*).
 
 ```css
-	background: var(--color-bg-brand);
+background: var(--color-bg-brand);
 ```

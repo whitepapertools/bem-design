@@ -6,7 +6,7 @@
 <iframe height='265' scrolling='no' title='theme. space' src='//codepen.io/bem_design/embed/b810a2c80814d7c696fb08f2d1d7932e/?height=265&theme-id=0&default-tab=css&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/b810a2c80814d7c696fb08f2d1d7932e/'>theme. space</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-Эти переменные можно использовать, как в локальных блоках, так и в качестве `decorator` в разметке.
+Эти переменные можно использовать, как в локальных стилях блока, так и в разметке с помощью специального блока `decorator`.
 
 ```css
 .your-block {

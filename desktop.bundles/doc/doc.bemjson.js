@@ -15,7 +15,7 @@ module.exports = {
 	],
 	mix: {
 		block: 'theme',
-		mods: { color: 'liquid-default', space: 'default', size: 'default' }
+		mods: { color: 'whitepaper-default', space: 'default', size: 'default' }
 	},
 	content: [
 	{

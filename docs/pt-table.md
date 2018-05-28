@@ -1,6 +1,6 @@
 # pt-table
 
-![pt-table](_images/pt-table.png)
+<!-- ![pt-table](_images/pt-table.png) -->
 
 Паттерн для создания простых плоских таблиц.
 

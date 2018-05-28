@@ -21,14 +21,14 @@
 	* [pt-table](pt-table.md)
 	* [pt-informer](pt-informer.md)
 	* [pt-surface](pt-surface.md)
-	* [Как создать новый паттерн](patterns-new.md)
+	<!-- * [Как создать новый паттерн](patterns-new.md) -->
 
 * Контент
 	* [Текст](content-text.md)
 	* [Иконки](content-icons.md)
 	* [Иконки. Гайд](content-icon-guide.md)
 	* [Векторы](content-vectors.md)
-	* [Векторы. Гайд](content-vectors-guide.md)
+	<!-- * [Векторы. Гайд](content-vectors-guide.md) -->
 	* [Аватар](content-avatar.md)
 	* [Бейдж](content-badge.md)
 	* [Тэг](content-tag.md)
@@ -44,3 +44,5 @@
 <!-- * [BEMTREE](bemtree.md) -->
 
 <!-- * [i-bem (или JS)](js.md) -->
+
+* [Установка в своем проекте](install.md)
