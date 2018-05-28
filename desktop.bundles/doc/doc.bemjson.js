@@ -9,13 +9,13 @@ module.exports = {
 		{ elem: 'css', url: 'doc.min.css' }
 	],
 	scripts: [
-		{ elem: 'js', url: 'doc.min.js' },
 		{ elem: 'js', url: '//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js' },
-		{ elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' }
+		{ elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' },
+		{ elem: 'js', url: 'doc.min.js' }
 	],
 	mix: {
 		block: 'theme',
-		mods: { color: 'default', space: 'default', size: 'default' }
+		mods: { color: 'whitepaper-default', space: 'default', size: 'default' }
 	},
 	content: [
 	{
@@ -30,7 +30,6 @@ module.exports = {
 					'loadSidebar: true, '+
   					'autoHeader: true, '+
   					'mergeNavbar: true, '+
-					'name: \'BEM Design\', '+
 					'basePath: \'/docs/\', '+
 
 					'search: { '+

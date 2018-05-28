@@ -109,7 +109,7 @@ BEMJSON – формат, в котором описывается размет�
 
 ## Микс
 
-Миксуемая сущность описывается так же, как и основной блок. НО! Шаблоны этого блока не применятся, как и его контент.
+Миксуемая сущность описывается так же, как и основной блок. НО! [Шаблоны](bemhtml.md) этого блока не применятся, как и его контент.
 
 ```js
 {
@@ -156,10 +156,3 @@ BEMJSON – формат, в котором описывается размет�
 ```html
 <a href="bem.design" class="link">Click me!</a>
 ```
-
-## Задание
-
-Преобразуй HTML-разметку в BEMJSON-разметку
-
-<iframe height='500' scrolling='no' title='BEMJSON. Задание 1' src='//codepen.io/bem_design/embed/80aad85b602f4e49c9e5a9cb9eae2a80/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/80aad85b602f4e49c9e5a9cb9eae2a80/'>BEMJSON. Задание 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
