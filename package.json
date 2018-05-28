@@ -1,7 +1,7 @@
 {
   "author": "",
-  "name": "whitepaper-project-stub",
-  "version": "0.0.1",
+  "name": "bem-project-stub",
+  "version": "2.0.0",
   "browserslist": [
     "ie >= 10",
     "opera 12.1",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:whitepapertools/whitepaper-portal.git"
+    "url": "git://github.com/bem/project-stub.git"
   },
   "engines": {
     "node": ">=4"
