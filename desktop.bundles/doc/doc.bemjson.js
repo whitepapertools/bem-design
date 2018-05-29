@@ -19,24 +19,40 @@ module.exports = {
 	},
 	content: [
 	{
-		block: 'docsify',
-		attrs: { id: 'app' }
-	},
-	{
-		tag: 'script',
-		content: 'window.$docsify = { '+
-					'auto2top: true, '+
-					'autoHeader: true, '+
-					'loadSidebar: true, '+
-  					'autoHeader: true, '+
-  					'mergeNavbar: true, '+
-					'basePath: \'/docs/\', '+
+		block: 'demo',
+		content: [
+		{
+			block: 'tpl-layout',
+			attrs: { style: 'position: relative; top: 60px' },
+			content: [
+			{
+				block: 'new-menu',
+			},
+			{
+				block: 'docsify',
+				attrs: { id: 'app' }
+			},
+			{
+				elem: 'section',
+				content: [
+				{
+					tag: 'script',
+					content: 'window.$docsify = { '+
+								'auto2top: true, '+
+								'autoHeader: true, '+
+								'loadSidebar: true, '+
+								'autoHeader: true, '+
+								'mergeNavbar: true, '+
+								'basePath: \'/docs/\', '+
 
-					'search: { '+
-						'paths: \'auto\', '+
-						'placeholder: \'Тут можно поискать\', '+
-						'noData: \'Не нашлось!\', '+
-					'}'+
-				'}'
+								'search: { '+
+									'paths: \'auto\', '+
+									'placeholder: \'Тут можно поискать\', '+
+									'noData: \'Не нашлось!\', '+
+								'}'+
+							'}'
+				}]
+			}]
+		}]
 	}]
 };
