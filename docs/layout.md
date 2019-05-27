@@ -1,8 +1,8 @@
-# Сетка
+# Каркас
 
-Сетка – очень важная часть интерфейса. Мы делим их на два вида: обвязки страницы (tpl-layout) и сетки контентных секций (tpl-grid).
+Каркас отвечает за композиционную расстановку блоков в интерфейсе. Он состоит из двух блоков: обвязка страницы (tpl-layout) и сетка контентных секций (tpl-grid).
 
-## Обвязки
+## Обвязка
 
 <div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_m-ratio_1-1-1 tpl-grid_row-gap_half tpl-grid_col-gap_half">
 	<div class="tpl-grid__fraction">
@@ -41,7 +41,7 @@
 
 [Посмотреть все примеры](https://whitepaper.tools/doc.html#/layout-outer)
 
-## Сетки
+## Сетка
 
 <div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_m-ratio_1-1-1 tpl-grid_row-gap_half tpl-grid_col-gap_half">
 	<div class="tpl-grid__fraction">

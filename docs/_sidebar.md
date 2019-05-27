@@ -10,9 +10,9 @@
 	* [Сеточные правила](theme-gap.md)
 	* [Шрифты](theme-font.md)
 
-* [Сетка](layout.md)
-	* [Обвязки](layout-outer.md)
-	* [Сетки](layout-inner.md)
+* [Каркас](layout.md)
+	* [Обвязка](layout-outer.md)
+	* [Сетка](layout-inner.md)
 
 * [Паттерны](patterns.md)
 	* [pt-icon-plus](pt-icon-plus.md)

@@ -155,7 +155,7 @@ module.exports = {
                                             {
                                                 block: 'text',
                                                 mods: { view: 'primary', font: 'mono', weight: 'light', display: 'inline-block' },
-                                                content: 'Открытый инструмент для разработки дизайн-системы на основе '
+                                                content: { html: 'Открытый инструмент для разработки дизайн-системы на&nbsp;основе ' }
                                             },
                                             {
                                                 elem: 'combination',
@@ -1450,7 +1450,7 @@ module.exports = {
                                 block: 'text',
                                 mods: { size: 'xl', view: 'secondary', weight: 'light' },
                                 mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
-                                content: 'Дизайн-система whitepaper помогает сократить количество этапов и участников, для того чтобы сформировать интерфейс готовый к продакшну'
+                                content: {html : 'Инструмент whitepaper помогает сократить количество этапов и&nbsp;участников, для того чтобы сформировать интерфейс готовый к&nbsp;продакшну.'}
                             },
                             {
                                 block: 'process',
@@ -1564,7 +1564,7 @@ module.exports = {
                                                     { block: 'e-accordion', elem: 'short' },
                                                     { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
                                                 ],
-                                                content: '— Можно ли попробовать в песочнице?'
+                                                content: {html: '&mdash;&nbsp;Можно&nbsp;ли попробовать в&nbsp;песочнице?'}
                                             },
                                             {
                                                 elem: 'answer',
@@ -1572,7 +1572,7 @@ module.exports = {
                                                 content: {
                                                     block: 'text',
                                                     mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                                    content: '— В любую песочницу можно подключить CSS-файл со всеми собранными стилями дизайн-системы'
+                                                    content: {html: '&mdash;&nbsp;В&nbsp;любую песочницу можно подключить CSS-файл со&nbsp;всеми собранными стилями дизайн-системы'}
                                                 }
                                             }
                                         ]
@@ -1587,7 +1587,7 @@ module.exports = {
                                                     { block: 'e-accordion', elem: 'short' },
                                                     { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
                                                 ],
-                                                content: '— Можно ли добавить в готовый проект?'
+                                                content: {html: '&mdash;&nbsp;Можно&nbsp;ли добавить в&nbsp;готовый проект?'}
                                             },
                                             {
                                                 elem: 'answer',
@@ -1595,7 +1595,7 @@ module.exports = {
                                                 content: {
                                                     block: 'text',
                                                     mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                                    content: '— Можно установить whitepaper как зависимость в проект или подключить файл со всеми стилями на страницу'
+                                                    content: {html: '&mdash;&nbsp;Можно установить whitepaper как зависимость в&nbsp;проект или подключить файл со&nbsp;всеми стилями на&nbsp;страницу'}
                                                 }
                                             }
                                         ]
@@ -1664,7 +1664,7 @@ module.exports = {
                                                 content: {
                                                     block: 'text',
                                                     mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                                    content: '— Все блоки дизайн-системы можно переопределять и доопределять на уровне проекта'
+                                                    content: '— Все базовые блоки можно переопределять и доопределять на уровне проекта'
                                                 }
                                             }
                                         ]
@@ -1687,7 +1687,7 @@ module.exports = {
                                                 content: {
                                                     block: 'text',
                                                     mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                                    content: '— Дизайн-система предоставляет весь необходимый набор инструментов, позволяющий реализовать и гибко настроить интерфейсы любого уровня сложности и масштаба'
+                                                    content: '— whitepaper предоставляет весь необходимый набор инструментов, позволяющий реализовать и гибко настроить интерфейсы любого уровня сложности и масштаба'
                                                 }
                                             }
                                         ]
@@ -1843,12 +1843,12 @@ module.exports = {
                                                                 {
                                                                     block: 'text',
                                                                     mods: { size: 'l', view: 'primary', weight: 'light' },
-                                                                    content: 'Dribbble Meetup, 2018'
+                                                                    content: 'FrontendConf, май 2019'
                                                                 },
                                                                 {
                                                                     block: 'text',
                                                                     mods: { size: 'l', view: 'primary', weight: 'light' },
-                                                                    content: 'Санкт-Петербург'
+                                                                    content: 'Москва'
                                                                 }
                                                             ]
                                                         },
@@ -1859,7 +1859,7 @@ module.exports = {
                                                                 {
                                                                     block: 'text',
                                                                     mods: { size: 'l', view: 'primary', weight: 'light' },
-                                                                    content: 'Web Standarts, 2018'
+                                                                    content: 'BEMup, май 2019'
                                                                 },
                                                                 {
                                                                     block: 'text',
@@ -2140,7 +2140,7 @@ module.exports = {
                                             {
                                                 block: 'text',
                                                 mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                                content: 'Вся работа над дизайн системой ведётся открыто. Всегда есть несколько задач разного уровня сложности, поэтому любой человек может внести свой вклад'
+                                                content: 'Вся работа над инструментом ведётся открыто. Всегда есть задачи разного уровня сложности, поэтому любой человек может внести свой вклад.'
                                             },
                                             {
                                                 block: 'figured-button',
@@ -2221,14 +2221,13 @@ module.exports = {
                             {
                                 block: 'text',
                                 mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
-                                content: 'Для старта прототипирования с нуля можно установить БЭМ-платформу с предустановленной дизайн-системой и настроенной сборкой. В уже имеющийся проект можно подключить файл со всеми стилями дизайн-системы или установить её как зависимость'
+                                mix: { block: 'decorator', mods: { 'indent-b': 'xxl' } },
+                                content: 'Для старта прототипирования с нуля нужно развернуть БЭМ-платформу с предустановленным whatepaper и настроенной сборкой.'
                             },
-
-
 
                             {
                                 block: 'process',
+                                mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
                                 content: [
                                     {
                                         elem: 'item',
@@ -2282,15 +2281,28 @@ module.exports = {
                                                 ]
                                             }
                                         ]
-                                    },
+                                    }
+                                ]
+                            },
+
+                            {
+                                block: 'text',
+                                mods: { size: 'xl', view: 'secondary', weight: 'light' },
+                                mix: { block: 'decorator', mods: { 'indent-b': 'xxl' } },
+                                content: 'В уже имеющийся проект можно подключить файл со всеми стилями или установить whatepaper как зависимость.'
+                            },
+
+                            {
+                                block: 'process',
+                                content: [
                                     {
                                         elem: 'item',
                                         content: [
-                                            {
-                                                elem: 'label',
-                                                mix: { block: 'text', mods: { size: 'l', view: 'secondary' } },
-                                                content: 'В работающем проекте:'
-                                            },
+                                            // {
+                                            //     elem: 'label',
+                                            //     mix: { block: 'text', mods: { size: 'l', view: 'secondary' } },
+                                            //     content: 'В работающем проекте:'
+                                            // },
                                             {
                                                 block: 'steps',
                                                 content: [
