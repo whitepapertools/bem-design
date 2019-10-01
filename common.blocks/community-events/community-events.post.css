@@ -1,6 +1,10 @@
 .community-events {
+  &__wrapper {
+    min-width: 320px;
+    background-color: var(--color-bg-ghost);
+  }
   &__content {
-    min-height: 350px;
+    min-height: 320px;
   }
   &__info {
     display: flex;

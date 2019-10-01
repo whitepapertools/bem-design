@@ -1836,12 +1836,12 @@ module.exports = {
                                                                 {
                                                                     block: 'text',
                                                                     mods: { size: 'l', view: 'primary', weight: 'light' },
-                                                                    content: 'Dribbble Meetup, 2018'
+                                                                    content: ' CSS MINSK JS, 2019'
                                                                 },
                                                                 {
                                                                     block: 'text',
                                                                     mods: { size: 'l', view: 'primary', weight: 'light' },
-                                                                    content: 'Санкт-Петербург'
+                                                                    content: 'Минск'
                                                                 }
                                                             ]
                                                         },
@@ -1852,7 +1852,7 @@ module.exports = {
                                                                 {
                                                                     block: 'text',
                                                                     mods: { size: 'l', view: 'primary', weight: 'light' },
-                                                                    content: 'Web Standarts, 2018'
+                                                                    content: 'РИТ++, 2019'
                                                                 },
                                                                 {
                                                                     block: 'text',
