@@ -165,11 +165,11 @@ module.exports = {
 						content: [
 							{
 								block: 'change-version',
-								versionLink: '#2_0_0', // href для якоря, # обязательна
+								versionLink: '#2_3_0', // href для якоря, # обязательна
 								versionId: '2_3_0', // id для якоря
 								number: 'Версия 2.3.0',
 								description: 'Оптимизация, упрощение работы с паттернами и избавление от графики',
-								date: '10 июня 2019',
+								date: '26 августа 2019',
 
 								major: 'Важные изменения, добавлены:', // eng: Notable changes, с тчк.зр. версий – мажор
 								majorList: [],
