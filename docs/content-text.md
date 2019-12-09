@@ -23,7 +23,7 @@ ___
 `decoration` | `underline`                                        | Подчеркивание
 `display`    | `block` `inline-block` `inline`                    | Способ отображения блока на странице
 `size`       | `xs` `s` `m` `l` `xl` `xxl` `xxxl` `xxxxl`         | Размер
-`height`     | `xs` `s` `m` `l`                                   | Межстрочное расстояние
+`line-height`| `xs` `s` `m` `l`                                   | Межстрочное расстояние
 `spacing`    | `xs` `s` `m`                                       | Межбуквенное расстояние
 `style`      | `italic`                                           | Курсив
 `transform`  | `uppercase`                                        | Верхний регистр
