@@ -122,12 +122,12 @@ align       | center            | Выравнивание конейнера п
 </div>
 
 ```html
-<div class="tpl-layout tpl-layout_structure_fold-70-30">
+<div class="tpl-layout tpl-layout_structure_fold-100 theme_menu_defaul">
     <div class="tpl-layout__section">
         ...
     </div>
     <div class="tpl-layout__section">
-        <div class="tpl-layout__container tpl-layout__container_size_xs">Контейнер</div>
+        <div class="tpl-layout__container tpl-layout__container_size_xs tpl-layout__container_align_center">Контейнер</div>
     </div>
 </div>
 ```
